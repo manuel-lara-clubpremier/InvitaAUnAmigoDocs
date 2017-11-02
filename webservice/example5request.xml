@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <AuthenticationHeader xmlns="http://skywards.com/Mercator.CRIS.WS">
+      <AuthenticationName>*********</AuthenticationName>
+      <AuthenticationPassword>*****</AuthenticationPassword>
+    </AuthenticationHeader>
+  </soap:Header>
+  <soap:Body>
+    <AssignCampaigns xmlns="http://skywards.com/Mercator.CRIS.WS">
+      <CardNumber>string</CardNumber>
+      <CampaignList>
+        <Campaign>
+          <PrcCode>string</PrcCode>
+          <PrcDescription>string</PrcDescription>
+          <StartDate>
+            <IsQuery>boolean</IsQuery>
+            <QueryString>string</QueryString>
+            <ContainsQueryOperators>boolean</ContainsQueryOperators>
+            <HasValue>boolean</HasValue>
+            <Value>dateTime</Value>
+          </StartDate>
+          <EndDate>
+            <IsQuery>boolean</IsQuery>
+            <QueryString>string</QueryString>
+            <ContainsQueryOperators>boolean</ContainsQueryOperators>
+            <HasValue>boolean</HasValue>
+            <Value>dateTime</Value>
+          </EndDate>
+          <DateTargetted>
+            <IsQuery>boolean</IsQuery>
+            <QueryString>string</QueryString>
+            <ContainsQueryOperators>boolean</ContainsQueryOperators>
+            <HasValue>boolean</HasValue>
+            <Value>dateTime</Value>
+          </DateTargetted>
+          <CardNumber>string</CardNumber>
+        </Campaign>
+      </CampaignList>
+    </AssignCampaigns>
+  </soap:Body>
+</soap:Envelope>

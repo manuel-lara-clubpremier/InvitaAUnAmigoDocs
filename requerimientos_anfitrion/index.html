@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Req Anfitrión - Bring A Friend</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">Bring A Friend</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Inicio</a>
+                    </li>
+                    <li >
+                        <a href="../description/">Descripción general</a>
+                    </li>
+                    <li >
+                        <a href="../flujos/">Flujos</a>
+                    </li>
+                    <li class="active">
+                        <a href="./">Req Anfitrión</a>
+                    </li>
+                    <li >
+                        <a href="../requerimientos_invitado/">Req Invitado</a>
+                    </li>
+                    <li >
+                        <a href="../requerimientos_inscripcion/">Req Inscripción</a>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../flujos/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../requerimientos_invitado/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#requerimientos-de-interfaces">Requerimientos de interfaces</a></li>
+            <li><a href="#ria0-pantalla-de-informacion-de-la-promocion-en-cms">RIA0: Pantalla de información de la promoción en CMS</a></li>
+            <li><a href="#ria1-pantalla-de-anfitrion-basica">RIA1: Pantalla de anfitrión básica</a></li>
+            <li><a href="#ria2-pantalla-de-anfitrion-con-modulo-de-monitor-de-invitados">RIA2: Pantalla de anfitrión con módulo de monitor de invitados</a></li>
+            <li><a href="#ria3-modulo-de-invitar-amigos">RIA3: Módulo de invitar amigos</a></li>
+            <li><a href="#ria4-modulo-de-monitor-de-invitaciones">RIA4: Módulo de monitor de invitaciones</a></li>
+        <li class="main "><a href="#requerimientos-funcionales">Requerimientos funcionales</a></li>
+            <li><a href="#tr01-opcion-de-menu-de-cms">TR01: Opción de menú de CMS</a></li>
+            <li><a href="#tr02-opcion-de-menu-de-landing-anfitrion">TR02: Opción de menú de landing anfitrión</a></li>
+            <li><a href="#tr03-solicitar-inicio-de-sesion-en-landing-anfitrion">TR03: Solicitar inicio de sesión en landing anfitrión</a></li>
+            <li><a href="#tr04-redireccionar-la-pagina-sin-ser-anfitrion">TR04: Redireccionar la página sin ser anfitrión</a></li>
+            <li><a href="#tr05-inscripcion-de-un-anfitrion">TR05: Inscripción de un anfitrión</a></li>
+            <li><a href="#tr06-visualizar-landing-anfitrion-con-modulo-invita-amigo-maquetacion">TR06: Visualizar landing anfitrión con módulo invita amigo (maquetación)</a></li>
+            <li><a href="#tr08-agregar-correos-validos-en-el-box-de-correos-del-modulo-invitar-amigos">TR08: Agregar correos válidos en el box de correos del módulo invitar amigos</a></li>
+            <li><a href="#tr09-agregar-correos-invalidos-en-el-box-de-correos-del-modulo-invitar-amigos">TR09: Agregar correos inválidos en el box de correos del módulo invitar amigos</a></li>
+            <li><a href="#tr10-enviar-correos-de-invitacion">TR10: Enviar correos de invitación</a></li>
+            <li><a href="#tr11-crear-registro-de-la-invitacion">TR11: Crear registro de la invitación</a></li>
+            <li><a href="#tr12-mensaje-de-envio-de-correo-exitoso">TR12: Mensaje de envío de correo exitoso</a></li>
+            <li><a href="#tr13-mensaje-de-envio-de-correo-fallido">TR13: Mensaje de envio de correo fallido</a></li>
+            <li><a href="#tr14-visualizar-y-copiar-el-link-del-anfitrion">TR14: Visualizar y copiar el link del anfitrión</a></li>
+            <li><a href="#tr15-compartir-en-redes-sociales-el-link-del-anfitrion">TR15: Compartir en redes sociales el link del anfitrión</a></li>
+            <li><a href="#tr16-visualizar-invitaciones-enviadas-por-correo">TR16: Visualizar invitaciones enviadas por correo</a></li>
+            <li><a href="#tr17-visualizar-el-modulo-de-monitor-de-invitados">TR17: Visualizar el módulo de monitor de invitados</a></li>
+            <li><a href="#tr18-reenviar-una-invitacion">TR18: Reenviar una invitación</a></li>
+            <li><a href="#tr19-ordenar-por-columnas-el-modulo-de-monitor-de-invitados">TR19: Ordenar por columnas el módulo de monitor de invitados</a></li>
+            <li><a href="#tr20-leer-archivo-batch-con-puntos-y-actualizar-tabla_invitados">TR20: Leer archivo batch con puntos y actualizar tabla_invitados</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="requerimientos-de-interfaces">Requerimientos de interfaces</h1>
+<h3 id="ria0-pantalla-de-informacion-de-la-promocion-en-cms">RIA0: Pantalla de información de la promoción en CMS</h3>
+<p>Pantalla que reside en el CMS donde se mostrará la información general de la promoción. Esta pantalla no será desarrollada por Vinco pero es parte del flujo.</p>
+<p><img alt="**Muestra pantalla**" src="../img/interfaces/cms_landing.png" /></p>
+<h3 id="ria1-pantalla-de-anfitrion-basica">RIA1: Pantalla de anfitrión básica</h3>
+<p>Pantalla que verán los anfitriones donde pueden enviar invitaciones.</p>
+<p><img alt="**Muestra pantalla**" src="../img/interfaces/landing_anfitrion_basica.png" /></p>
+<h3 id="ria2-pantalla-de-anfitrion-con-modulo-de-monitor-de-invitados">RIA2: Pantalla de anfitrión con módulo de <em>monitor de invitados</em></h3>
+<p>Pantalla que verán los anfitriones después de que envían invitaciones o alguien ha aceptado su invitación.</p>
+<p><img alt="**Muestra pantalla**" src="../img/interfaces/landing_anfitrion_con_monitor_invitaciones.png" /></p>
+<h3 id="ria3-modulo-de-invitar-amigos">RIA3: Módulo de <em>invitar amigos</em></h3>
+<p>Este módulo se podrá ver siempre en el <em>landing anfitrión</em>, con él se podrán enviar invitaciones por correo electrónico y compartir el link único del anfitrion.</p>
+<p><img alt="**Muestra pantalla**" src="../img/interfaces/modulo_invita_amigos.png" /></p>
+<h3 id="ria4-modulo-de-monitor-de-invitaciones">RIA4: Módulo de <em>monitor de invitaciones</em></h3>
+<p>Este módulo se muestra cuando existen invitaciones para dicho anfitrión, ya sean invitaciones que ya se han registrado o invitaciones que no se han registrado.</p>
+<p><img alt="**Muestra pantalla**" src="../img/interfaces/modulo_monitor_invitaciones.png" /></p>
+<ul>
+<li>Logo de reenvio de correo: <a href="../adjuntos/reenvio_correo.png">Logo habilitado</a> <a href="../adjuntos/reenvio_correo_deshabilitado.png">Logo deshabilitado</a></li>
+</ul>
+<h1 id="requerimientos-funcionales">Requerimientos funcionales</h1>
+<p>En esta sección se enlistan los requerimientos solicitados para el proyecto. Se indica un id por cada uno y las dependencias entre sí.</p>
+<h3 id="tr01-opcion-de-menu-de-cms">TR01: Opción de menú de CMS</h3>
+<p><strong>Dependencias</strong>: No</p>
+<p>Cuando un usuario acceda en la sección de menú de <strong>Promociones</strong> debe existir la opción <strong>Invita a un amigo</strong> que tenga la dirección URL <strong><code>https://www.clubpremier.com/mx/invita-a-un-amigo</code></strong> y el ícono adjunto.</p>
+<h4 id="adjuntos">Adjuntos</h4>
+<p>Ícono: <a href="../adjuntos/icono_menu.ai">Archivo Adobe Illustrator</a></p>
+<h3 id="tr02-opcion-de-menu-de-landing-anfitrion">TR02: Opción de menú de <em>landing anfitrión</em></h3>
+<p><strong>Dependencias</strong>: No</p>
+<p>Cuando un usuario acceda en la sección de menú de <strong>Mi cuenta</strong> debe existir la opción <strong>Invita a un amigo</strong> que tenga la dirección URL <strong><code>https://member.clubpremier.com/invita-a-un-amigo</code></strong>.</p>
+<h3 id="tr03-solicitar-inicio-de-sesion-en-landing-anfitrion">TR03: Solicitar inicio de sesión en <em>landing anfitrión</em></h3>
+<p><strong>Dependencias</strong>: No</p>
+<p>Cuando un usuario sin sesión iniciada accede a la URL <strong><code>https://member.clubpremier.com/invita-a-un-amigo</code></strong> se debe redireccionar a la pantalla de inicio de sesión, al iniciar su sesión correctamente se debe regresar a la página solicitada originalmente respetando los parametros que puedan existir en la URL.</p>
+<h3 id="tr04-redireccionar-la-pagina-sin-ser-anfitrion">TR04: Redireccionar la página sin ser anfitrión</h3>
+<p><strong>Dependencias</strong>: TR03</p>
+<p>Cuando un socio con sesión iniciada acceda a la URL <strong><code>https://member.clubpremier.com/invita-a-un-amigo</code></strong>, si ese socio no está registrado dentro de <em>tabla_codigo_anfitrion</em> ni tiene en la URL el parametro <code>?incripcion=true</code>, se debe redireccionar al socio a la URL <strong><code>https://www.clubpremier.com/mx/invita-a-un-amigo</code></strong>.</p>
+<h3 id="tr05-inscripcion-de-un-anfitrion">TR05: Inscripción de un anfitrión</h3>
+<p><strong>Dependencias</strong>: TR04</p>
+<p>Cuando un socio con sesión iniciada acceda a la URL <strong><code>https://member.clubpremier.com/invita-a-un-amigo?inscripcion=true</code></strong>, si el socio no es un anfitrión se tiene que generar su código único y agregarlo a la tabla <em>tabla_codigo_anfitrion</em> con la fecha y su nombre (incluyendo primer letra del apellido).</p>
+<h3 id="tr06-visualizar-landing-anfitrion-con-modulo-invita-amigo-maquetacion">TR06: Visualizar <em>landing anfitrión</em> con módulo <em>invita amigo</em> (maquetación)</h3>
+<p><strong>Dependencias</strong>: TR05</p>
+<p>Si es que sucede alguna de estas:</p>
+<ul>
+<li>Socio con sesión iniciada que accede a la URL del <em>landing anfitrión</em> y que está dentro de la tabla <em>tabla_codigo_anfitrion</em>.</li>
+<li>Socio que acaba de inscribirse como anfitrión (TR05).</li>
+</ul>
+<p>Entonces el socio deberá ver la página <em>landing anfitrión básico</em>.</p>
+<h4 id="adjuntos_1">Adjuntos</h4>
+<p><a href="../img/interfaces/landing_anfitrion_basica.png"><strong>Muestra pantalla</strong></a></p>
+<p><a href="../img/interfaces/modulo_invita_amigos.png"><strong>Muestra módulo invitar amigos</strong></a></p>
+<p>Título: Invita a tus amigos a que vuelen y transfieran Puntos ¡y ganen juntos!</p>
+<p><a href="../img/assets/landing_anfitrion_banner.jpg">Banner</a></p>
+<p>Descripción:</p>
+<pre><code>Comienza a invitar a tus amigos.
+
+Elige cómo:
+</code></pre>
+
+<p>Logos redes sociales: <a href="../adjuntos/logos_redes_sociales.ai">Archivo Adobe Illustrator</a> <a href="../adjuntos/logo_facebook.jpg">Imagen Facebook</a> <a href="../adjuntos/logo_twitter.jpg">Imagen Twitter</a></p>
+<h3 id="tr08-agregar-correos-validos-en-el-box-de-correos-del-modulo-invitar-amigos">TR08: Agregar correos válidos en el box de correos del módulo <em>invitar amigos</em></h3>
+<p><strong>Dependencias</strong>: TR07</p>
+<p>Cuando un usuario escriba una dirección de correo válida en el box y presione <code>Enter</code> o el box pierda el foco, la dirección de correo debe agruparse como se muestra en la figura.</p>
+<h4 id="adjuntos_2">Adjuntos</h4>
+<p><a href="../img/req_mod_inv_amg_box_cor_val.png"><strong>Flujo</strong></a></p>
+<h3 id="tr09-agregar-correos-invalidos-en-el-box-de-correos-del-modulo-invitar-amigos">TR09: Agregar correos inválidos en el box de correos del módulo <em>invitar amigos</em></h3>
+<p><strong>Dependencias</strong>: TR08</p>
+<p>Cuando un usuario escriba una dirección de correo inválida en el box y presione <code>Enter</code> o el box pierda el foco, la dirección de correo debe agruparse como se muestra en la figura.</p>
+<h4 id="adjuntos_3">Adjuntos</h4>
+<p><a href="../img/req_mod_inv_amg_box_cor_inv.png"><strong>Flujo</strong></a></p>
+<h3 id="tr10-enviar-correos-de-invitacion">TR10: Enviar correos de invitación</h3>
+<p><strong>Dependencias</strong>: TR09</p>
+<p>Cuando todas las direcciones de correo agrupadas en el box sean válidas y el usuario presione el botón <em>Enviar invitación</em> se debe limpiar el box y se deben enviar a dichas direcciones el correo electrónico de invitación. Este correo debe tener el nombre del anfitrión y el link para compartir del anfitrión.</p>
+<h4 id="adjuntos_4">Adjuntos</h4>
+<p>Asunto del correo: %%Nombreanfitrión%%, te invitó a ganar  15% MÁS  Puntos Premier</p>
+<p>HTML del correo: <a href="../adjuntos/mailing.html">archivo</a></p>
+<p>Ejemplo del correo: <a href="../adjuntos/ejemplo_correo.psd">psd</a></p>
+<h3 id="tr11-crear-registro-de-la-invitacion">TR11: Crear registro de la invitación</h3>
+<p><strong>Dependencias</strong>: TR10</p>
+<p>Cuando se envían el (los) correos de invitación (TR09), por cada dirección de correo a la que se envío exitosamente se verificará si en los registros de ese anfitrión dentro de la tabla <em>tabla_invitados</em> existe esa dirección de correo, si no existe el registro se va a agregar llenando los campos de la siguiente forma:</p>
+<table>
+<thead>
+<tr>
+<th>cta_anfitrion</th>
+<th>cta_invitado</th>
+<th>estado</th>
+<th>nombre</th>
+<th>puntos</th>
+<th>validacion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Número de cuenta del anfitrión</td>
+<td>vacío</td>
+<td>no_registrado</td>
+<td>Dirección de correo</td>
+<td>vacío</td>
+<td>vacío</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tr12-mensaje-de-envio-de-correo-exitoso">TR12: Mensaje de envío de correo exitoso</h3>
+<p><strong>Dependencias</strong>: TR11</p>
+<p>Cuando un usuario envíe un correo en TR10, y el correo se envíe exitosamente se debe mostrar un mensaje de correo enviado exitosamente.</p>
+<h4 id="adjuntos_5">Adjuntos</h4>
+<p>Mensaje: Ahora, ya puedes empezar a ganar, el envío fue exitoso</p>
+<h3 id="tr13-mensaje-de-envio-de-correo-fallido">TR13: Mensaje de envio de correo fallido</h3>
+<p><strong>Dependencias</strong>: TR12</p>
+<p>Cuando un usuario envíe un correo en TR10, y el correo no se pueda enviar por alguna razón, se debe mostrar un mensaje de error.</p>
+<h4 id="adjuntos_6">Adjuntos</h4>
+<p>Mensaje por fallo al enviar: ¡Ups! El correo no fue enviado, inténtalo de nuevo.</p>
+<p>Mensaje por correos invalidos: ¡Ups! Hay correos no válidos, por favor, verifica la dirección de correo electrónico.</p>
+<h3 id="tr14-visualizar-y-copiar-el-link-del-anfitrion">TR14: Visualizar y copiar el link del anfitrión</h3>
+<p><strong>Dependencias</strong>: TR07</p>
+<p>Cuando un anfitrión visualiza el módulo de <em>invitar amigos</em> (TR07) debe poder ver su link único de anfitrión, este debe ser la URL <code>https://member.clubpremier.com/invitacion/</code> + <em>codigo del anfitrión</em>, al presionar el botón <em>Copiar</em> debe copiarse al portapapeles.</p>
+<h4 id="adjuntos_7">Adjuntos</h4>
+<p><a href="../img/modulo_invitar_amigos_compartir.png"><strong>Pantalla ejemplo</strong></a></p>
+<h3 id="tr15-compartir-en-redes-sociales-el-link-del-anfitrion">TR15: Compartir en redes sociales el link del anfitrión</h3>
+<p><strong>Dependencias:</strong> TR14</p>
+<p>Cuando un usuario visualiza el módulo de <em>invitar amigos</em> TR07, al presionar los botones de facebook o twitter deberá poder compartir su link de anfitrión en dichas redes sociales.</p>
+<h4 id="adjuntos_8">Adjuntos</h4>
+<p>Tags para facebook:</p>
+<pre><code class="html">&lt;meta property=&quot;og:title&quot; content=&quot;Inscr&amp;iacute;bete sin costo a Club Premier&quot;/&gt;
+&lt;meta property=&quot;og:type&quot; content=&quot;website&quot;/&gt;
+&lt;meta property=&quot;og:image&quot; content=&quot;https://s3.amazonaws.com/club_premier/invita/invitacion.jpg&quot;/&gt;
+&lt;meta property=&quot;og:image:width&quot; content=&quot;1200&quot;/&gt;
+&lt;meta property=&quot;og:image:height&quot; content=&quot;600&quot;/&gt;
+&lt;meta property=&quot;og:site_name&quot; content=&quot;Club Premier&quot;/&gt;
+&lt;meta property=&quot;og:description&quot; content=&quot;Ganemos juntos m&amp;aacute;s Puntos Premier, empieza aqu&amp;iacute;.&quot;/&gt;
+</code></pre>
+
+<p>Tags para twitter:</p>
+<pre><code class="html">&lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot;/&gt;
+&lt;meta name=&quot;twitter:title&quot; content=&quot;Inscribete sin costo a Club Premier&quot;/&gt;
+&lt;meta name=&quot;twitter:description&quot; content=&quot;Te invito a ganar conmigo m&amp;aacute;s Puntos Premier, mira como %%Link del anfitrion%%&quot;/&gt;
+&lt;meta name=&quot;twitter:image&quot; content=&quot;https://s3.amazonaws.com/club_premier/invita/invitacion.jpg&quot;/&gt;
+&lt;meta itemprop=&quot;image&quot; content=&quot;https://s3.amazonaws.com/club_premier/invita/invitacion.jpg&quot;/&gt;
+</code></pre>
+
+<h3 id="tr16-visualizar-invitaciones-enviadas-por-correo">TR16: Visualizar invitaciones enviadas por correo</h3>
+<p><strong>Dependencias:</strong> TR11</p>
+<p>Cuando un anfitrión accede al <em>landing anfitrión</em> y envía correos de invitación (TR09), por cada dirección de correo que se envió correctamente si no existe este registro en el <em>monitor de invitados</em> este registro se debe agregar. (Esto se refiere a que cuando se manden invitaciones el anfitrión pueda ver que las invitaciones nuevas se agregan al módulo inmediatamente sin tener que recargar la página o hacer alguna acción.)</p>
+<h3 id="tr17-visualizar-el-modulo-de-monitor-de-invitados">TR17: Visualizar el módulo de <em>monitor de invitados</em></h3>
+<p><strong>Dependencias:</strong> TR11</p>
+<p>Cuando un anfitrión accede al <em>landing anfitrión</em> y existen registros en la tabla <em>tabla_invitados</em> asociados con él, el socio debe visualizar el módulo de <em>monitor de invitados</em> con dichos registros. En caso que no existan registros el módulo no debe mostrarse.</p>
+<p>Ícono: <a href="../adjuntos/icono_reenviar.ai">Archivo Adobe Illustrator</a></p>
+<h3 id="tr18-reenviar-una-invitacion">TR18: Reenviar una invitación</h3>
+<p><strong>Dependencias:</strong> TR17</p>
+<p>Cuando un socio visualiza el módulo de <em>monitor de invitados</em> y presiona el botón <em>Reenviar</em> de una invitación no registrada, se debe enviar el correo de invitación a esa dirección de correo.</p>
+<h3 id="tr19-ordenar-por-columnas-el-modulo-de-monitor-de-invitados">TR19: Ordenar por columnas el módulo de <em>monitor de invitados</em></h3>
+<p><strong>Dependencias:</strong> TR17</p>
+<p>Cuando un usuario de click en la cabecera de alguna columna de la tabla del módulo de <em>monitor de invitados</em> los registros de la tabla deben ordenarse alfabéticamente respecto a esa columna, si se da click nuevamente se debe cambiar la dirección del ordenamiento.</p>
+<h3 id="tr20-leer-archivo-batch-con-puntos-y-actualizar-tabla_invitados">TR20: Leer archivo batch con puntos y actualizar <em>tabla_invitados</em></h3>
+<p><strong>Dependencias:</strong> TR05</p>
+<p>Debe existir un sistema que a una hora especifica del día lea el archivo llamado <em>registro_puntos_invita_a_un_amigo_<code>+fecha</code></em>, por cada registro debe buscar el registro en la tabla <em>tabla_invitados</em> que coincide con el número de cuenta de anfitrión y de invitado y sumar los puntos.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

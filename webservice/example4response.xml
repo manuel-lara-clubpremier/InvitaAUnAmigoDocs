@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <GetLastNTransactions2Response xmlns="http://skywards.com/Mercator.CRIS.WS">
+            <GetLastNTransactions2Result />
+            <wsResult>
+                <IsSuccess>true</IsSuccess>
+                <ErrorNumber>0</ErrorNumber>
+                <Message />
+                <ExtraInfo />
+                <ExType />
+            </wsResult>
+        </GetLastNTransactions2Response>
+    </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <GetLastNTransactions2Response xmlns="http://skywards.com/Mercator.CRIS.WS">
+            <GetLastNTransactions2Result>
+                <Activity PersonID="0" MemUID="8737774" ActivityType="BPT" ActivityTypeCategory="FIN">
+                    <CreatedDate>
+                        <ContainsQueryOperators>false</ContainsQueryOperators>
+                    </CreatedDate>
+                    <ModifiedDate>
+                        <ContainsQueryOperators>false</ContainsQueryOperators>
+                    </ModifiedDate>
+                    <ActivityID>189301272</ActivityID>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CLP_OWNR</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737774</MemUID>
+                        <ActivityID>193225664</ActivityID>
+                        <ActivityDate>2016-06-30T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>BPT</ActivityType>
+                        <CityPair />
+                        <PartnerCode>MRM</PartnerCode>
+                        <PartnerDescr>Membership Rewards Mexico</PartnerDescr>
+                        <TransactionDate>2016-07-01T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Membership Rewards Mexico</TransactionDescr>
+                        <EnglishDescr>Membership Rewards Mexico</EnglishDescr>
+                        <RedemptionMiles>1150</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-04-30T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>MRM 05</ActivityCode>
+                        <ActivityTypeCategory>FIN</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>167957355</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011573</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>01JUL2016</TransactionDateString>
+                        <ActivityDateString>30JUN2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Bank program transfers</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CLP_OWNR</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737774</MemUID>
+                        <ActivityID>192078156</ActivityID>
+                        <ActivityDate>2016-06-10T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>BPT</ActivityType>
+                        <CityPair />
+                        <PartnerCode>MRM</PartnerCode>
+                        <PartnerDescr>Membership Rewards Mexico</PartnerDescr>
+                        <TransactionDate>2016-06-13T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Membership Rewards Mexico</TransactionDescr>
+                        <EnglishDescr>Membership Rewards Mexico</EnglishDescr>
+                        <RedemptionMiles>1323</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-04-30T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>MRM 05</ActivityCode>
+                        <ActivityTypeCategory>FIN</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>166568399</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011573</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>13JUN2016</TransactionDateString>
+                        <ActivityDateString>10JUN2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Bank program transfers</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>WSANCH01</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CLP_OWNR</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737774</MemUID>
+                        <ActivityID>189388849</ActivityID>
+                        <ActivityDate>2016-04-12T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>BPT</ActivityType>
+                        <CityPair />
+                        <PartnerCode>BVA</PartnerCode>
+                        <PartnerDescr>Bancomer</PartnerDescr>
+                        <TransactionDate>2016-04-12T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>Gana mas Puntos Premier con Bancomer</TransactionDescr>
+                        <EnglishDescr>Gana mas Puntos Premier con Bancomer</EnglishDescr>
+                        <RedemptionMiles>300</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>2016_AAQ</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-04-30T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>M</ActivityMethod>
+                        <ActivityCode>BVA 10   </ActivityCode>
+                        <ActivityTypeCategory>FIN</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>162742609</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011573</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>12APR2016</TransactionDateString>
+                        <ActivityDateString>12APR2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Bank program transfers</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>PLMPRO</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>WSANCH01</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CLP_OWNR</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737774</MemUID>
+                        <ActivityID>189388849</ActivityID>
+                        <ActivityDate>2016-04-12T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>BPT</ActivityType>
+                        <CityPair />
+                        <PartnerCode>BVA</PartnerCode>
+                        <PartnerDescr>Bancomer</PartnerDescr>
+                        <TransactionDate>2016-04-12T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>TRANSFERENCIA PUNTOS VIDA BANCOMER</TransactionDescr>
+                        <EnglishDescr>TRANSFERENCIA PUNTOS VIDA BANCOMER</EnglishDescr>
+                        <RedemptionMiles>2000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-04-30T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>M</ActivityMethod>
+                        <ActivityCode>BVA 10   </ActivityCode>
+                        <ActivityTypeCategory>FIN</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>162742608</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011573</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>12APR2016</TransactionDateString>
+                        <ActivityDateString>12APR2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Bank program transfers</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>WSANCH01</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CLP_OWNR</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737774</MemUID>
+                        <ActivityID>189388842</ActivityID>
+                        <ActivityDate>2016-04-12T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>BPT</ActivityType>
+                        <CityPair />
+                        <PartnerCode>BVA</PartnerCode>
+                        <PartnerDescr>Bancomer</PartnerDescr>
+                        <TransactionDate>2016-04-12T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>Gana mas Puntos Premier con Bancomer</TransactionDescr>
+                        <EnglishDescr>Gana mas Puntos Premier con Bancomer</EnglishDescr>
+                        <RedemptionMiles>1230</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>2016_AAQ</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-04-30T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>M</ActivityMethod>
+                        <ActivityCode>BVA 10   </ActivityCode>
+                        <ActivityTypeCategory>FIN</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>162742598</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011573</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>12APR2016</TransactionDateString>
+                        <ActivityDateString>12APR2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Bank program transfers</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>PLMPRO</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>WSANCH01</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CLP_OWNR</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737774</MemUID>
+                        <ActivityID>189388842</ActivityID>
+                        <ActivityDate>2016-04-12T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>BPT</ActivityType>
+                        <CityPair />
+                        <PartnerCode>BVA</PartnerCode>
+                        <PartnerDescr>Bancomer</PartnerDescr>
+                        <TransactionDate>2016-04-12T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>TRANSFERENCIA PUNTOS VIDA BANCOMER</TransactionDescr>
+                        <EnglishDescr>TRANSFERENCIA PUNTOS VIDA BANCOMER</EnglishDescr>
+                        <RedemptionMiles>8200</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-04-30T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>M</ActivityMethod>
+                        <ActivityCode>BVA 10   </ActivityCode>
+                        <ActivityTypeCategory>FIN</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>162742597</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011573</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>12APR2016</TransactionDateString>
+                        <ActivityDateString>12APR2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Bank program transfers</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>WSANCH01</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CLP_OWNR</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737774</MemUID>
+                        <ActivityID>189388832</ActivityID>
+                        <ActivityDate>2016-04-11T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>BPT</ActivityType>
+                        <CityPair />
+                        <PartnerCode>BVA</PartnerCode>
+                        <PartnerDescr>Bancomer</PartnerDescr>
+                        <TransactionDate>2016-04-12T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>Gana mas Puntos Premier con Bancomer</TransactionDescr>
+                        <EnglishDescr>Gana mas Puntos Premier con Bancomer</EnglishDescr>
+                        <RedemptionMiles>1900</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>2016_AAP</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-04-30T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>M</ActivityMethod>
+                        <ActivityCode>BVA 10   </ActivityCode>
+                        <ActivityTypeCategory>FIN</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>162742584</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011573</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>12APR2016</TransactionDateString>
+                        <ActivityDateString>11APR2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Bank program transfers</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>PLMPRO</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>WSANCH01</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CLP_OWNR</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737774</MemUID>
+                        <ActivityID>189388832</ActivityID>
+                        <ActivityDate>2016-04-11T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>BPT</ActivityType>
+                        <CityPair />
+                        <PartnerCode>BVA</PartnerCode>
+                        <PartnerDescr>Bancomer</PartnerDescr>
+                        <TransactionDate>2016-04-12T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>TRANSFERENCIA PUNTOS VIDA BANCOMER</TransactionDescr>
+                        <EnglishDescr>TRANSFERENCIA PUNTOS VIDA BANCOMER</EnglishDescr>
+                        <RedemptionMiles>9500</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-04-30T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>M</ActivityMethod>
+                        <ActivityCode>BVA 10   </ActivityCode>
+                        <ActivityTypeCategory>FIN</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>162742583</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011573</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>12APR2016</TransactionDateString>
+                        <ActivityDateString>11APR2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Bank program transfers</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>WSANCH01</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CLP_OWNR</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737774</MemUID>
+                        <ActivityID>189370891</ActivityID>
+                        <ActivityDate>2016-04-11T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>BPT</ActivityType>
+                        <CityPair />
+                        <PartnerCode>SBI</PartnerCode>
+                        <PartnerDescr>Scotiabank Inverlat</PartnerDescr>
+                        <TransactionDate>2016-04-12T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>ACUMULACION SCOTIABANK</TransactionDescr>
+                        <EnglishDescr>ACUMULACION SCOTIABANK</EnglishDescr>
+                        <RedemptionMiles>3000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-04-30T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>M</ActivityMethod>
+                        <ActivityCode>SBI 10   </ActivityCode>
+                        <ActivityTypeCategory>FIN</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>162717679</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011573</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>12APR2016</TransactionDateString>
+                        <ActivityDateString>11APR2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Bank program transfers</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>WSANCH01</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CLP_OWNR</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737774</MemUID>
+                        <ActivityID>189301272</ActivityID>
+                        <ActivityDate>2016-04-11T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>BPT</ActivityType>
+                        <CityPair />
+                        <PartnerCode>SBI</PartnerCode>
+                        <PartnerDescr>Scotiabank Inverlat</PartnerDescr>
+                        <TransactionDate>2016-04-11T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>ACUMULACION SCOTIABANK</TransactionDescr>
+                        <EnglishDescr>ACUMULACION SCOTIABANK</EnglishDescr>
+                        <RedemptionMiles>50000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-04-30T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>M</ActivityMethod>
+                        <ActivityCode>SBI 10   </ActivityCode>
+                        <ActivityTypeCategory>FIN</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>162638388</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011573</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>11APR2016</TransactionDateString>
+                        <ActivityDateString>11APR2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Bank program transfers</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                </Activity>
+            </GetLastNTransactions2Result>
+            <wsResult>
+                <IsSuccess>true</IsSuccess>
+                <ErrorNumber>0</ErrorNumber>
+                <Message />
+                <ExtraInfo />
+                <ExType />
+            </wsResult>
+        </GetLastNTransactions2Response>
+    </soap:Body>
+</soap:Envelope>

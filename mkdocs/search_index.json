@@ -1,0 +1,729 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Introducci\u00f3n\n\n\nEsta secci\u00f3n describe el alcance y resumen de todo lo que est\u00e1 incluido en este requerimiento de software, as\u00ed como una lista de t\u00e9rminos y abreviaciones utilizadas.\n\n\nObjetivo\n\n\nDescribir a detalle los requerimientos del proyecto \nBring A Friend\n. Se ilustrar\u00e1 el funcionamiento del sistema, alcance, limitantes, definiciones e interacciones con otros sistemas.\n\n\nReglas de negocio\n\n\nSe desarrollara un sistema de referidos donde socios puedan invitar a sus amigos a realizar acumulaciones por vuelos de AM o transferencias de puntos, los invitados pueden ser socios existente o personas que no son parte de Club Premier. Las reglas de la promoci\u00f3n son las suguientes:\n\n\n\n\n\n\nVuelos\n: A partir de la fecha de ingreso, si el invitado no hab\u00eda acumulado puntos por vuelos de AeroM\u00e9xico en los \u00faltimos 2 a\u00f1os entonces todas las acumulaciones que realice (a partir de la fecha de ingreso, durante 90 d\u00edas) les da el 15% m\u00e1s y a su anfitri\u00f3n el 10%.\n\n\n\n\n\n\nTranferencias\n: A partir de la fecha de ingreso si el invitado no ha realizado una tranferencia de puntos en el \u00faltimo a\u00f1o su siguiente transferencia les dar\u00e1 el 15% m\u00e1s y a su anfitri\u00f3n el 10% (por cada partner).\n\n\n\n\n\n\nLos anfitriones deben ver las reglas de la promoci\u00f3n antes de poder invitar a sus conocidos.\n\n\nTodos los socios de Club Premier pueden ser anfitriones. Para ser invitado puedo ser un socio existente o ase necesita verificar dos cosas, que no sea invitado de alguien m\u00e1s y que la persona que me est\u00e1 invitado no sea uno de mis invitados directos.\n\n\nDefiniciones\n\n\nAnfitri\u00f3n\n: Cuando un socio \nacepta\n ser parte de la promoci\u00f3n como anfitri\u00f3n.\n\n\nInvitado\n: Socio existente o nuevo que acepta la invitaci\u00f3n de alguien.",
+            "title": "Inicio"
+        },
+        {
+            "location": "/#introduccion",
+            "text": "Esta secci\u00f3n describe el alcance y resumen de todo lo que est\u00e1 incluido en este requerimiento de software, as\u00ed como una lista de t\u00e9rminos y abreviaciones utilizadas.",
+            "title": "Introducci\u00f3n"
+        },
+        {
+            "location": "/#objetivo",
+            "text": "Describir a detalle los requerimientos del proyecto  Bring A Friend . Se ilustrar\u00e1 el funcionamiento del sistema, alcance, limitantes, definiciones e interacciones con otros sistemas.",
+            "title": "Objetivo"
+        },
+        {
+            "location": "/#reglas-de-negocio",
+            "text": "Se desarrollara un sistema de referidos donde socios puedan invitar a sus amigos a realizar acumulaciones por vuelos de AM o transferencias de puntos, los invitados pueden ser socios existente o personas que no son parte de Club Premier. Las reglas de la promoci\u00f3n son las suguientes:    Vuelos : A partir de la fecha de ingreso, si el invitado no hab\u00eda acumulado puntos por vuelos de AeroM\u00e9xico en los \u00faltimos 2 a\u00f1os entonces todas las acumulaciones que realice (a partir de la fecha de ingreso, durante 90 d\u00edas) les da el 15% m\u00e1s y a su anfitri\u00f3n el 10%.    Tranferencias : A partir de la fecha de ingreso si el invitado no ha realizado una tranferencia de puntos en el \u00faltimo a\u00f1o su siguiente transferencia les dar\u00e1 el 15% m\u00e1s y a su anfitri\u00f3n el 10% (por cada partner).    Los anfitriones deben ver las reglas de la promoci\u00f3n antes de poder invitar a sus conocidos.  Todos los socios de Club Premier pueden ser anfitriones. Para ser invitado puedo ser un socio existente o ase necesita verificar dos cosas, que no sea invitado de alguien m\u00e1s y que la persona que me est\u00e1 invitado no sea uno de mis invitados directos.",
+            "title": "Reglas de negocio"
+        },
+        {
+            "location": "/#definiciones",
+            "text": "Anfitri\u00f3n : Cuando un socio  acepta  ser parte de la promoci\u00f3n como anfitri\u00f3n.  Invitado : Socio existente o nuevo que acepta la invitaci\u00f3n de alguien.",
+            "title": "Definiciones"
+        },
+        {
+            "location": "/description/",
+            "text": "Resumen\n\n\nEl sistema consiste de tres p\u00e1ginas web, una de ellas residir\u00e1 en el CMS y las otras dos residir\u00e1n dentro del dominio member. De las dos que est\u00e1n en member una de ellas ser\u00e1 el \nlanding anfitri\u00f3n\n y otra el \nlanding invitado\n. Adem\u00e1s se har\u00e1n modificaciones al sistema de inscripci\u00f3n de usuarios.\n\n\nLa p\u00e1gina dentro del CMS mostrar\u00e1 la informaci\u00f3n general de la promoci\u00f3n, antes de que un socio pueda participar como anfitri\u00f3n es requerido que visite esta p\u00e1gina, en ella se tendr\u00e1 un bot\u00f3n de \nparticipar\n con un link hacia el landing anfitri\u00f3n que tendr\u00e1 un parametro especial para inscribirse como anfitri\u00f3n. El CMS tendr\u00e1 las siguientes funciones:\n\n\n\n\nMostrar la informaci\u00f3n de la promoci\u00f3n\n\n\nRedirigir al landing anfitri\u00f3n con un parametro especial para inscribir al socio como anfitri\u00f3n\n\n\n\n\nEl landing anfitri\u00f3n reside dentro de member. Cuando se accede a \u00e9l tendr\u00e1 la capacidad de inscribir a los socios como anfitriones cuando se le pase un parametro especial, una vez registrados como anfitriones podr\u00e1n acceder al contenido, tendr\u00e1 dos m\u00f3dulos, uno para poder enviar las invitaciones a sus conocidos, a este lo llamamos \ninvitar amigos\n, y otro para monitorear el registro de invitados y cuantos puntos le han generado llamado \nmonitor de invitados\n. Las funciones que los socios tienen en el \nlanding anfitri\u00f3n\n son las siguientes:\n\n\n\n\nInscribirse a la promoci\u00f3n como anfitriones al acceder con el parametro especial\n\n\nInvitar amigos\n\n\nPor correo\n\n\nCopiando un link\n\n\nCompartiendo en redes sociales el link (facebook y twitter)\n\n\n\n\n\n\nVisualizar informaci\u00f3n de las invitaciones enviadas\n\n\nEstado (Registrado \u00f3 No registrado)\n\n\nNombre del invitado\n\n\nPuntos generados\n\n\n\n\n\n\nReenviar invitaciones\n\n\n\n\nUna vez que se accede se inscribir\u00e1 a la promoci\u00f3n, c\n\n\nEl landing invitado se accede con el correo de invitaci\u00f3n o por el link que comparte un anfitri\u00f3n. Como parte del t\u00edtulo del landing se mostrar\u00e1 el nombre del anfitri\u00f3n. Existen dos tipos de socios que se pueden inscribir, socios nuevos o socios existentes, para los socios nuevos se les dar\u00e1 la opci\u00f3n de inscribirse, se le agregar\u00e1 el campo de referido a la hora de inscribirse y se le asignar\u00e1n las campa\u00f1as de la promoci\u00f3n, despu\u00e9s se le mostrar\u00e1 una pantalla con todas las transacciones que le dan bono. Para los socios existentes hay restricciones en la promoci\u00f3n, se tendr\u00e1 un sistema de pre-validaci\u00f3n utilizando un web service para mostrar al socio las transacciones de promoci\u00f3n que aplican para \u00e9l, una vez que la pre-validaci\u00f3n fue exitosa se le asignar\u00e1n dos campa\u00f1as y una preferencia para inscribirlo en la promoci\u00f3n. Las funciones que los usuarios tienen en el \nlanding invitado\n son las siguientes:\n\n\n\n\nSocio Nuevo\n\n\nInscribirse a la promoci\u00f3n como invitado de alguien\n\n\nVer todas las transacciones de la promoci\u00f3n\n\n\nSocio existente\n\n\nVerificar si se puede inscribir como invitado\n\n\nPre-validar en qu\u00e9 promociones puede participar\n\n\nInscribirse a la promoci\u00f3n como invitado\n\n\nVer las transacciones en las que ese socio puede participar\n\n\n\n\nAdem\u00e1s de lo anterior se har\u00e1n cambios en el sistema de inscripci\u00f3n de los usuarios. En la forma de inscripci\u00f3n se agregar\u00e1 un nuevo campo donde se podr\u00e1 colocar el n\u00famero de cuenta de un socio anfitri\u00f3n, este campo se llenar\u00e1 automaticamente cuando el socio haya llegado a la inscripci\u00f3n por el link o correo de un anfitri\u00f3n.\n\n\nAnfitri\u00f3n\n\n\nEn esta secci\u00f3n se describen a detalle los puntos del requerimiento que tienen que ver con el flujo del anfitri\u00f3n.\n\n\nOpci\u00f3nes en el men\u00fa\n\n\nSe agregar\u00e1n dos opciones de men\u00fa, una para la p\u00e1gina de informaci\u00f3n que residir\u00e1 dentro del dominio del CMS y otra para \nlanding anfitrion\n que estar\u00e1 en member.\n\n\nOpci\u00f3n de men\u00fa para p\u00e1gina de CMS\n\n\nSe debe agregar una opci\u00f3n en el men\u00fa para acceder a la p\u00e1gina de informaci\u00f3n de la promoci\u00f3n que residira en el CMS, este debe estar bajo la categor\u00eda \nPromociones\n y se debe llamar \nInvita a un amigo\n, va a tener un logo y su URL debe ser \nhttps://www.clubpremier.com/mx/invita-a-un-amigo\n.\n\n\nOpci\u00f3n de men\u00fa para p\u00e1gina \nlanding anfitri\u00f3n\n en member\n\n\nSe debe agregar una opci\u00f3n en el men\u00fa para acceder al \nlanding anfitri\u00f3n\n, este debe estar bajo la categor\u00eda \nMi cuenta\n y se debe llamar \nInvita a un amigo\n y su URL debe ser \nhttps://member.clubpremier.com/invita-a-un-amigo\n.\n\n\nLanding anfitri\u00f3n\n\n\nEl socio ingresa al \nlanding anfitri\u00f3n\n a trav\u00e9s de la liga que est\u00e1 en el men\u00fa o colocando directamente la URL \nhttps://member.clubpremier.com/invita-a-un-amigo\n. Esta p\u00e1gina solo ser\u00e1 accesible con una sesi\u00f3n iniciada, por lo que si el socio no tiene un sesi\u00f3n iniciada se deber\u00e1 redirigir a la p\u00e1gina de inicio de sesi\u00f3n. Esta p\u00e1gina podr\u00e1 inscribir a los socios como anfitriones si es que se pasa el parametro \ninscripcion=true\n, una vez inscrito a la promoci\u00f3n el anfitri\u00f3n podr\u00e1 acceder al contenido y los m\u00f3dulos de \ninvitar amigos\n y \nmonitor invitados\n.\n\n\nFlujo del \nlanding anfitrion\n\n\nFlujo del \nlanding anfitrion\n con ventanas\n\n\nAlta en la promoci\u00f3n como anfitri\u00f3n\n\n\nPara darse de alta en la promoci\u00f3n como anfitri\u00f3n se debe acceder a la URL del \nlanding anfitri\u00f3n\n con un parametro especial que indica que se acept\u00f3 participar en la promoci\u00f3n, \nhttps://member.clubpremier.com/invita-a-un-amigo?inscripcion=true\n. Para dar de alta hay que generar su c\u00f3digo \u00fanico el cual ser\u00e1 almacenado en una tabla llamada \ntabla_codigo_anfitrion\n, esta tabla tendr\u00e1 el n\u00famero de cuenta del anfitri\u00f3n y el c\u00f3digo generado, adem\u00e1s tendr\u00e1 la fecha de inscripci\u00f3n.\n\n\nEjemplo \ntabla_codigo_anfitrion\n:\n\n\n\n\n\n\n\n\ncta_anfitrion\n\n\ncodigo\n\n\nfecha_inscipcion\n\n\nnombre\n\n\n\n\n\n\n\n\n\n\n0012312312\n\n\nAjdfs12D\n\n\n2017-02-01\n\n\nMario M.\n\n\n\n\n\n\n\n\nVerificar acceso\n\n\nCuando se accede con una sesi\u00f3n se tiene que verificar si el socio ya es parte de la promoci\u00f3n, para esto podemos revisar la \ntabla_codigo_anfitrion\n, la cual contiene los c\u00f3digos generados para los anfitriones, si no est\u00e1 en esta tabla quiere decir que a\u00fan no es parte de la promoci\u00f3n. Despu\u00e9s hay que verificar si tiene el parametro de inscripci\u00f3n, en caso de que as\u00ed sea se debe hacer la inscripci\u00f3n y proceder a mostrar la p\u00e1gina, en caso contrario hay que redirigirlo a la URL \nhttps://www.clubpremier.com/mx/invita-a-un-amigo\n, para que en esa p\u00e1gina se de de alta.\n\n\nDespliegue de p\u00e1gina \nlanding anfitri\u00f3n b\u00e1sica\n\n\nSi el socio ya es parte de la promoci\u00f3n y tiene una sesi\u00f3n iniciada podr\u00e1 acceder a la p\u00e1gina, la cual muestra el t\u00edtulo, un banner y un texto descriptivo de la promoci\u00f3n, estos son est\u00e1ticos y siempre los mismos, adem\u00e1s mostrar\u00e1 los m\u00f3dulos de \ninvitar amigos\n y de \nmonitor de invitados\n.\n\n\nLanding anfitri\u00f3n\n\n\nM\u00f3dulo de \ninvitar amigos\n\n\nEste m\u00f3dulo consta de dos partes, un box donde se escriben los correos para enviar las invitaciones, el otro es un visor del link \u00fanico del anfitri\u00f3n con botones para poder copiarlo y compartirlo en redes sociales. El correo y el link son los que \u00fatilizar\u00e1n los invitados para registrarse en el programa.\n\n\n\n\nLink \u00fanico de anfitri\u00f3n\n\n\nCada anfitri\u00f3n debe tener un c\u00f3digo \u00fanico el cual est\u00e1 guardado en \ntabla_codigo_anfitrion\n, este c\u00f3digo junto con una url \nhttps://member.clubpremier.com/invitacion/\n generan un link, este link es utilizado por el m\u00f3dulo de \ninvitar amigo\n para hacer referencia a la p\u00e1gina de invitaci\u00f3n de ese socio en particular. Por ejemplo el c\u00f3digo de un socio puede ser \ngW3313Djfd\n, entonces su link \u00fanico ser\u00eda \nhttps://member.clubpremier.com/invitacion/gW3313Djfd\n.\n\n\nBox de correos\n\n\nEn este box se pueden colocar las direcciones de correo a las que se quieren enviar las invitaciones, se puede poner uno o muchos correos, con el bot\u00f3n \nEnviar\n se env\u00edan los correos a trav\u00e9s de una cuenta de SendGrid (la cuenta y contrase\u00f1a deben ser solicitadas). Este box tiene un funcionamiento similar al que tiene gmail cuando se va a enviar un correo, se escribe un correo y cuando se presiona \nEnter\n este se agrupa y se le asigna un bot\u00f3n de eliminar, de esta forma se pueden escribir varias direcciones de correo e irlas eliminando de manera sencilla.\n\n\nEl box debe mostrar el texto \nCaptura las direcciones de correo electr\u00f3nico de tus amigos\n cuando no se haya colocado ning\u00fan texto.\n\n\nM\u00f3dulo de invitar amigos, box solo\n\n\nM\u00f3dulo de invitar amigos, box con varios correos\n\n\nEnv\u00edo de correo\n\n\nCuando en el box existan direcciones de correos agrupadas y se presione el bot\u00f3n \nEnviar\n se deben enviar correos de invitaci\u00f3n a dichas direcciones y se debe limpiar el box. Se debe colocar el nombre del anfitri\u00f3n en el asunto y en el cuerpo del correo, adem\u00e1s de que el bot\u00f3n \nAceptar invitaci\u00f3n\n tenga la URL del link \u00fanico. Cuando se env\u00edan correos de invitaci\u00f3n estos deben ser agregados a la tabla \ntabla_invitados\n para ser visualizados en el m\u00f3dulo \ninvitar amigos\n.\n\n\nEjemplo de correo\n \n(Solo ilustrativo, no final)\n\n\nVisor de link \u00fanico\n\n\nEn este m\u00f3dulo se muestra el link \u00fanico del anfitri\u00f3n, una opci\u00f3n para copiarlo y una opci\u00f3n para compartirlo en redes sociales, se podr\u00e1 compartir en facebooky twitter.\n\n\nM\u00f3dulo de invitar amigos, compartir link\n \n(Solo ilustrativo, no final)\n\n\nM\u00f3dulo de \nmonitor de amigos\n\n\nMonitor de amigos\n es una tabla que muestra cuatro columnas, \nInvitado\n, \nEstado\n, \nPuntos generados\n y \nReenviar\n. Esta tabla funciona para darle seguimiento a las invitaciones enviadas, saber quienes ya se registraron como invitado y cuantos puntos han generado. Cuando la tabla no tiene ning\u00fan registro esta no se debe mostrar.\n\n\n\n\nCuando el anfitri\u00f3n env\u00eda un correo a trav\u00e9s del m\u00f3dulo \ninvitar amigos\n este correo es guardado en la columna \nInvitado\n con un \nEstado\n en \nNo registrado\n, tendr\u00e1 0 puntos generados y en la columna \nReenviar\n se dar\u00e1 la opci\u00f3n de reenviar el correo.\n\n\n\n\nCuando un invitado se inscribe a la promoci\u00f3n se busca en la \ntabla_invitados\n si es que se tiene guardado el correo del invitado, en caso de que sea as\u00ed se cambia el texto del correo por el nombre y primer letra del apellido del invitado, se cambia \nEstado\n a \nRegistrado\n. En caso de que el invitado no est\u00e9 previamente registrado en la \ntabla_invitados\n entonces se agrega el registro.\n\n\n\n\nEsta informaci\u00f3n debe ser guardada en una tabla en una base de datos, le llamaremos a esta tabla \ntabla_invitados\n. En esta tabla se tendr\u00e1 almacenado el n\u00famero de cuenta del anfitri\u00f3n, n\u00famero de cuenta del invitado (solo si es que ya se registr\u00f3), el estado de esa invitaci\u00f3n (puede ser \nRegistrado\n o \nNo registrado\n), el nombre (si es que no est\u00e1 registrado se pone la direcci\u00f3n de correo electr\u00f3nico, en caso de que est\u00e9 registrado se pone el primer nombre y la primer sigla de su apellido) y los puntos que ese invitado ha generado.\n\n\n\n\n\n\n\n\ncta_anfitrion\n\n\ncta_invitado\n\n\nestado\n\n\nnombre\n\n\npuntos\n\n\nvalidacion\n\n\nfecha\n\n\n\n\n\n\n\n\n\n\nN\u00famero de cuenta del anfitri\u00f3n a 11 caracteres\n\n\nN\u00famero de cuenta del invitado a 11 caracteres\n\n\nestado, puede ser \nregistrado\n o \nno_registrado\n\n\nnombre identificador, si no est\u00e1 registrado es el correo, si est\u00e1 registrado es el primer nombre y primer letra del apellido (Mauro M.)\n\n\nN\u00famero de puntos generados\n\n\nObjeto que contiene los c\u00f3digos de los partners que fueron validados para ese invitado\n\n\nFecha de inscripci\u00f3n\n\n\n\n\n\n\n\n\nClub Premier va a generar una archivo diario \nbatch\n llamado \nregistro_puntos_invita_a_un_amigo_\n+fecha\n que ser\u00e1 compartido por ftp, este archivo contendr\u00e1 los registros de las acumulaciones que se han generado para cada anfitri\u00f3n y el n\u00famero de cuenta de qui\u00e9n las gener\u00f3. Usando esto se puede actualizar en \ntabla_invitados\n los puntos generados por cada invitado, los puntos en el archivo no ser\u00e1n totales sino del d\u00eda que se genere, as\u00ed que habr\u00e1 que sumar cada vez que llegue un archivo nuevo para tener el total de puntos generados. El formato de este archivo es el siguiente.\n\n\n\n\n\n\n\n\ncta_anfitrion\n\n\ncta_invitado\n\n\npuntos\n\n\nfecha\n\n\n\n\n\n\n\n\n\n\nN\u00famero de cuenta del anfitri\u00f3n a 11 caracteres\n\n\nN\u00famero de cuenta del invitado a 11 caracteres\n\n\nN\u00famero de puntos generados para ese d\u00eda\n\n\nFecha de creaci\u00f3n del registro\n\n\n\n\n\n\n\n\nInvitados\n\n\nEn la siguiente secci\u00f3n se describe el proceso de inscripci\u00f3n a la promoci\u00f3n para los invitados. Se pueden inscribir socios existentes o socios nuevos.\n\n\nAcceso al link del anfitri\u00f3n, cookie del anfitri\u00f3n\n\n\nUn usuario que accede al link de un anfitri\u00f3n, ya sea porque se lo compartieron o porque le lleg\u00f3 por correo, va a ser enviado al \nlanding invitado\n, lo primero que el sistema va a hacer es crear una cookie que guarde la informaci\u00f3n del anfitri\u00f3n, esto se har\u00e1 para que sin importar qu\u00e9 flujo siga el usuario dentro de la p\u00e1gina se tenga la informaci\u00f3n de quien lo invit\u00f3. Esta cookie tiene una duraci\u00f3n de 2 d\u00edas, si es que ya exist\u00eda una cookie se va a sobreescribir.\n\n\nLanding Invitado sin sesi\u00f3n iniciada\n\n\nEn cuando el usuario accede al \nlanding invitado\n. Si es que no existe una sesi\u00f3n iniciada se le mostrar\u00e1 la opci\u00f3n para \nIniciar sesi\u00f3n\n o para \nInscribirse\n. En el t\u00edtulo del landing se mostrar\u00e1 el nombre del anfitri\u00f3n como se muestra en el ejemplo de pantalla.\n\n\nLanding invitado sin sesi\u00f3n iniciada\n\n\nT\u00edtulo: \nPendiente\n\n\nBanner: \nPendiente\n\n\nDescripci\u00f3n: \nPendiente\n\n\nValidaciones para el invitado que ya es socio\n\n\nSi el socio da click en \nIniciar sesi\u00f3n\n se le redirige a la p\u00e1gina de inicio de sesi\u00f3n, una vez que haya iniciado sesi\u00f3n se regresa al \nlanding invitado\n.\n\n\nCuando se accede al \nlanding invitado\n con una sesi\u00f3n iniciada se har\u00e1n dos verificaciones, en la primera se verifica que el invitado no sea invitado de alguien m\u00e1s, para esto se puede revisar en la tabla \ntabla_invitados\n si es que existe un registro de ese socio que ya est\u00e9 registrado, en caso de que ya sea un invitado se mostrar\u00e1 un modal con un mensaje de error. La segunda verificaci\u00f3n revisar\u00e1 si es que el anfitri\u00f3n no sea un invitado directo del socio (esto significa que yo no puedo ser invitado de un invitado m\u00edo), para esto se puede revisar la tabla \ntabla_invitados\n y revisar si existe una registro que relacione al anfitri\u00f3n y al invitado, en caso de que se encuentre esa relaci\u00f3n se mostrar\u00e1 un mensaje de error en un modal.\n\n\nC\u00e1lculo de pre-validaci\u00f3n\n\n\nLa pre-validaci\u00f3n solo se realiza cuando el invitado ya es un socio existente y pas\u00f3 las validaciones previas. Ya que la promoci\u00f3n tiene varias restricciones se va a pre-validar en cuales transacciones o con cuales partners puede ganar puntos el invitado, para esto se utilizar\u00e1 el web service \nGetLastNTransaction2\n.\n\n\nEl web service \nGetLastNTransactions2\n nos permite solicitar todas las transacciones que un socio haya realizado en un cierto intervalo de tiempo, adem\u00e1s de esto nos permite filtrar las transacciones por tipo de actividad.\n\n\nLa idea es tener un objeto que contiene todos los c\u00f3digos de los partners, de esta lista se van a ir removiendo los partners que se encuentren con el web wervice, la lista completa es la siguiente:\n\n\n{AM, PC, HX, HI, BH, STW, HY, HJ, HW, WH, BW, CHI, LQ, CS, ACC, MRM, BVA, HMX, SFI, SS, GFM, SE, SBI, PH, SBS}\n\n\nExisten dos principales categor\u00edas donde se pueden ganar puntos, por vuelos y por tranferencias.\n\n\nPara calcular la participaci\u00f3n en vuelos se van a solicitar las transacciones de los \u00faltimos 24 meses con el tipo de actividad \nFLT\n y el c\u00f3digo de partner \nAM\n. Si es que esto regresa alg\u00fan registro entonces ya no aplica a esta promoci\u00f3n y se remueve el partner \nAM\n.\n\n\nPara las transacciones es diferente ya que estas est\u00e1n categorizadas, hay 3 tipos de actividad diferentes, uno para hoteles, uno para retail y otro para bancos. Por cada tipo de actividad se tendr\u00e1n que solicitar las transacciones de los \u00faltimos 12 meses, revisar cada una e ir verificando de qu\u00e9 partners se hicieron transferencias, por cada partner que se realiz\u00f3 transferencia se va a remover ese partner de la lista.\n\n\nEl resultado de esta prevalidaci\u00f3n va a ser un objeto que contenga los c\u00f3digos de los partners con los que el socio si recibe bono.\n\n\nPara m\u00e1s informaci\u00f3n as\u00ed como la lista completa de partners y sus logos ver la documentaci\u00f3n del webservice \naqu\u00ed\n\n\nInscripci\u00f3n a la promoci\u00f3n para socios existentes\n\n\nSi es que la pre-validaci\u00f3n es exitosa y se tiene el objeto resultado, entonces se procede a inscribir al socio a la promoci\u00f3n, este proceso son varios pasos:\n\n\n\n\nAgregar al socio a dos campa\u00f1as\n\n\nAgregar al socio una preferencia con el n\u00famero de cuenta del anfitri\u00f3n\n\n\nBuscar si el socio ya existe en un registro del anfitri\u00f3n, actualizar ese registro o crear uno nuevo\n\n\n\n\nSi es que la pre-validaci\u00f3n genera alg\u00fan error por cualquier cosa se mostrar\u00e1 un mensaje de error para que lo intente m\u00e1s tarde.\n\n\nAgregar al socio a dos campa\u00f1as\n\n\nAl socio hay que agregarlo a dos campa\u00f1as, esto se hace con el web service \nAssignCampaigns\n, los nombres de las campa\u00f1as son: \nBF17D\n y \nBF17E\n. Por cada campa\u00f1a hay que colocar tres fechas:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStartDate\n\n\nFecha de inicio de campa\u00f1a\n\n\n2017-05-01\n\n\n\n\n\n\nEndDate\n\n\nFecha de fin de campa\u00f1a\n\n\n2099-12-31\n\n\n\n\n\n\nDateTargetted\n\n\nFecha de inscripci\u00f3n a la campa\u00f1a\n\n\nLa fecha de inscripci\u00f3n\n\n\n\n\n\n\n\n\n\n\nEjemplo de inscripci\u00f3n a las dos campa\u00f1as: \nRequest\n \nResponse\n\n\n\n\nAgregar al socio en una preferencia su anfitri\u00f3n\n\n\nSe va a agregar una preferencia para guardar quien es el anfitri\u00f3n, la preferencia tiene el n\u00famero \n863\n, con el c\u00f3digo \nINVTED\n, esta preferencia representa que el socio es un \nInvited\n de alguien, entonces en esta preferencia se va a almacenar el n\u00famero de cuenta del anfitri\u00f3n (a 11 carateres).\n\n\nEjemplo: \nPendiente\n\n\nActualizar la tabla \ntabla_invitados\n\n\nPor \u00faltimo hay que buscar en la tabla \ntabla_invitados\n si es que para el anfitri\u00f3n ya existe un registro que tenga el correo que tiene el invitado. Si existe el registro entonces hay que actualizar la informaci\u00f3n en ese registro, si no existe entonces se crear\u00e1 un registro nuevo, sea cual sea el caso el resultado debe tener la siguiente informaci\u00f3n:\n\n\n\n\n\n\n\n\ncta_anfitrion\n\n\ncta_invitado\n\n\nestado\n\n\nnombre\n\n\npuntos\n\n\nvalidacion\n\n\nfecha\n\n\n\n\n\n\n\n\n\n\nN\u00famero de cuenta del anfitri\u00f3n a 11 caracteres\n\n\nN\u00famero de cuenta del invitado a 11 caracteres\n\n\nregistrado\n\n\nel primer nombre y primer letra del apellido (Mauro M.)\n\n\n0\n\n\nEl objeto calculado en la pre-validaci\u00f3n\n\n\nFecha de inscripci\u00f3n\n\n\n\n\n\n\n\n\nFlujo de \nlanding invitado\n\n\nMostrar la pantalla de inscripci\u00f3n finalizada\n\n\nSe le mostrar\u00e1 al socio la pantalla que muestra los partners con los que participa. Hay dos secciones principales, una es la de vuelos en la que solo se encuentra Aerom\u00e9xico y la otra es la de transferencias en la que participan muchos partners. Si en la pre-validaci\u00f3n no est\u00e1 incluido AM, entonces la secci\u00f3n de vuelos se oculta, la secci\u00f3n de transferencias tiene los otros partners, solo deben aparecer los que est\u00e1n incluidos en la pre-validaci\u00f3n, y deben estar ordenados por Bancos, Hoteles y Retail.\n\n\nCon este proceso termina el flujo para el invitado que ya es socio.\n\n\nInvitado que a\u00fan no es socio\n\n\nCuando un usuario accede al \nlandind invitado\n tiene la opci\u00f3n de inscribirse, si da click en esta opci\u00f3n entonces se redirige a la p\u00e1gina de inscripci\u00f3n de Club Premier. El sistema de inscripci\u00f3n tendr\u00e1 algunos cambios.\n\n\nCambios en la p\u00e1gina de inscripci\u00f3n\n\n\nSe va a agregar un nuevo campo en la pantalla de inscripci\u00f3n, este va a ser el campo de \nAnfitri\u00f3n\n, en este campo se va a poder colocar el n\u00famero de cuenta de alguien que te haya invitado. La idea es que puedas inscribirte como invitado a pesar de no tener el link de un anfitri\u00f3n, solo tienes que conocer su n\u00famero de cuenta. Este campo debe tener las mismas validaciones que cualquier otro campo que utilice un n\u00famero de cuenta, sin embargo no ser\u00e1 un campo requerido.\n\n\nLlenado autom\u00e1tico del campo Anfitri\u00f3n\n\n\nSi es que se detecta que existe una cookie con informaci\u00f3n de anfitri\u00f3n, entonces este campo se llenar\u00e1 autom\u00e1ticamente, y adem\u00e1s no podr\u00e1 ser editable.\n\n\nInscripci\u00f3n con el campo de Anfitri\u00f3n llenado\n\n\nCuando un socio se inscribe y existe informaci\u00f3n en el campo de anfitri\u00f3n, se har\u00e1n dos cosas:\n\n\n\n\nInscribir al socio de forma normal pero agregando el campo \nRecommendersCardNo\n\n\nAgregar al socio a dos campa\u00f1as\n\n\n\n\nInscripci\u00f3n incluyendo el campo \nRecommendersCardNo\n\n\nEl web service de EnrollMember que se utiliza para la inscripci\u00f3n de los socios tiene un campo llamado \nRecommendersCardNo\n que identifica si ese socio es referido, este campo solo se puede llenar cuando se inscribe al socio, y en \u00e9l se coloca el n\u00famero de cuenta del anfitri\u00f3n, este n\u00famero de cuenta se obtiene del campo \nAnfitri\u00f3n\n, ya sea que lo coloca el socio o que se llena autom\u00e1ticamente por la cookie.\n\n\nAgregar a dos campa\u00f1as\n\n\nSe tiene que agregar a dos campa\u00f1as, una para la parte de vuelos y una para la parte de tranferencias, cabe decir que estas campa\u00f1as son diferentes a las campa\u00f1as que utilizan los invitados que son socios. Esto se hace con el web service \nAssignCampaigns\n, los nombres de las campa\u00f1as son: \nBF17A\n y \nBF17B\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStartDate\n\n\nFecha de inicio de campa\u00f1a\n\n\n2017-05-01\n\n\n\n\n\n\nEndDate\n\n\nFecha de fin de campa\u00f1a\n\n\n2099-12-31\n\n\n\n\n\n\nDateTargetted\n\n\nFecha de inscripci\u00f3n a la campa\u00f1a\n\n\nLa fecha de inscripci\u00f3n\n\n\n\n\n\n\n\n\n\n\nEjemplo de inscripci\u00f3n a las dos campa\u00f1as: \nRequest\n \nResponse\n\n\n\n\nMostrar la informaci\u00f3n de inscripci\u00f3n a la campa\u00f1a\n\n\nUna vez inscrito se mostrar\u00e1 la pantalla para completar los datos, esto es el mismo proceso de las inscripciones normales, sin embargo, despu\u00e9s de que completan sus datos en lugar de que\n\n\nAssignCampaigns Spec\n\n\nAgrega a un socio a una o varias campa\u00f1as. En caso de \u00e9xito regresa todas las campa\u00f1as a las que est\u00e1 suscrito el socio, en caso de error manda un mensaje de error. Solo se puede inscribir a una campa\u00f1a una vez, si ya se est\u00e1 inscrito regresa error, las campa\u00f1as ya no pueden borrarse ni modificarse una vez agregadas.\n\n\nURL de pruebas\n\n\nhttp://cr5w5cptest.clubpremier.com/Mercator.CRIS.WebService.TESTCRIS/IVRWebService.asmx\n\n\nAutenticaci\u00f3n\n\n\nNecesaria, HTTP basic.\n\n\nPetici\u00f3n\n\n\n\n\n\n\n\n\nNombre\n\n\nDescripci\u00f3n\n\n\n\n\n\n\n\n\n\n\nCardNumber\n\n\nN\u00famero de cuenta del socio\n\n\n\n\n\n\nCampaignList\n\n\nDebe contener los objetos Campaign de las campa\u00f1as que se quieren agregar\n\n\n\n\n\n\nCampaign\n\n\nObjeto que representa una campa\u00f1a\n\n\n\n\n\n\nCampaign.PrcCode\n\n\nC\u00f3digo de la promoci\u00f3n\n\n\n\n\n\n\nCampaign.StartDate\n\n\nObjeto que representa el inicio de la campa\u00f1a\n\n\n\n\n\n\nCampaign.StartDate.IsQuery\n\n\nDebe estar en 'false'\n\n\n\n\n\n\nCampaign.StartDate.QueryString\n\n\nDebe estar vac\u00edo\n\n\n\n\n\n\nCampaign.StartDate.HasValue\n\n\nDebe ser 'true'\n\n\n\n\n\n\nCampaign.StartDate.Value\n\n\nDebe ser la fecha de inicio de la campa\u00f1a\n\n\n\n\n\n\nCampaign.EndDate\n\n\nObjeto que representa el fin de la campa\u00f1a\n\n\n\n\n\n\nCampaign.EndDate.IsQuery\n\n\nDebe estar en 'false'\n\n\n\n\n\n\nCampaign.EndDate.QueryString\n\n\nDebe estar vac\u00edo\n\n\n\n\n\n\nCampaign.EndDate.HasValue\n\n\nDebe ser 'true'\n\n\n\n\n\n\nCampaign.EndDate.Value\n\n\nDebe ser la fecha de fin de la campa\u00f1a\n\n\n\n\n\n\nCampaign.DateTargetted\n\n\nObjeto que representa la fecha de cuando el socio se une a la campa\u00f1a\n\n\n\n\n\n\nCampaign.DateTargetted.IsQuery\n\n\nDebe estar en 'false'\n\n\n\n\n\n\nCampaign.DateTargetted.QueryString\n\n\nDebe estar vac\u00edo\n\n\n\n\n\n\nCampaign.DateTargetted.HasValue\n\n\nDebe ser 'true'\n\n\n\n\n\n\nCampaign.DateTargetted.Value\n\n\nDebe ser la fecha en la que el socio se une a la campa\u00f1a\n\n\n\n\n\n\nCampaign.CardNumber\n\n\nN\u00famero de cuenta del socio\n\n\n\n\n\n\n\n\nEjemplos\n\n\nAgregar a la campa\u00f1a BF17A\n\n\n<AssignCampaigns xmlns=\"http://skywards.com/Mercator.CRIS.WS\">\n  <CardNumber>00970011581</CardNumber>\n  <CampaignList>\n    <Campaign>\n      <PrcCode>BF17A</PrcCode>\n      <StartDate>\n        <IsQuery>false</IsQuery>\n        <QueryString></QueryString>\n        <ContainsQueryOperators>false</ContainsQueryOperators>\n        <HasValue>true</HasValue>\n        <Value>2017-06-01</Value>\n      </StartDate>\n      <EndDate>\n        <IsQuery>false</IsQuery>\n        <QueryString></QueryString>\n        <ContainsQueryOperators>false</ContainsQueryOperators>\n        <HasValue>true</HasValue>\n        <Value>2017-12-31</Value>\n      </EndDate>\n      <DateTargetted>\n        <IsQuery>false</IsQuery>\n        <QueryString></QueryString>\n        <ContainsQueryOperators>false</ContainsQueryOperators>\n        <HasValue>true</HasValue>\n        <Value>2017-08-30</Value>\n      </DateTargetted>\n      <CardNumber>00970011581</CardNumber>\n    </Campaign>\n  </CampaignList>\n</AssignCampaigns>\n\n\n\n\nrequest\n \nresponse\n\n\nGetLastNTransactions2 Spec\n\n\nURL de pruebas\n\n\nhttp://cr5w5cptest.clubpremier.com/Mercator.CRIS.WebService.TESTCRIS/IVRWebService.asmx?op=GetLastNTransactions2\n\n\nAutenticaci\u00f3n\n\n\nNecesaria, HTTP basic. (solicitar claves de pruebas)\n\n\nPetici\u00f3n\n\n\n\n\n\n\n\n\nNombre\n\n\nDescripci\u00f3n\n\n\n\n\n\n\n\n\n\n\nactiveCardNo\n\n\nN\u00famero de cuenta del socio a solicitar, a 11 caracteres\n\n\n\n\n\n\nfromTransDate\n\n\nFecha a partir de la cual se buscan los registros, en el formato \n0001-01-01T00:00:00\n\n\n\n\n\n\ntoTransDate\n\n\nFecha hasta la cual se buscan los registros, en el formato \n0001-01-01T00:00:00\n\n\n\n\n\n\nactivityType\n\n\nFiltro de tipo de actividad\n\n\n\n\n\n\ntransFilter\n\n\nDebe existir vac\u00edo\n\n\n\n\n\n\norderBy\n\n\nOrdena los resultados por actividad \nA\n o por transferencia \nT\n\n\n\n\n\n\npartnerCode\n\n\nFiltro del c\u00f3digo del partner\n\n\n\n\n\n\n\n\nEjemplos\n\n\nEjemplo 1\n\n\nPara solicitar los \u00faltimos dos a\u00f1os de transacciones de tipo FLT con partnerCode AM. Este ser\u00e1 utilizado para verificar si aplican a la promoci\u00f3n de vuelos.\n\n\n<soap:Body>\n    <GetLastNTransactions2 xmlns=\"http://skywards.com/Mercator.CRIS.WS\">\n      <activeCardNo>00970011581</activeCardNo>\n      <fromTransDate>2015-08-22</fromTransDate>\n      <toTransDate>2017-08-22</toTransDate>\n      <activityType>FLT</activityType>\n      <transFilter></transFilter>\n      <orderBy></orderBy>\n      <partnerCode>AM</partnerCode>\n    </GetLastNTransactions2>\n</soap:Body>\n\n\n\n\nRequest\n \nResponse\n\n\nEjemplo 2\n\n\nPara solicitar el \u00faltimo a\u00f1o de transacciones de transferencias de puntos de bancos. Se utiliza el tipo de transacci\u00f3n BPT. Con el partner code hay que ver con cuales partners ya se hicieron tranferencias.\n\n\n<soap:Body>\n    <GetLastNTransactions2 xmlns=\"http://skywards.com/Mercator.CRIS.WS\">\n      <activeCardNo>00970011581</activeCardNo>\n      <fromTransDate>2016-08-22</fromTransDate>\n      <toTransDate>2017-08-22</toTransDate>\n      <activityType>BPT</activityType>\n      <transFilter></transFilter>\n      <orderBy></orderBy>\n      <partnerCode></partnerCode>\n    </GetLastNTransactions2>\n</soap:Body>\n\n\n\n\nRequest\n \nResponse\n\n\nEjemplo 3\n\n\nPara solicitar el \u00faltimo a\u00f1o de transacciones de transferencias de puntos de hoteles. Se utiliza el tipo de transacci\u00f3n LYP. Con el partner code hay que ver con cuales partners ya se hicieron tranferencias.\n\n\n<soap:Body>\n    <GetLastNTransactions2 xmlns=\"http://skywards.com/Mercator.CRIS.WS\">\n      <activeCardNo>00970011581</activeCardNo>\n      <fromTransDate>2016-08-22</fromTransDate>\n      <toTransDate>2017-08-22</toTransDate>\n      <activityType>LYP</activityType>\n      <transFilter></transFilter>\n      <orderBy></orderBy>\n      <partnerCode></partnerCode>\n    </GetLastNTransactions2>\n</soap:Body>\n\n\n\n\nRequest\n \nResponse\n\n\nEjemplo 4\n\n\nLa \u00fatilma petici\u00f3n es para solicitar el \u00faltimo a\u00f1o de transacciones de transferencias de puntos de retail. Se utiliza el tipo de transacci\u00f3n RPT. Con el partner code hay que ver con cuales partners ya se hicieron tranferencias. La respuesta de este ejemplo no econtr\u00f3 ning\u00fan registro que coincidiera con el filtro.\n\n\n<soap:Body>\n    <GetLastNTransactions2 xmlns=\"http://skywards.com/Mercator.CRIS.WS\">\n      <activeCardNo>00970011581</activeCardNo>\n      <fromTransDate>2016-08-22</fromTransDate>\n      <toTransDate>2017-08-22</toTransDate>\n      <activityType>RPT</activityType>\n      <transFilter></transFilter>\n      <orderBy></orderBy>\n      <partnerCode></partnerCode>\n    </GetLastNTransactions2>\n</soap:Body>\n\n\n\n\nRequest\n \nResponse\n\n\nC\u00f3digos\n\n\nCodigos de tipo de actividad\n\n\n\n\n\n\n\n\nactivityType\n\n\nDescripci\u00f3n\n\n\n\n\n\n\n\n\n\n\nFLT\n\n\nVuelos\n\n\n\n\n\n\nBPT\n\n\nTranferencias de bancos\n\n\n\n\n\n\nRPT\n\n\nTransferencias de retail\n\n\n\n\n\n\nLYP\n\n\nTransferencias de hoteles\n\n\n\n\n\n\n\n\nC\u00f3digos de partners de hoteles\n\n\n\n\n\n\n\n\npartnerCode\n\n\nDescripci\u00f3n\n\n\nLogo\n\n\nLink de informaci\u00f3n\n\n\n\n\n\n\n\n\n\n\nPC\n\n\nFiesta Rewards\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nHX\n\n\nMarriott Rewards\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nHI\n\n\nHilton Honors\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nBH\n\n\nIHG Rewards\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nSTW\n\n\nStarwood\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nHY\n\n\nHyatt Gold Passport\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nHJ\n\n\nCity Premios\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nHW\n\n\nCarlson Reizdor Hotels\n\n\nLink\n\n\nlink no est\u00e1 disponible\n\n\n\n\n\n\nWH\n\n\nWyndham Rewards\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nBW\n\n\nBest Western\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nCHI\n\n\nChoice Privileges\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nLQ\n\n\nLa Quinta Returns\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nCS\n\n\nC\u00edrculo Real\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nACC\n\n\nAccor Hotels\n\n\nLink\n\n\nLink\n\n\n\n\n\n\n\n\nC\u00f3digos de partners de bancos\n\n\n\n\n\n\n\n\npartnerCode\n\n\nDescripci\u00f3n\n\n\nLogo\n\n\nLink de informaci\u00f3n\n\n\n\n\n\n\n\n\n\n\nMRM\n\n\nMembership Rewards M\u00e9xico\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nBVA\n\n\nBancomer\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nHMX\n\n\nHSBC\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nSFI\n\n\nInbursa\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nSS\n\n\nInvex\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nGFM\n\n\nBanca Mifel\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nSE\n\n\nSantander\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nSBI\n\n\nScotiabank\n\n\nLink\n\n\nLink\n\n\n\n\n\n\n\n\nC\u00f3digos de partners de retail\n\n\n\n\n\n\n\n\npartnerCode\n\n\nDescripci\u00f3n\n\n\nLogo\n\n\nLink de informaci\u00f3n\n\n\n\n\n\n\n\n\n\n\nPH\n\n\nPalacio de Hierro\n\n\nLink\n\n\nLink\n\n\n\n\n\n\nSBS\n\n\nSanborns\n\n\nLink\n\n\nLink\n\n\n\n\n\n\n\n\nC\u00f3digos de partners de vuelos\n\n\n\n\n\n\n\n\npartnerCode\n\n\nDescripci\u00f3n\n\n\nLogo\n\n\nLink de informaci\u00f3n\n\n\n\n\n\n\n\n\n\n\nAM\n\n\nAerom\u00e9xico\n\n\nArchivo de illustrator\n\n\nLink\n\n\n\n\n\n\n\n\nCambios en el m\u00f3dulo de inscripci\u00f3n\n\n\nEn el sistema de inscripci\u00f3n general de la p\u00e1gina se har\u00e1n cambios dependiendo de si se encuentra la cookie del anfitri\u00f3n.\n\n\nSi la cookie no est\u00e1 presente se mostrar\u00e1 un campo para agregar el n\u00famero de cuenta de tu anfitri\u00f3n, esto es para que de forma manual alguna persona pueda indicar si es invitado de alguien. Si este campo es llenado a la hora de inscribirse se agregar\u00e1 al campo \nrefered\n, adem\u00e1s se agregar\u00e1 al socio a la campa\u00f1a \nBF17B\n. Si no se llena el campo se procedera de forma normal con la inscripci\u00f3n.\n\n\nSi la cookie est\u00e1 presente no se mostrar\u00e1 el campo de anfitri\u00f3n pero de igual forma se le agregar\u00e1 la informaci\u00f3n del anfitri\u00f3n en el campo \nrefered\n y se agregar\u00e1 a la campa\u00f1a \nBF17B\n.\n\n\nEn cualquiera de los dos casos si es que se inscribe al socio en la promoci\u00f3n, ya sea porque manualmente coloc\u00f3 la informaci\u00f3n de sus anfitri\u00f3n o porque se obtuvo autom\u00e1ticamente de la cookie, despu\u00e9s de la segunda pantalla de llenado de datos se har\u00e1 login autom\u00e1timente y se redirigir\u00e1 a la pantalla de \nlanding invitado\n para que pueda ver la pre-validaci\u00f3n.\n\n\nFlujo de inscripci\u00f3n\n\n\nFlujo de inscripci\u00f3n ventanas",
+            "title": "Descripci\u00f3n general"
+        },
+        {
+            "location": "/description/#resumen",
+            "text": "El sistema consiste de tres p\u00e1ginas web, una de ellas residir\u00e1 en el CMS y las otras dos residir\u00e1n dentro del dominio member. De las dos que est\u00e1n en member una de ellas ser\u00e1 el  landing anfitri\u00f3n  y otra el  landing invitado . Adem\u00e1s se har\u00e1n modificaciones al sistema de inscripci\u00f3n de usuarios.  La p\u00e1gina dentro del CMS mostrar\u00e1 la informaci\u00f3n general de la promoci\u00f3n, antes de que un socio pueda participar como anfitri\u00f3n es requerido que visite esta p\u00e1gina, en ella se tendr\u00e1 un bot\u00f3n de  participar  con un link hacia el landing anfitri\u00f3n que tendr\u00e1 un parametro especial para inscribirse como anfitri\u00f3n. El CMS tendr\u00e1 las siguientes funciones:   Mostrar la informaci\u00f3n de la promoci\u00f3n  Redirigir al landing anfitri\u00f3n con un parametro especial para inscribir al socio como anfitri\u00f3n   El landing anfitri\u00f3n reside dentro de member. Cuando se accede a \u00e9l tendr\u00e1 la capacidad de inscribir a los socios como anfitriones cuando se le pase un parametro especial, una vez registrados como anfitriones podr\u00e1n acceder al contenido, tendr\u00e1 dos m\u00f3dulos, uno para poder enviar las invitaciones a sus conocidos, a este lo llamamos  invitar amigos , y otro para monitorear el registro de invitados y cuantos puntos le han generado llamado  monitor de invitados . Las funciones que los socios tienen en el  landing anfitri\u00f3n  son las siguientes:   Inscribirse a la promoci\u00f3n como anfitriones al acceder con el parametro especial  Invitar amigos  Por correo  Copiando un link  Compartiendo en redes sociales el link (facebook y twitter)    Visualizar informaci\u00f3n de las invitaciones enviadas  Estado (Registrado \u00f3 No registrado)  Nombre del invitado  Puntos generados    Reenviar invitaciones   Una vez que se accede se inscribir\u00e1 a la promoci\u00f3n, c  El landing invitado se accede con el correo de invitaci\u00f3n o por el link que comparte un anfitri\u00f3n. Como parte del t\u00edtulo del landing se mostrar\u00e1 el nombre del anfitri\u00f3n. Existen dos tipos de socios que se pueden inscribir, socios nuevos o socios existentes, para los socios nuevos se les dar\u00e1 la opci\u00f3n de inscribirse, se le agregar\u00e1 el campo de referido a la hora de inscribirse y se le asignar\u00e1n las campa\u00f1as de la promoci\u00f3n, despu\u00e9s se le mostrar\u00e1 una pantalla con todas las transacciones que le dan bono. Para los socios existentes hay restricciones en la promoci\u00f3n, se tendr\u00e1 un sistema de pre-validaci\u00f3n utilizando un web service para mostrar al socio las transacciones de promoci\u00f3n que aplican para \u00e9l, una vez que la pre-validaci\u00f3n fue exitosa se le asignar\u00e1n dos campa\u00f1as y una preferencia para inscribirlo en la promoci\u00f3n. Las funciones que los usuarios tienen en el  landing invitado  son las siguientes:   Socio Nuevo  Inscribirse a la promoci\u00f3n como invitado de alguien  Ver todas las transacciones de la promoci\u00f3n  Socio existente  Verificar si se puede inscribir como invitado  Pre-validar en qu\u00e9 promociones puede participar  Inscribirse a la promoci\u00f3n como invitado  Ver las transacciones en las que ese socio puede participar   Adem\u00e1s de lo anterior se har\u00e1n cambios en el sistema de inscripci\u00f3n de los usuarios. En la forma de inscripci\u00f3n se agregar\u00e1 un nuevo campo donde se podr\u00e1 colocar el n\u00famero de cuenta de un socio anfitri\u00f3n, este campo se llenar\u00e1 automaticamente cuando el socio haya llegado a la inscripci\u00f3n por el link o correo de un anfitri\u00f3n.",
+            "title": "Resumen"
+        },
+        {
+            "location": "/description/#anfitrion",
+            "text": "En esta secci\u00f3n se describen a detalle los puntos del requerimiento que tienen que ver con el flujo del anfitri\u00f3n.",
+            "title": "Anfitri\u00f3n"
+        },
+        {
+            "location": "/description/#opciones-en-el-menu",
+            "text": "Se agregar\u00e1n dos opciones de men\u00fa, una para la p\u00e1gina de informaci\u00f3n que residir\u00e1 dentro del dominio del CMS y otra para  landing anfitrion  que estar\u00e1 en member.",
+            "title": "Opci\u00f3nes en el men\u00fa"
+        },
+        {
+            "location": "/description/#opcion-de-menu-para-pagina-de-cms",
+            "text": "Se debe agregar una opci\u00f3n en el men\u00fa para acceder a la p\u00e1gina de informaci\u00f3n de la promoci\u00f3n que residira en el CMS, este debe estar bajo la categor\u00eda  Promociones  y se debe llamar  Invita a un amigo , va a tener un logo y su URL debe ser  https://www.clubpremier.com/mx/invita-a-un-amigo .",
+            "title": "Opci\u00f3n de men\u00fa para p\u00e1gina de CMS"
+        },
+        {
+            "location": "/description/#opcion-de-menu-para-pagina-landing-anfitrion-en-member",
+            "text": "Se debe agregar una opci\u00f3n en el men\u00fa para acceder al  landing anfitri\u00f3n , este debe estar bajo la categor\u00eda  Mi cuenta  y se debe llamar  Invita a un amigo  y su URL debe ser  https://member.clubpremier.com/invita-a-un-amigo .",
+            "title": "Opci\u00f3n de men\u00fa para p\u00e1gina landing anfitri\u00f3n en member"
+        },
+        {
+            "location": "/description/#landing-anfitrion",
+            "text": "El socio ingresa al  landing anfitri\u00f3n  a trav\u00e9s de la liga que est\u00e1 en el men\u00fa o colocando directamente la URL  https://member.clubpremier.com/invita-a-un-amigo . Esta p\u00e1gina solo ser\u00e1 accesible con una sesi\u00f3n iniciada, por lo que si el socio no tiene un sesi\u00f3n iniciada se deber\u00e1 redirigir a la p\u00e1gina de inicio de sesi\u00f3n. Esta p\u00e1gina podr\u00e1 inscribir a los socios como anfitriones si es que se pasa el parametro  inscripcion=true , una vez inscrito a la promoci\u00f3n el anfitri\u00f3n podr\u00e1 acceder al contenido y los m\u00f3dulos de  invitar amigos  y  monitor invitados .  Flujo del  landing anfitrion  Flujo del  landing anfitrion  con ventanas",
+            "title": "Landing anfitri\u00f3n"
+        },
+        {
+            "location": "/description/#alta-en-la-promocion-como-anfitrion",
+            "text": "Para darse de alta en la promoci\u00f3n como anfitri\u00f3n se debe acceder a la URL del  landing anfitri\u00f3n  con un parametro especial que indica que se acept\u00f3 participar en la promoci\u00f3n,  https://member.clubpremier.com/invita-a-un-amigo?inscripcion=true . Para dar de alta hay que generar su c\u00f3digo \u00fanico el cual ser\u00e1 almacenado en una tabla llamada  tabla_codigo_anfitrion , esta tabla tendr\u00e1 el n\u00famero de cuenta del anfitri\u00f3n y el c\u00f3digo generado, adem\u00e1s tendr\u00e1 la fecha de inscripci\u00f3n.  Ejemplo  tabla_codigo_anfitrion :     cta_anfitrion  codigo  fecha_inscipcion  nombre      0012312312  Ajdfs12D  2017-02-01  Mario M.",
+            "title": "Alta en la promoci\u00f3n como anfitri\u00f3n"
+        },
+        {
+            "location": "/description/#verificar-acceso",
+            "text": "Cuando se accede con una sesi\u00f3n se tiene que verificar si el socio ya es parte de la promoci\u00f3n, para esto podemos revisar la  tabla_codigo_anfitrion , la cual contiene los c\u00f3digos generados para los anfitriones, si no est\u00e1 en esta tabla quiere decir que a\u00fan no es parte de la promoci\u00f3n. Despu\u00e9s hay que verificar si tiene el parametro de inscripci\u00f3n, en caso de que as\u00ed sea se debe hacer la inscripci\u00f3n y proceder a mostrar la p\u00e1gina, en caso contrario hay que redirigirlo a la URL  https://www.clubpremier.com/mx/invita-a-un-amigo , para que en esa p\u00e1gina se de de alta.",
+            "title": "Verificar acceso"
+        },
+        {
+            "location": "/description/#despliegue-de-pagina-landing-anfitrion-basica",
+            "text": "Si el socio ya es parte de la promoci\u00f3n y tiene una sesi\u00f3n iniciada podr\u00e1 acceder a la p\u00e1gina, la cual muestra el t\u00edtulo, un banner y un texto descriptivo de la promoci\u00f3n, estos son est\u00e1ticos y siempre los mismos, adem\u00e1s mostrar\u00e1 los m\u00f3dulos de  invitar amigos  y de  monitor de invitados .  Landing anfitri\u00f3n",
+            "title": "Despliegue de p\u00e1gina landing anfitri\u00f3n b\u00e1sica"
+        },
+        {
+            "location": "/description/#modulo-de-invitar-amigos",
+            "text": "Este m\u00f3dulo consta de dos partes, un box donde se escriben los correos para enviar las invitaciones, el otro es un visor del link \u00fanico del anfitri\u00f3n con botones para poder copiarlo y compartirlo en redes sociales. El correo y el link son los que \u00fatilizar\u00e1n los invitados para registrarse en el programa.",
+            "title": "M\u00f3dulo de invitar amigos"
+        },
+        {
+            "location": "/description/#link-unico-de-anfitrion",
+            "text": "Cada anfitri\u00f3n debe tener un c\u00f3digo \u00fanico el cual est\u00e1 guardado en  tabla_codigo_anfitrion , este c\u00f3digo junto con una url  https://member.clubpremier.com/invitacion/  generan un link, este link es utilizado por el m\u00f3dulo de  invitar amigo  para hacer referencia a la p\u00e1gina de invitaci\u00f3n de ese socio en particular. Por ejemplo el c\u00f3digo de un socio puede ser  gW3313Djfd , entonces su link \u00fanico ser\u00eda  https://member.clubpremier.com/invitacion/gW3313Djfd .",
+            "title": "Link \u00fanico de anfitri\u00f3n"
+        },
+        {
+            "location": "/description/#box-de-correos",
+            "text": "En este box se pueden colocar las direcciones de correo a las que se quieren enviar las invitaciones, se puede poner uno o muchos correos, con el bot\u00f3n  Enviar  se env\u00edan los correos a trav\u00e9s de una cuenta de SendGrid (la cuenta y contrase\u00f1a deben ser solicitadas). Este box tiene un funcionamiento similar al que tiene gmail cuando se va a enviar un correo, se escribe un correo y cuando se presiona  Enter  este se agrupa y se le asigna un bot\u00f3n de eliminar, de esta forma se pueden escribir varias direcciones de correo e irlas eliminando de manera sencilla.  El box debe mostrar el texto  Captura las direcciones de correo electr\u00f3nico de tus amigos  cuando no se haya colocado ning\u00fan texto.  M\u00f3dulo de invitar amigos, box solo  M\u00f3dulo de invitar amigos, box con varios correos",
+            "title": "Box de correos"
+        },
+        {
+            "location": "/description/#envio-de-correo",
+            "text": "Cuando en el box existan direcciones de correos agrupadas y se presione el bot\u00f3n  Enviar  se deben enviar correos de invitaci\u00f3n a dichas direcciones y se debe limpiar el box. Se debe colocar el nombre del anfitri\u00f3n en el asunto y en el cuerpo del correo, adem\u00e1s de que el bot\u00f3n  Aceptar invitaci\u00f3n  tenga la URL del link \u00fanico. Cuando se env\u00edan correos de invitaci\u00f3n estos deben ser agregados a la tabla  tabla_invitados  para ser visualizados en el m\u00f3dulo  invitar amigos .  Ejemplo de correo   (Solo ilustrativo, no final)",
+            "title": "Env\u00edo de correo"
+        },
+        {
+            "location": "/description/#visor-de-link-unico",
+            "text": "En este m\u00f3dulo se muestra el link \u00fanico del anfitri\u00f3n, una opci\u00f3n para copiarlo y una opci\u00f3n para compartirlo en redes sociales, se podr\u00e1 compartir en facebooky twitter.  M\u00f3dulo de invitar amigos, compartir link   (Solo ilustrativo, no final)",
+            "title": "Visor de link \u00fanico"
+        },
+        {
+            "location": "/description/#modulo-de-monitor-de-amigos",
+            "text": "Monitor de amigos  es una tabla que muestra cuatro columnas,  Invitado ,  Estado ,  Puntos generados  y  Reenviar . Esta tabla funciona para darle seguimiento a las invitaciones enviadas, saber quienes ya se registraron como invitado y cuantos puntos han generado. Cuando la tabla no tiene ning\u00fan registro esta no se debe mostrar.   Cuando el anfitri\u00f3n env\u00eda un correo a trav\u00e9s del m\u00f3dulo  invitar amigos  este correo es guardado en la columna  Invitado  con un  Estado  en  No registrado , tendr\u00e1 0 puntos generados y en la columna  Reenviar  se dar\u00e1 la opci\u00f3n de reenviar el correo.   Cuando un invitado se inscribe a la promoci\u00f3n se busca en la  tabla_invitados  si es que se tiene guardado el correo del invitado, en caso de que sea as\u00ed se cambia el texto del correo por el nombre y primer letra del apellido del invitado, se cambia  Estado  a  Registrado . En caso de que el invitado no est\u00e9 previamente registrado en la  tabla_invitados  entonces se agrega el registro.   Esta informaci\u00f3n debe ser guardada en una tabla en una base de datos, le llamaremos a esta tabla  tabla_invitados . En esta tabla se tendr\u00e1 almacenado el n\u00famero de cuenta del anfitri\u00f3n, n\u00famero de cuenta del invitado (solo si es que ya se registr\u00f3), el estado de esa invitaci\u00f3n (puede ser  Registrado  o  No registrado ), el nombre (si es que no est\u00e1 registrado se pone la direcci\u00f3n de correo electr\u00f3nico, en caso de que est\u00e9 registrado se pone el primer nombre y la primer sigla de su apellido) y los puntos que ese invitado ha generado.     cta_anfitrion  cta_invitado  estado  nombre  puntos  validacion  fecha      N\u00famero de cuenta del anfitri\u00f3n a 11 caracteres  N\u00famero de cuenta del invitado a 11 caracteres  estado, puede ser  registrado  o  no_registrado  nombre identificador, si no est\u00e1 registrado es el correo, si est\u00e1 registrado es el primer nombre y primer letra del apellido (Mauro M.)  N\u00famero de puntos generados  Objeto que contiene los c\u00f3digos de los partners que fueron validados para ese invitado  Fecha de inscripci\u00f3n     Club Premier va a generar una archivo diario  batch  llamado  registro_puntos_invita_a_un_amigo_ +fecha  que ser\u00e1 compartido por ftp, este archivo contendr\u00e1 los registros de las acumulaciones que se han generado para cada anfitri\u00f3n y el n\u00famero de cuenta de qui\u00e9n las gener\u00f3. Usando esto se puede actualizar en  tabla_invitados  los puntos generados por cada invitado, los puntos en el archivo no ser\u00e1n totales sino del d\u00eda que se genere, as\u00ed que habr\u00e1 que sumar cada vez que llegue un archivo nuevo para tener el total de puntos generados. El formato de este archivo es el siguiente.     cta_anfitrion  cta_invitado  puntos  fecha      N\u00famero de cuenta del anfitri\u00f3n a 11 caracteres  N\u00famero de cuenta del invitado a 11 caracteres  N\u00famero de puntos generados para ese d\u00eda  Fecha de creaci\u00f3n del registro",
+            "title": "M\u00f3dulo de monitor de amigos"
+        },
+        {
+            "location": "/description/#invitados",
+            "text": "En la siguiente secci\u00f3n se describe el proceso de inscripci\u00f3n a la promoci\u00f3n para los invitados. Se pueden inscribir socios existentes o socios nuevos.",
+            "title": "Invitados"
+        },
+        {
+            "location": "/description/#acceso-al-link-del-anfitrion-cookie-del-anfitrion",
+            "text": "Un usuario que accede al link de un anfitri\u00f3n, ya sea porque se lo compartieron o porque le lleg\u00f3 por correo, va a ser enviado al  landing invitado , lo primero que el sistema va a hacer es crear una cookie que guarde la informaci\u00f3n del anfitri\u00f3n, esto se har\u00e1 para que sin importar qu\u00e9 flujo siga el usuario dentro de la p\u00e1gina se tenga la informaci\u00f3n de quien lo invit\u00f3. Esta cookie tiene una duraci\u00f3n de 2 d\u00edas, si es que ya exist\u00eda una cookie se va a sobreescribir.",
+            "title": "Acceso al link del anfitri\u00f3n, cookie del anfitri\u00f3n"
+        },
+        {
+            "location": "/description/#landing-invitado-sin-sesion-iniciada",
+            "text": "En cuando el usuario accede al  landing invitado . Si es que no existe una sesi\u00f3n iniciada se le mostrar\u00e1 la opci\u00f3n para  Iniciar sesi\u00f3n  o para  Inscribirse . En el t\u00edtulo del landing se mostrar\u00e1 el nombre del anfitri\u00f3n como se muestra en el ejemplo de pantalla.  Landing invitado sin sesi\u00f3n iniciada  T\u00edtulo:  Pendiente  Banner:  Pendiente  Descripci\u00f3n:  Pendiente",
+            "title": "Landing Invitado sin sesi\u00f3n iniciada"
+        },
+        {
+            "location": "/description/#validaciones-para-el-invitado-que-ya-es-socio",
+            "text": "Si el socio da click en  Iniciar sesi\u00f3n  se le redirige a la p\u00e1gina de inicio de sesi\u00f3n, una vez que haya iniciado sesi\u00f3n se regresa al  landing invitado .  Cuando se accede al  landing invitado  con una sesi\u00f3n iniciada se har\u00e1n dos verificaciones, en la primera se verifica que el invitado no sea invitado de alguien m\u00e1s, para esto se puede revisar en la tabla  tabla_invitados  si es que existe un registro de ese socio que ya est\u00e9 registrado, en caso de que ya sea un invitado se mostrar\u00e1 un modal con un mensaje de error. La segunda verificaci\u00f3n revisar\u00e1 si es que el anfitri\u00f3n no sea un invitado directo del socio (esto significa que yo no puedo ser invitado de un invitado m\u00edo), para esto se puede revisar la tabla  tabla_invitados  y revisar si existe una registro que relacione al anfitri\u00f3n y al invitado, en caso de que se encuentre esa relaci\u00f3n se mostrar\u00e1 un mensaje de error en un modal.",
+            "title": "Validaciones para el invitado que ya es socio"
+        },
+        {
+            "location": "/description/#calculo-de-pre-validacion",
+            "text": "La pre-validaci\u00f3n solo se realiza cuando el invitado ya es un socio existente y pas\u00f3 las validaciones previas. Ya que la promoci\u00f3n tiene varias restricciones se va a pre-validar en cuales transacciones o con cuales partners puede ganar puntos el invitado, para esto se utilizar\u00e1 el web service  GetLastNTransaction2 .  El web service  GetLastNTransactions2  nos permite solicitar todas las transacciones que un socio haya realizado en un cierto intervalo de tiempo, adem\u00e1s de esto nos permite filtrar las transacciones por tipo de actividad.  La idea es tener un objeto que contiene todos los c\u00f3digos de los partners, de esta lista se van a ir removiendo los partners que se encuentren con el web wervice, la lista completa es la siguiente:  {AM, PC, HX, HI, BH, STW, HY, HJ, HW, WH, BW, CHI, LQ, CS, ACC, MRM, BVA, HMX, SFI, SS, GFM, SE, SBI, PH, SBS}  Existen dos principales categor\u00edas donde se pueden ganar puntos, por vuelos y por tranferencias.  Para calcular la participaci\u00f3n en vuelos se van a solicitar las transacciones de los \u00faltimos 24 meses con el tipo de actividad  FLT  y el c\u00f3digo de partner  AM . Si es que esto regresa alg\u00fan registro entonces ya no aplica a esta promoci\u00f3n y se remueve el partner  AM .  Para las transacciones es diferente ya que estas est\u00e1n categorizadas, hay 3 tipos de actividad diferentes, uno para hoteles, uno para retail y otro para bancos. Por cada tipo de actividad se tendr\u00e1n que solicitar las transacciones de los \u00faltimos 12 meses, revisar cada una e ir verificando de qu\u00e9 partners se hicieron transferencias, por cada partner que se realiz\u00f3 transferencia se va a remover ese partner de la lista.  El resultado de esta prevalidaci\u00f3n va a ser un objeto que contenga los c\u00f3digos de los partners con los que el socio si recibe bono.  Para m\u00e1s informaci\u00f3n as\u00ed como la lista completa de partners y sus logos ver la documentaci\u00f3n del webservice  aqu\u00ed",
+            "title": "C\u00e1lculo de pre-validaci\u00f3n"
+        },
+        {
+            "location": "/description/#inscripcion-a-la-promocion-para-socios-existentes",
+            "text": "Si es que la pre-validaci\u00f3n es exitosa y se tiene el objeto resultado, entonces se procede a inscribir al socio a la promoci\u00f3n, este proceso son varios pasos:   Agregar al socio a dos campa\u00f1as  Agregar al socio una preferencia con el n\u00famero de cuenta del anfitri\u00f3n  Buscar si el socio ya existe en un registro del anfitri\u00f3n, actualizar ese registro o crear uno nuevo   Si es que la pre-validaci\u00f3n genera alg\u00fan error por cualquier cosa se mostrar\u00e1 un mensaje de error para que lo intente m\u00e1s tarde.",
+            "title": "Inscripci\u00f3n a la promoci\u00f3n para socios existentes"
+        },
+        {
+            "location": "/description/#agregar-al-socio-a-dos-campanas",
+            "text": "Al socio hay que agregarlo a dos campa\u00f1as, esto se hace con el web service  AssignCampaigns , los nombres de las campa\u00f1as son:  BF17D  y  BF17E . Por cada campa\u00f1a hay que colocar tres fechas:            StartDate  Fecha de inicio de campa\u00f1a  2017-05-01    EndDate  Fecha de fin de campa\u00f1a  2099-12-31    DateTargetted  Fecha de inscripci\u00f3n a la campa\u00f1a  La fecha de inscripci\u00f3n      Ejemplo de inscripci\u00f3n a las dos campa\u00f1as:  Request   Response",
+            "title": "Agregar al socio a dos campa\u00f1as"
+        },
+        {
+            "location": "/description/#agregar-al-socio-en-una-preferencia-su-anfitrion",
+            "text": "Se va a agregar una preferencia para guardar quien es el anfitri\u00f3n, la preferencia tiene el n\u00famero  863 , con el c\u00f3digo  INVTED , esta preferencia representa que el socio es un  Invited  de alguien, entonces en esta preferencia se va a almacenar el n\u00famero de cuenta del anfitri\u00f3n (a 11 carateres).  Ejemplo:  Pendiente",
+            "title": "Agregar al socio en una preferencia su anfitri\u00f3n"
+        },
+        {
+            "location": "/description/#actualizar-la-tabla-tabla_invitados",
+            "text": "Por \u00faltimo hay que buscar en la tabla  tabla_invitados  si es que para el anfitri\u00f3n ya existe un registro que tenga el correo que tiene el invitado. Si existe el registro entonces hay que actualizar la informaci\u00f3n en ese registro, si no existe entonces se crear\u00e1 un registro nuevo, sea cual sea el caso el resultado debe tener la siguiente informaci\u00f3n:     cta_anfitrion  cta_invitado  estado  nombre  puntos  validacion  fecha      N\u00famero de cuenta del anfitri\u00f3n a 11 caracteres  N\u00famero de cuenta del invitado a 11 caracteres  registrado  el primer nombre y primer letra del apellido (Mauro M.)  0  El objeto calculado en la pre-validaci\u00f3n  Fecha de inscripci\u00f3n     Flujo de  landing invitado",
+            "title": "Actualizar la tabla tabla_invitados"
+        },
+        {
+            "location": "/description/#mostrar-la-pantalla-de-inscripcion-finalizada",
+            "text": "Se le mostrar\u00e1 al socio la pantalla que muestra los partners con los que participa. Hay dos secciones principales, una es la de vuelos en la que solo se encuentra Aerom\u00e9xico y la otra es la de transferencias en la que participan muchos partners. Si en la pre-validaci\u00f3n no est\u00e1 incluido AM, entonces la secci\u00f3n de vuelos se oculta, la secci\u00f3n de transferencias tiene los otros partners, solo deben aparecer los que est\u00e1n incluidos en la pre-validaci\u00f3n, y deben estar ordenados por Bancos, Hoteles y Retail.  Con este proceso termina el flujo para el invitado que ya es socio.",
+            "title": "Mostrar la pantalla de inscripci\u00f3n finalizada"
+        },
+        {
+            "location": "/description/#invitado-que-aun-no-es-socio",
+            "text": "Cuando un usuario accede al  landind invitado  tiene la opci\u00f3n de inscribirse, si da click en esta opci\u00f3n entonces se redirige a la p\u00e1gina de inscripci\u00f3n de Club Premier. El sistema de inscripci\u00f3n tendr\u00e1 algunos cambios.",
+            "title": "Invitado que a\u00fan no es socio"
+        },
+        {
+            "location": "/description/#cambios-en-la-pagina-de-inscripcion",
+            "text": "Se va a agregar un nuevo campo en la pantalla de inscripci\u00f3n, este va a ser el campo de  Anfitri\u00f3n , en este campo se va a poder colocar el n\u00famero de cuenta de alguien que te haya invitado. La idea es que puedas inscribirte como invitado a pesar de no tener el link de un anfitri\u00f3n, solo tienes que conocer su n\u00famero de cuenta. Este campo debe tener las mismas validaciones que cualquier otro campo que utilice un n\u00famero de cuenta, sin embargo no ser\u00e1 un campo requerido.",
+            "title": "Cambios en la p\u00e1gina de inscripci\u00f3n"
+        },
+        {
+            "location": "/description/#llenado-automatico-del-campo-anfitrion",
+            "text": "Si es que se detecta que existe una cookie con informaci\u00f3n de anfitri\u00f3n, entonces este campo se llenar\u00e1 autom\u00e1ticamente, y adem\u00e1s no podr\u00e1 ser editable.",
+            "title": "Llenado autom\u00e1tico del campo Anfitri\u00f3n"
+        },
+        {
+            "location": "/description/#inscripcion-con-el-campo-de-anfitrion-llenado",
+            "text": "Cuando un socio se inscribe y existe informaci\u00f3n en el campo de anfitri\u00f3n, se har\u00e1n dos cosas:   Inscribir al socio de forma normal pero agregando el campo  RecommendersCardNo  Agregar al socio a dos campa\u00f1as",
+            "title": "Inscripci\u00f3n con el campo de Anfitri\u00f3n llenado"
+        },
+        {
+            "location": "/description/#inscripcion-incluyendo-el-campo-recommenderscardno",
+            "text": "El web service de EnrollMember que se utiliza para la inscripci\u00f3n de los socios tiene un campo llamado  RecommendersCardNo  que identifica si ese socio es referido, este campo solo se puede llenar cuando se inscribe al socio, y en \u00e9l se coloca el n\u00famero de cuenta del anfitri\u00f3n, este n\u00famero de cuenta se obtiene del campo  Anfitri\u00f3n , ya sea que lo coloca el socio o que se llena autom\u00e1ticamente por la cookie.",
+            "title": "Inscripci\u00f3n incluyendo el campo RecommendersCardNo"
+        },
+        {
+            "location": "/description/#agregar-a-dos-campanas",
+            "text": "Se tiene que agregar a dos campa\u00f1as, una para la parte de vuelos y una para la parte de tranferencias, cabe decir que estas campa\u00f1as son diferentes a las campa\u00f1as que utilizan los invitados que son socios. Esto se hace con el web service  AssignCampaigns , los nombres de las campa\u00f1as son:  BF17A  y  BF17B .            StartDate  Fecha de inicio de campa\u00f1a  2017-05-01    EndDate  Fecha de fin de campa\u00f1a  2099-12-31    DateTargetted  Fecha de inscripci\u00f3n a la campa\u00f1a  La fecha de inscripci\u00f3n      Ejemplo de inscripci\u00f3n a las dos campa\u00f1as:  Request   Response",
+            "title": "Agregar a dos campa\u00f1as"
+        },
+        {
+            "location": "/description/#mostrar-la-informacion-de-inscripcion-a-la-campana",
+            "text": "Una vez inscrito se mostrar\u00e1 la pantalla para completar los datos, esto es el mismo proceso de las inscripciones normales, sin embargo, despu\u00e9s de que completan sus datos en lugar de que",
+            "title": "Mostrar la informaci\u00f3n de inscripci\u00f3n a la campa\u00f1a"
+        },
+        {
+            "location": "/description/#assigncampaigns-spec",
+            "text": "Agrega a un socio a una o varias campa\u00f1as. En caso de \u00e9xito regresa todas las campa\u00f1as a las que est\u00e1 suscrito el socio, en caso de error manda un mensaje de error. Solo se puede inscribir a una campa\u00f1a una vez, si ya se est\u00e1 inscrito regresa error, las campa\u00f1as ya no pueden borrarse ni modificarse una vez agregadas.",
+            "title": "AssignCampaigns Spec"
+        },
+        {
+            "location": "/description/#url-de-pruebas",
+            "text": "http://cr5w5cptest.clubpremier.com/Mercator.CRIS.WebService.TESTCRIS/IVRWebService.asmx",
+            "title": "URL de pruebas"
+        },
+        {
+            "location": "/description/#autenticacion",
+            "text": "Necesaria, HTTP basic.",
+            "title": "Autenticaci\u00f3n"
+        },
+        {
+            "location": "/description/#peticion",
+            "text": "Nombre  Descripci\u00f3n      CardNumber  N\u00famero de cuenta del socio    CampaignList  Debe contener los objetos Campaign de las campa\u00f1as que se quieren agregar    Campaign  Objeto que representa una campa\u00f1a    Campaign.PrcCode  C\u00f3digo de la promoci\u00f3n    Campaign.StartDate  Objeto que representa el inicio de la campa\u00f1a    Campaign.StartDate.IsQuery  Debe estar en 'false'    Campaign.StartDate.QueryString  Debe estar vac\u00edo    Campaign.StartDate.HasValue  Debe ser 'true'    Campaign.StartDate.Value  Debe ser la fecha de inicio de la campa\u00f1a    Campaign.EndDate  Objeto que representa el fin de la campa\u00f1a    Campaign.EndDate.IsQuery  Debe estar en 'false'    Campaign.EndDate.QueryString  Debe estar vac\u00edo    Campaign.EndDate.HasValue  Debe ser 'true'    Campaign.EndDate.Value  Debe ser la fecha de fin de la campa\u00f1a    Campaign.DateTargetted  Objeto que representa la fecha de cuando el socio se une a la campa\u00f1a    Campaign.DateTargetted.IsQuery  Debe estar en 'false'    Campaign.DateTargetted.QueryString  Debe estar vac\u00edo    Campaign.DateTargetted.HasValue  Debe ser 'true'    Campaign.DateTargetted.Value  Debe ser la fecha en la que el socio se une a la campa\u00f1a    Campaign.CardNumber  N\u00famero de cuenta del socio",
+            "title": "Petici\u00f3n"
+        },
+        {
+            "location": "/description/#ejemplos",
+            "text": "",
+            "title": "Ejemplos"
+        },
+        {
+            "location": "/description/#agregar-a-la-campana-bf17a",
+            "text": "<AssignCampaigns xmlns=\"http://skywards.com/Mercator.CRIS.WS\">\n  <CardNumber>00970011581</CardNumber>\n  <CampaignList>\n    <Campaign>\n      <PrcCode>BF17A</PrcCode>\n      <StartDate>\n        <IsQuery>false</IsQuery>\n        <QueryString></QueryString>\n        <ContainsQueryOperators>false</ContainsQueryOperators>\n        <HasValue>true</HasValue>\n        <Value>2017-06-01</Value>\n      </StartDate>\n      <EndDate>\n        <IsQuery>false</IsQuery>\n        <QueryString></QueryString>\n        <ContainsQueryOperators>false</ContainsQueryOperators>\n        <HasValue>true</HasValue>\n        <Value>2017-12-31</Value>\n      </EndDate>\n      <DateTargetted>\n        <IsQuery>false</IsQuery>\n        <QueryString></QueryString>\n        <ContainsQueryOperators>false</ContainsQueryOperators>\n        <HasValue>true</HasValue>\n        <Value>2017-08-30</Value>\n      </DateTargetted>\n      <CardNumber>00970011581</CardNumber>\n    </Campaign>\n  </CampaignList>\n</AssignCampaigns>  request   response",
+            "title": "Agregar a la campa\u00f1a BF17A"
+        },
+        {
+            "location": "/description/#getlastntransactions2-spec",
+            "text": "",
+            "title": "GetLastNTransactions2 Spec"
+        },
+        {
+            "location": "/description/#url-de-pruebas_1",
+            "text": "http://cr5w5cptest.clubpremier.com/Mercator.CRIS.WebService.TESTCRIS/IVRWebService.asmx?op=GetLastNTransactions2",
+            "title": "URL de pruebas"
+        },
+        {
+            "location": "/description/#autenticacion_1",
+            "text": "Necesaria, HTTP basic. (solicitar claves de pruebas)",
+            "title": "Autenticaci\u00f3n"
+        },
+        {
+            "location": "/description/#peticion_1",
+            "text": "Nombre  Descripci\u00f3n      activeCardNo  N\u00famero de cuenta del socio a solicitar, a 11 caracteres    fromTransDate  Fecha a partir de la cual se buscan los registros, en el formato  0001-01-01T00:00:00    toTransDate  Fecha hasta la cual se buscan los registros, en el formato  0001-01-01T00:00:00    activityType  Filtro de tipo de actividad    transFilter  Debe existir vac\u00edo    orderBy  Ordena los resultados por actividad  A  o por transferencia  T    partnerCode  Filtro del c\u00f3digo del partner",
+            "title": "Petici\u00f3n"
+        },
+        {
+            "location": "/description/#ejemplos_1",
+            "text": "",
+            "title": "Ejemplos"
+        },
+        {
+            "location": "/description/#ejemplo-1",
+            "text": "Para solicitar los \u00faltimos dos a\u00f1os de transacciones de tipo FLT con partnerCode AM. Este ser\u00e1 utilizado para verificar si aplican a la promoci\u00f3n de vuelos.  <soap:Body>\n    <GetLastNTransactions2 xmlns=\"http://skywards.com/Mercator.CRIS.WS\">\n      <activeCardNo>00970011581</activeCardNo>\n      <fromTransDate>2015-08-22</fromTransDate>\n      <toTransDate>2017-08-22</toTransDate>\n      <activityType>FLT</activityType>\n      <transFilter></transFilter>\n      <orderBy></orderBy>\n      <partnerCode>AM</partnerCode>\n    </GetLastNTransactions2>\n</soap:Body>  Request   Response",
+            "title": "Ejemplo 1"
+        },
+        {
+            "location": "/description/#ejemplo-2",
+            "text": "Para solicitar el \u00faltimo a\u00f1o de transacciones de transferencias de puntos de bancos. Se utiliza el tipo de transacci\u00f3n BPT. Con el partner code hay que ver con cuales partners ya se hicieron tranferencias.  <soap:Body>\n    <GetLastNTransactions2 xmlns=\"http://skywards.com/Mercator.CRIS.WS\">\n      <activeCardNo>00970011581</activeCardNo>\n      <fromTransDate>2016-08-22</fromTransDate>\n      <toTransDate>2017-08-22</toTransDate>\n      <activityType>BPT</activityType>\n      <transFilter></transFilter>\n      <orderBy></orderBy>\n      <partnerCode></partnerCode>\n    </GetLastNTransactions2>\n</soap:Body>  Request   Response",
+            "title": "Ejemplo 2"
+        },
+        {
+            "location": "/description/#ejemplo-3",
+            "text": "Para solicitar el \u00faltimo a\u00f1o de transacciones de transferencias de puntos de hoteles. Se utiliza el tipo de transacci\u00f3n LYP. Con el partner code hay que ver con cuales partners ya se hicieron tranferencias.  <soap:Body>\n    <GetLastNTransactions2 xmlns=\"http://skywards.com/Mercator.CRIS.WS\">\n      <activeCardNo>00970011581</activeCardNo>\n      <fromTransDate>2016-08-22</fromTransDate>\n      <toTransDate>2017-08-22</toTransDate>\n      <activityType>LYP</activityType>\n      <transFilter></transFilter>\n      <orderBy></orderBy>\n      <partnerCode></partnerCode>\n    </GetLastNTransactions2>\n</soap:Body>  Request   Response",
+            "title": "Ejemplo 3"
+        },
+        {
+            "location": "/description/#ejemplo-4",
+            "text": "La \u00fatilma petici\u00f3n es para solicitar el \u00faltimo a\u00f1o de transacciones de transferencias de puntos de retail. Se utiliza el tipo de transacci\u00f3n RPT. Con el partner code hay que ver con cuales partners ya se hicieron tranferencias. La respuesta de este ejemplo no econtr\u00f3 ning\u00fan registro que coincidiera con el filtro.  <soap:Body>\n    <GetLastNTransactions2 xmlns=\"http://skywards.com/Mercator.CRIS.WS\">\n      <activeCardNo>00970011581</activeCardNo>\n      <fromTransDate>2016-08-22</fromTransDate>\n      <toTransDate>2017-08-22</toTransDate>\n      <activityType>RPT</activityType>\n      <transFilter></transFilter>\n      <orderBy></orderBy>\n      <partnerCode></partnerCode>\n    </GetLastNTransactions2>\n</soap:Body>  Request   Response",
+            "title": "Ejemplo 4"
+        },
+        {
+            "location": "/description/#codigos",
+            "text": "",
+            "title": "C\u00f3digos"
+        },
+        {
+            "location": "/description/#codigos-de-tipo-de-actividad",
+            "text": "activityType  Descripci\u00f3n      FLT  Vuelos    BPT  Tranferencias de bancos    RPT  Transferencias de retail    LYP  Transferencias de hoteles",
+            "title": "Codigos de tipo de actividad"
+        },
+        {
+            "location": "/description/#codigos-de-partners-de-hoteles",
+            "text": "partnerCode  Descripci\u00f3n  Logo  Link de informaci\u00f3n      PC  Fiesta Rewards  Link  Link    HX  Marriott Rewards  Link  Link    HI  Hilton Honors  Link  Link    BH  IHG Rewards  Link  Link    STW  Starwood  Link  Link    HY  Hyatt Gold Passport  Link  Link    HJ  City Premios  Link  Link    HW  Carlson Reizdor Hotels  Link  link no est\u00e1 disponible    WH  Wyndham Rewards  Link  Link    BW  Best Western  Link  Link    CHI  Choice Privileges  Link  Link    LQ  La Quinta Returns  Link  Link    CS  C\u00edrculo Real  Link  Link    ACC  Accor Hotels  Link  Link",
+            "title": "C\u00f3digos de partners de hoteles"
+        },
+        {
+            "location": "/description/#codigos-de-partners-de-bancos",
+            "text": "partnerCode  Descripci\u00f3n  Logo  Link de informaci\u00f3n      MRM  Membership Rewards M\u00e9xico  Link  Link    BVA  Bancomer  Link  Link    HMX  HSBC  Link  Link    SFI  Inbursa  Link  Link    SS  Invex  Link  Link    GFM  Banca Mifel  Link  Link    SE  Santander  Link  Link    SBI  Scotiabank  Link  Link",
+            "title": "C\u00f3digos de partners de bancos"
+        },
+        {
+            "location": "/description/#codigos-de-partners-de-retail",
+            "text": "partnerCode  Descripci\u00f3n  Logo  Link de informaci\u00f3n      PH  Palacio de Hierro  Link  Link    SBS  Sanborns  Link  Link",
+            "title": "C\u00f3digos de partners de retail"
+        },
+        {
+            "location": "/description/#codigos-de-partners-de-vuelos",
+            "text": "partnerCode  Descripci\u00f3n  Logo  Link de informaci\u00f3n      AM  Aerom\u00e9xico  Archivo de illustrator  Link",
+            "title": "C\u00f3digos de partners de vuelos"
+        },
+        {
+            "location": "/description/#cambios-en-el-modulo-de-inscripcion",
+            "text": "En el sistema de inscripci\u00f3n general de la p\u00e1gina se har\u00e1n cambios dependiendo de si se encuentra la cookie del anfitri\u00f3n.  Si la cookie no est\u00e1 presente se mostrar\u00e1 un campo para agregar el n\u00famero de cuenta de tu anfitri\u00f3n, esto es para que de forma manual alguna persona pueda indicar si es invitado de alguien. Si este campo es llenado a la hora de inscribirse se agregar\u00e1 al campo  refered , adem\u00e1s se agregar\u00e1 al socio a la campa\u00f1a  BF17B . Si no se llena el campo se procedera de forma normal con la inscripci\u00f3n.  Si la cookie est\u00e1 presente no se mostrar\u00e1 el campo de anfitri\u00f3n pero de igual forma se le agregar\u00e1 la informaci\u00f3n del anfitri\u00f3n en el campo  refered  y se agregar\u00e1 a la campa\u00f1a  BF17B .  En cualquiera de los dos casos si es que se inscribe al socio en la promoci\u00f3n, ya sea porque manualmente coloc\u00f3 la informaci\u00f3n de sus anfitri\u00f3n o porque se obtuvo autom\u00e1ticamente de la cookie, despu\u00e9s de la segunda pantalla de llenado de datos se har\u00e1 login autom\u00e1timente y se redirigir\u00e1 a la pantalla de  landing invitado  para que pueda ver la pre-validaci\u00f3n.  Flujo de inscripci\u00f3n  Flujo de inscripci\u00f3n ventanas",
+            "title": "Cambios en el m\u00f3dulo de inscripci\u00f3n"
+        },
+        {
+            "location": "/flujos/",
+            "text": "Diagramas de flujo\n\n\nDiagramas de flujo del anfitri\u00f3n y del invitado.\n\n\nAnfitri\u00f3n\n\n\nFlujo anfitri\u00f3n en texto\n\n\nFlujo anfitri\u00f3n en ventanas\n\n\nInvitado\n\n\nFlujo invitado en ventanas\n\n\nInscripci\u00f3n de socios\n\n\nFlujo inscripci\u00f3n en texto\n\n\nFlujo inscripci\u00f3n en ventanas",
+            "title": "Flujos"
+        },
+        {
+            "location": "/flujos/#diagramas-de-flujo",
+            "text": "Diagramas de flujo del anfitri\u00f3n y del invitado.",
+            "title": "Diagramas de flujo"
+        },
+        {
+            "location": "/flujos/#anfitrion",
+            "text": "Flujo anfitri\u00f3n en texto  Flujo anfitri\u00f3n en ventanas",
+            "title": "Anfitri\u00f3n"
+        },
+        {
+            "location": "/flujos/#invitado",
+            "text": "Flujo invitado en ventanas",
+            "title": "Invitado"
+        },
+        {
+            "location": "/flujos/#inscripcion-de-socios",
+            "text": "Flujo inscripci\u00f3n en texto  Flujo inscripci\u00f3n en ventanas",
+            "title": "Inscripci\u00f3n de socios"
+        },
+        {
+            "location": "/requerimientos_anfitrion/",
+            "text": "Requerimientos de interfaces\n\n\nRIA0: Pantalla de informaci\u00f3n de la promoci\u00f3n en CMS\n\n\nPantalla que reside en el CMS donde se mostrar\u00e1 la informaci\u00f3n general de la promoci\u00f3n. Esta pantalla no ser\u00e1 desarrollada por Vinco pero es parte del flujo.\n\n\n\n\nRIA1: Pantalla de anfitri\u00f3n b\u00e1sica\n\n\nPantalla que ver\u00e1n los anfitriones donde pueden enviar invitaciones.\n\n\n\n\nRIA2: Pantalla de anfitri\u00f3n con m\u00f3dulo de \nmonitor de invitados\n\n\nPantalla que ver\u00e1n los anfitriones despu\u00e9s de que env\u00edan invitaciones o alguien ha aceptado su invitaci\u00f3n.\n\n\n\n\nRIA3: M\u00f3dulo de \ninvitar amigos\n\n\nEste m\u00f3dulo se podr\u00e1 ver siempre en el \nlanding anfitri\u00f3n\n, con \u00e9l se podr\u00e1n enviar invitaciones por correo electr\u00f3nico y compartir el link \u00fanico del anfitrion.\n\n\n\n\nRIA4: M\u00f3dulo de \nmonitor de invitaciones\n\n\nEste m\u00f3dulo se muestra cuando existen invitaciones para dicho anfitri\u00f3n, ya sean invitaciones que ya se han registrado o invitaciones que no se han registrado.\n\n\n\n\n\n\nLogo de reenvio de correo: \nLogo habilitado\n \nLogo deshabilitado\n\n\n\n\nRequerimientos funcionales\n\n\nEn esta secci\u00f3n se enlistan los requerimientos solicitados para el proyecto. Se indica un id por cada uno y las dependencias entre s\u00ed.\n\n\nTR01: Opci\u00f3n de men\u00fa de CMS\n\n\nDependencias\n: No\n\n\nCuando un usuario acceda en la secci\u00f3n de men\u00fa de \nPromociones\n debe existir la opci\u00f3n \nInvita a un amigo\n que tenga la direcci\u00f3n URL \nhttps://www.clubpremier.com/mx/invita-a-un-amigo\n y el \u00edcono adjunto.\n\n\nAdjuntos\n\n\n\u00cdcono: \nArchivo Adobe Illustrator\n\n\nTR02: Opci\u00f3n de men\u00fa de \nlanding anfitri\u00f3n\n\n\nDependencias\n: No\n\n\nCuando un usuario acceda en la secci\u00f3n de men\u00fa de \nMi cuenta\n debe existir la opci\u00f3n \nInvita a un amigo\n que tenga la direcci\u00f3n URL \nhttps://member.clubpremier.com/invita-a-un-amigo\n.\n\n\nTR03: Solicitar inicio de sesi\u00f3n en \nlanding anfitri\u00f3n\n\n\nDependencias\n: No\n\n\nCuando un usuario sin sesi\u00f3n iniciada accede a la URL \nhttps://member.clubpremier.com/invita-a-un-amigo\n se debe redireccionar a la pantalla de inicio de sesi\u00f3n, al iniciar su sesi\u00f3n correctamente se debe regresar a la p\u00e1gina solicitada originalmente respetando los parametros que puedan existir en la URL.\n\n\nTR04: Redireccionar la p\u00e1gina sin ser anfitri\u00f3n\n\n\nDependencias\n: TR03\n\n\nCuando un socio con sesi\u00f3n iniciada acceda a la URL \nhttps://member.clubpremier.com/invita-a-un-amigo\n, si ese socio no est\u00e1 registrado dentro de \ntabla_codigo_anfitrion\n ni tiene en la URL el parametro \n?incripcion=true\n, se debe redireccionar al socio a la URL \nhttps://www.clubpremier.com/mx/invita-a-un-amigo\n.\n\n\nTR05: Inscripci\u00f3n de un anfitri\u00f3n\n\n\nDependencias\n: TR04\n\n\nCuando un socio con sesi\u00f3n iniciada acceda a la URL \nhttps://member.clubpremier.com/invita-a-un-amigo?inscripcion=true\n, si el socio no es un anfitri\u00f3n se tiene que generar su c\u00f3digo \u00fanico y agregarlo a la tabla \ntabla_codigo_anfitrion\n con la fecha y su nombre (incluyendo primer letra del apellido).\n\n\nTR06: Visualizar \nlanding anfitri\u00f3n\n con m\u00f3dulo \ninvita amigo\n (maquetaci\u00f3n)\n\n\nDependencias\n: TR05\n\n\nSi es que sucede alguna de estas:\n\n\n\n\nSocio con sesi\u00f3n iniciada que accede a la URL del \nlanding anfitri\u00f3n\n y que est\u00e1 dentro de la tabla \ntabla_codigo_anfitrion\n.\n\n\nSocio que acaba de inscribirse como anfitri\u00f3n (TR05).\n\n\n\n\nEntonces el socio deber\u00e1 ver la p\u00e1gina \nlanding anfitri\u00f3n b\u00e1sico\n.\n\n\nAdjuntos\n\n\nMuestra pantalla\n\n\nMuestra m\u00f3dulo invitar amigos\n\n\nT\u00edtulo: Invita a tus amigos a que vuelen y transfieran Puntos \u00a1y ganen juntos!\n\n\nBanner\n\n\nDescripci\u00f3n:\n\n\nComienza a invitar a tus amigos.\n\nElige c\u00f3mo:\n\n\n\n\nLogos redes sociales: \nArchivo Adobe Illustrator\n \nImagen Facebook\n \nImagen Twitter\n\n\nTR08: Agregar correos v\u00e1lidos en el box de correos del m\u00f3dulo \ninvitar amigos\n\n\nDependencias\n: TR07\n\n\nCuando un usuario escriba una direcci\u00f3n de correo v\u00e1lida en el box y presione \nEnter\n o el box pierda el foco, la direcci\u00f3n de correo debe agruparse como se muestra en la figura.\n\n\nAdjuntos\n\n\nFlujo\n\n\nTR09: Agregar correos inv\u00e1lidos en el box de correos del m\u00f3dulo \ninvitar amigos\n\n\nDependencias\n: TR08\n\n\nCuando un usuario escriba una direcci\u00f3n de correo inv\u00e1lida en el box y presione \nEnter\n o el box pierda el foco, la direcci\u00f3n de correo debe agruparse como se muestra en la figura.\n\n\nAdjuntos\n\n\nFlujo\n\n\nTR10: Enviar correos de invitaci\u00f3n\n\n\nDependencias\n: TR09\n\n\nCuando todas las direcciones de correo agrupadas en el box sean v\u00e1lidas y el usuario presione el bot\u00f3n \nEnviar invitaci\u00f3n\n se debe limpiar el box y se deben enviar a dichas direcciones el correo electr\u00f3nico de invitaci\u00f3n. Este correo debe tener el nombre del anfitri\u00f3n y el link para compartir del anfitri\u00f3n.\n\n\nAdjuntos\n\n\nAsunto del correo: %%Nombreanfitri\u00f3n%%, te invit\u00f3 a ganar  15% M\u00c1S  Puntos Premier\n\n\nHTML del correo: \narchivo\n\n\nEjemplo del correo: \npsd\n\n\nTR11: Crear registro de la invitaci\u00f3n\n\n\nDependencias\n: TR10\n\n\nCuando se env\u00edan el (los) correos de invitaci\u00f3n (TR09), por cada direcci\u00f3n de correo a la que se env\u00edo exitosamente se verificar\u00e1 si en los registros de ese anfitri\u00f3n dentro de la tabla \ntabla_invitados\n existe esa direcci\u00f3n de correo, si no existe el registro se va a agregar llenando los campos de la siguiente forma:\n\n\n\n\n\n\n\n\ncta_anfitrion\n\n\ncta_invitado\n\n\nestado\n\n\nnombre\n\n\npuntos\n\n\nvalidacion\n\n\n\n\n\n\n\n\n\n\nN\u00famero de cuenta del anfitri\u00f3n\n\n\nvac\u00edo\n\n\nno_registrado\n\n\nDirecci\u00f3n de correo\n\n\nvac\u00edo\n\n\nvac\u00edo\n\n\n\n\n\n\n\n\nTR12: Mensaje de env\u00edo de correo exitoso\n\n\nDependencias\n: TR11\n\n\nCuando un usuario env\u00ede un correo en TR10, y el correo se env\u00ede exitosamente se debe mostrar un mensaje de correo enviado exitosamente.\n\n\nAdjuntos\n\n\nMensaje: Ahora, ya puedes empezar a ganar, el env\u00edo fue exitoso\n\n\nTR13: Mensaje de envio de correo fallido\n\n\nDependencias\n: TR12\n\n\nCuando un usuario env\u00ede un correo en TR10, y el correo no se pueda enviar por alguna raz\u00f3n, se debe mostrar un mensaje de error.\n\n\nAdjuntos\n\n\nMensaje por fallo al enviar: \u00a1Ups! El correo no fue enviado, int\u00e9ntalo de nuevo.\n\n\nMensaje por correos invalidos: \u00a1Ups! Hay correos no v\u00e1lidos, por favor, verifica la direcci\u00f3n de correo electr\u00f3nico.\n\n\nTR14: Visualizar y copiar el link del anfitri\u00f3n\n\n\nDependencias\n: TR07\n\n\nCuando un anfitri\u00f3n visualiza el m\u00f3dulo de \ninvitar amigos\n (TR07) debe poder ver su link \u00fanico de anfitri\u00f3n, este debe ser la URL \nhttps://member.clubpremier.com/invitacion/\n + \ncodigo del anfitri\u00f3n\n, al presionar el bot\u00f3n \nCopiar\n debe copiarse al portapapeles.\n\n\nAdjuntos\n\n\nPantalla ejemplo\n\n\nTR15: Compartir en redes sociales el link del anfitri\u00f3n\n\n\nDependencias:\n TR14\n\n\nCuando un usuario visualiza el m\u00f3dulo de \ninvitar amigos\n TR07, al presionar los botones de facebook o twitter deber\u00e1 poder compartir su link de anfitri\u00f3n en dichas redes sociales.\n\n\nAdjuntos\n\n\nTags para facebook:\n\n\n<meta property=\"og:title\" content=\"Inscr&iacute;bete sin costo a Club Premier\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta property=\"og:image\" content=\"https://s3.amazonaws.com/club_premier/invita/invitacion.jpg\"/>\n<meta property=\"og:image:width\" content=\"1200\"/>\n<meta property=\"og:image:height\" content=\"600\"/>\n<meta property=\"og:site_name\" content=\"Club Premier\"/>\n<meta property=\"og:description\" content=\"Ganemos juntos m&aacute;s Puntos Premier, empieza aqu&iacute;.\"/>\n\n\n\n\nTags para twitter:\n\n\n<meta name=\"twitter:card\" content=\"summary_large_image\"/>\n<meta name=\"twitter:title\" content=\"Inscribete sin costo a Club Premier\"/>\n<meta name=\"twitter:description\" content=\"Te invito a ganar conmigo m&aacute;s Puntos Premier, mira como %%Link del anfitrion%%\"/>\n<meta name=\"twitter:image\" content=\"https://s3.amazonaws.com/club_premier/invita/invitacion.jpg\"/>\n<meta itemprop=\"image\" content=\"https://s3.amazonaws.com/club_premier/invita/invitacion.jpg\"/>\n\n\n\n\nTR16: Visualizar invitaciones enviadas por correo\n\n\nDependencias:\n TR11\n\n\nCuando un anfitri\u00f3n accede al \nlanding anfitri\u00f3n\n y env\u00eda correos de invitaci\u00f3n (TR09), por cada direcci\u00f3n de correo que se envi\u00f3 correctamente si no existe este registro en el \nmonitor de invitados\n este registro se debe agregar. (Esto se refiere a que cuando se manden invitaciones el anfitri\u00f3n pueda ver que las invitaciones nuevas se agregan al m\u00f3dulo inmediatamente sin tener que recargar la p\u00e1gina o hacer alguna acci\u00f3n.)\n\n\nTR17: Visualizar el m\u00f3dulo de \nmonitor de invitados\n\n\nDependencias:\n TR11\n\n\nCuando un anfitri\u00f3n accede al \nlanding anfitri\u00f3n\n y existen registros en la tabla \ntabla_invitados\n asociados con \u00e9l, el socio debe visualizar el m\u00f3dulo de \nmonitor de invitados\n con dichos registros. En caso que no existan registros el m\u00f3dulo no debe mostrarse.\n\n\n\u00cdcono: \nArchivo Adobe Illustrator\n\n\nTR18: Reenviar una invitaci\u00f3n\n\n\nDependencias:\n TR17\n\n\nCuando un socio visualiza el m\u00f3dulo de \nmonitor de invitados\n y presiona el bot\u00f3n \nReenviar\n de una invitaci\u00f3n no registrada, se debe enviar el correo de invitaci\u00f3n a esa direcci\u00f3n de correo.\n\n\nTR19: Ordenar por columnas el m\u00f3dulo de \nmonitor de invitados\n\n\nDependencias:\n TR17\n\n\nCuando un usuario de click en la cabecera de alguna columna de la tabla del m\u00f3dulo de \nmonitor de invitados\n los registros de la tabla deben ordenarse alfab\u00e9ticamente respecto a esa columna, si se da click nuevamente se debe cambiar la direcci\u00f3n del ordenamiento.\n\n\nTR20: Leer archivo batch con puntos y actualizar \ntabla_invitados\n\n\nDependencias:\n TR05\n\n\nDebe existir un sistema que a una hora especifica del d\u00eda lea el archivo llamado \nregistro_puntos_invita_a_un_amigo_\n+fecha\n, por cada registro debe buscar el registro en la tabla \ntabla_invitados\n que coincide con el n\u00famero de cuenta de anfitri\u00f3n y de invitado y sumar los puntos.",
+            "title": "Req Anfitri\u00f3n"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#requerimientos-de-interfaces",
+            "text": "",
+            "title": "Requerimientos de interfaces"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#ria0-pantalla-de-informacion-de-la-promocion-en-cms",
+            "text": "Pantalla que reside en el CMS donde se mostrar\u00e1 la informaci\u00f3n general de la promoci\u00f3n. Esta pantalla no ser\u00e1 desarrollada por Vinco pero es parte del flujo.",
+            "title": "RIA0: Pantalla de informaci\u00f3n de la promoci\u00f3n en CMS"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#ria1-pantalla-de-anfitrion-basica",
+            "text": "Pantalla que ver\u00e1n los anfitriones donde pueden enviar invitaciones.",
+            "title": "RIA1: Pantalla de anfitri\u00f3n b\u00e1sica"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#ria2-pantalla-de-anfitrion-con-modulo-de-monitor-de-invitados",
+            "text": "Pantalla que ver\u00e1n los anfitriones despu\u00e9s de que env\u00edan invitaciones o alguien ha aceptado su invitaci\u00f3n.",
+            "title": "RIA2: Pantalla de anfitri\u00f3n con m\u00f3dulo de monitor de invitados"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#ria3-modulo-de-invitar-amigos",
+            "text": "Este m\u00f3dulo se podr\u00e1 ver siempre en el  landing anfitri\u00f3n , con \u00e9l se podr\u00e1n enviar invitaciones por correo electr\u00f3nico y compartir el link \u00fanico del anfitrion.",
+            "title": "RIA3: M\u00f3dulo de invitar amigos"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#ria4-modulo-de-monitor-de-invitaciones",
+            "text": "Este m\u00f3dulo se muestra cuando existen invitaciones para dicho anfitri\u00f3n, ya sean invitaciones que ya se han registrado o invitaciones que no se han registrado.    Logo de reenvio de correo:  Logo habilitado   Logo deshabilitado",
+            "title": "RIA4: M\u00f3dulo de monitor de invitaciones"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#requerimientos-funcionales",
+            "text": "En esta secci\u00f3n se enlistan los requerimientos solicitados para el proyecto. Se indica un id por cada uno y las dependencias entre s\u00ed.",
+            "title": "Requerimientos funcionales"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr01-opcion-de-menu-de-cms",
+            "text": "Dependencias : No  Cuando un usuario acceda en la secci\u00f3n de men\u00fa de  Promociones  debe existir la opci\u00f3n  Invita a un amigo  que tenga la direcci\u00f3n URL  https://www.clubpremier.com/mx/invita-a-un-amigo  y el \u00edcono adjunto.",
+            "title": "TR01: Opci\u00f3n de men\u00fa de CMS"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#adjuntos",
+            "text": "\u00cdcono:  Archivo Adobe Illustrator",
+            "title": "Adjuntos"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr02-opcion-de-menu-de-landing-anfitrion",
+            "text": "Dependencias : No  Cuando un usuario acceda en la secci\u00f3n de men\u00fa de  Mi cuenta  debe existir la opci\u00f3n  Invita a un amigo  que tenga la direcci\u00f3n URL  https://member.clubpremier.com/invita-a-un-amigo .",
+            "title": "TR02: Opci\u00f3n de men\u00fa de landing anfitri\u00f3n"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr03-solicitar-inicio-de-sesion-en-landing-anfitrion",
+            "text": "Dependencias : No  Cuando un usuario sin sesi\u00f3n iniciada accede a la URL  https://member.clubpremier.com/invita-a-un-amigo  se debe redireccionar a la pantalla de inicio de sesi\u00f3n, al iniciar su sesi\u00f3n correctamente se debe regresar a la p\u00e1gina solicitada originalmente respetando los parametros que puedan existir en la URL.",
+            "title": "TR03: Solicitar inicio de sesi\u00f3n en landing anfitri\u00f3n"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr04-redireccionar-la-pagina-sin-ser-anfitrion",
+            "text": "Dependencias : TR03  Cuando un socio con sesi\u00f3n iniciada acceda a la URL  https://member.clubpremier.com/invita-a-un-amigo , si ese socio no est\u00e1 registrado dentro de  tabla_codigo_anfitrion  ni tiene en la URL el parametro  ?incripcion=true , se debe redireccionar al socio a la URL  https://www.clubpremier.com/mx/invita-a-un-amigo .",
+            "title": "TR04: Redireccionar la p\u00e1gina sin ser anfitri\u00f3n"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr05-inscripcion-de-un-anfitrion",
+            "text": "Dependencias : TR04  Cuando un socio con sesi\u00f3n iniciada acceda a la URL  https://member.clubpremier.com/invita-a-un-amigo?inscripcion=true , si el socio no es un anfitri\u00f3n se tiene que generar su c\u00f3digo \u00fanico y agregarlo a la tabla  tabla_codigo_anfitrion  con la fecha y su nombre (incluyendo primer letra del apellido).",
+            "title": "TR05: Inscripci\u00f3n de un anfitri\u00f3n"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr06-visualizar-landing-anfitrion-con-modulo-invita-amigo-maquetacion",
+            "text": "Dependencias : TR05  Si es que sucede alguna de estas:   Socio con sesi\u00f3n iniciada que accede a la URL del  landing anfitri\u00f3n  y que est\u00e1 dentro de la tabla  tabla_codigo_anfitrion .  Socio que acaba de inscribirse como anfitri\u00f3n (TR05).   Entonces el socio deber\u00e1 ver la p\u00e1gina  landing anfitri\u00f3n b\u00e1sico .",
+            "title": "TR06: Visualizar landing anfitri\u00f3n con m\u00f3dulo invita amigo (maquetaci\u00f3n)"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#adjuntos_1",
+            "text": "Muestra pantalla  Muestra m\u00f3dulo invitar amigos  T\u00edtulo: Invita a tus amigos a que vuelen y transfieran Puntos \u00a1y ganen juntos!  Banner  Descripci\u00f3n:  Comienza a invitar a tus amigos.\n\nElige c\u00f3mo:  Logos redes sociales:  Archivo Adobe Illustrator   Imagen Facebook   Imagen Twitter",
+            "title": "Adjuntos"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr08-agregar-correos-validos-en-el-box-de-correos-del-modulo-invitar-amigos",
+            "text": "Dependencias : TR07  Cuando un usuario escriba una direcci\u00f3n de correo v\u00e1lida en el box y presione  Enter  o el box pierda el foco, la direcci\u00f3n de correo debe agruparse como se muestra en la figura.",
+            "title": "TR08: Agregar correos v\u00e1lidos en el box de correos del m\u00f3dulo invitar amigos"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#adjuntos_2",
+            "text": "Flujo",
+            "title": "Adjuntos"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr09-agregar-correos-invalidos-en-el-box-de-correos-del-modulo-invitar-amigos",
+            "text": "Dependencias : TR08  Cuando un usuario escriba una direcci\u00f3n de correo inv\u00e1lida en el box y presione  Enter  o el box pierda el foco, la direcci\u00f3n de correo debe agruparse como se muestra en la figura.",
+            "title": "TR09: Agregar correos inv\u00e1lidos en el box de correos del m\u00f3dulo invitar amigos"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#adjuntos_3",
+            "text": "Flujo",
+            "title": "Adjuntos"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr10-enviar-correos-de-invitacion",
+            "text": "Dependencias : TR09  Cuando todas las direcciones de correo agrupadas en el box sean v\u00e1lidas y el usuario presione el bot\u00f3n  Enviar invitaci\u00f3n  se debe limpiar el box y se deben enviar a dichas direcciones el correo electr\u00f3nico de invitaci\u00f3n. Este correo debe tener el nombre del anfitri\u00f3n y el link para compartir del anfitri\u00f3n.",
+            "title": "TR10: Enviar correos de invitaci\u00f3n"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#adjuntos_4",
+            "text": "Asunto del correo: %%Nombreanfitri\u00f3n%%, te invit\u00f3 a ganar  15% M\u00c1S  Puntos Premier  HTML del correo:  archivo  Ejemplo del correo:  psd",
+            "title": "Adjuntos"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr11-crear-registro-de-la-invitacion",
+            "text": "Dependencias : TR10  Cuando se env\u00edan el (los) correos de invitaci\u00f3n (TR09), por cada direcci\u00f3n de correo a la que se env\u00edo exitosamente se verificar\u00e1 si en los registros de ese anfitri\u00f3n dentro de la tabla  tabla_invitados  existe esa direcci\u00f3n de correo, si no existe el registro se va a agregar llenando los campos de la siguiente forma:     cta_anfitrion  cta_invitado  estado  nombre  puntos  validacion      N\u00famero de cuenta del anfitri\u00f3n  vac\u00edo  no_registrado  Direcci\u00f3n de correo  vac\u00edo  vac\u00edo",
+            "title": "TR11: Crear registro de la invitaci\u00f3n"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr12-mensaje-de-envio-de-correo-exitoso",
+            "text": "Dependencias : TR11  Cuando un usuario env\u00ede un correo en TR10, y el correo se env\u00ede exitosamente se debe mostrar un mensaje de correo enviado exitosamente.",
+            "title": "TR12: Mensaje de env\u00edo de correo exitoso"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#adjuntos_5",
+            "text": "Mensaje: Ahora, ya puedes empezar a ganar, el env\u00edo fue exitoso",
+            "title": "Adjuntos"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr13-mensaje-de-envio-de-correo-fallido",
+            "text": "Dependencias : TR12  Cuando un usuario env\u00ede un correo en TR10, y el correo no se pueda enviar por alguna raz\u00f3n, se debe mostrar un mensaje de error.",
+            "title": "TR13: Mensaje de envio de correo fallido"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#adjuntos_6",
+            "text": "Mensaje por fallo al enviar: \u00a1Ups! El correo no fue enviado, int\u00e9ntalo de nuevo.  Mensaje por correos invalidos: \u00a1Ups! Hay correos no v\u00e1lidos, por favor, verifica la direcci\u00f3n de correo electr\u00f3nico.",
+            "title": "Adjuntos"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr14-visualizar-y-copiar-el-link-del-anfitrion",
+            "text": "Dependencias : TR07  Cuando un anfitri\u00f3n visualiza el m\u00f3dulo de  invitar amigos  (TR07) debe poder ver su link \u00fanico de anfitri\u00f3n, este debe ser la URL  https://member.clubpremier.com/invitacion/  +  codigo del anfitri\u00f3n , al presionar el bot\u00f3n  Copiar  debe copiarse al portapapeles.",
+            "title": "TR14: Visualizar y copiar el link del anfitri\u00f3n"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#adjuntos_7",
+            "text": "Pantalla ejemplo",
+            "title": "Adjuntos"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr15-compartir-en-redes-sociales-el-link-del-anfitrion",
+            "text": "Dependencias:  TR14  Cuando un usuario visualiza el m\u00f3dulo de  invitar amigos  TR07, al presionar los botones de facebook o twitter deber\u00e1 poder compartir su link de anfitri\u00f3n en dichas redes sociales.",
+            "title": "TR15: Compartir en redes sociales el link del anfitri\u00f3n"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#adjuntos_8",
+            "text": "Tags para facebook:  <meta property=\"og:title\" content=\"Inscr&iacute;bete sin costo a Club Premier\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta property=\"og:image\" content=\"https://s3.amazonaws.com/club_premier/invita/invitacion.jpg\"/>\n<meta property=\"og:image:width\" content=\"1200\"/>\n<meta property=\"og:image:height\" content=\"600\"/>\n<meta property=\"og:site_name\" content=\"Club Premier\"/>\n<meta property=\"og:description\" content=\"Ganemos juntos m&aacute;s Puntos Premier, empieza aqu&iacute;.\"/>  Tags para twitter:  <meta name=\"twitter:card\" content=\"summary_large_image\"/>\n<meta name=\"twitter:title\" content=\"Inscribete sin costo a Club Premier\"/>\n<meta name=\"twitter:description\" content=\"Te invito a ganar conmigo m&aacute;s Puntos Premier, mira como %%Link del anfitrion%%\"/>\n<meta name=\"twitter:image\" content=\"https://s3.amazonaws.com/club_premier/invita/invitacion.jpg\"/>\n<meta itemprop=\"image\" content=\"https://s3.amazonaws.com/club_premier/invita/invitacion.jpg\"/>",
+            "title": "Adjuntos"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr16-visualizar-invitaciones-enviadas-por-correo",
+            "text": "Dependencias:  TR11  Cuando un anfitri\u00f3n accede al  landing anfitri\u00f3n  y env\u00eda correos de invitaci\u00f3n (TR09), por cada direcci\u00f3n de correo que se envi\u00f3 correctamente si no existe este registro en el  monitor de invitados  este registro se debe agregar. (Esto se refiere a que cuando se manden invitaciones el anfitri\u00f3n pueda ver que las invitaciones nuevas se agregan al m\u00f3dulo inmediatamente sin tener que recargar la p\u00e1gina o hacer alguna acci\u00f3n.)",
+            "title": "TR16: Visualizar invitaciones enviadas por correo"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr17-visualizar-el-modulo-de-monitor-de-invitados",
+            "text": "Dependencias:  TR11  Cuando un anfitri\u00f3n accede al  landing anfitri\u00f3n  y existen registros en la tabla  tabla_invitados  asociados con \u00e9l, el socio debe visualizar el m\u00f3dulo de  monitor de invitados  con dichos registros. En caso que no existan registros el m\u00f3dulo no debe mostrarse.  \u00cdcono:  Archivo Adobe Illustrator",
+            "title": "TR17: Visualizar el m\u00f3dulo de monitor de invitados"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr18-reenviar-una-invitacion",
+            "text": "Dependencias:  TR17  Cuando un socio visualiza el m\u00f3dulo de  monitor de invitados  y presiona el bot\u00f3n  Reenviar  de una invitaci\u00f3n no registrada, se debe enviar el correo de invitaci\u00f3n a esa direcci\u00f3n de correo.",
+            "title": "TR18: Reenviar una invitaci\u00f3n"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr19-ordenar-por-columnas-el-modulo-de-monitor-de-invitados",
+            "text": "Dependencias:  TR17  Cuando un usuario de click en la cabecera de alguna columna de la tabla del m\u00f3dulo de  monitor de invitados  los registros de la tabla deben ordenarse alfab\u00e9ticamente respecto a esa columna, si se da click nuevamente se debe cambiar la direcci\u00f3n del ordenamiento.",
+            "title": "TR19: Ordenar por columnas el m\u00f3dulo de monitor de invitados"
+        },
+        {
+            "location": "/requerimientos_anfitrion/#tr20-leer-archivo-batch-con-puntos-y-actualizar-tabla_invitados",
+            "text": "Dependencias:  TR05  Debe existir un sistema que a una hora especifica del d\u00eda lea el archivo llamado  registro_puntos_invita_a_un_amigo_ +fecha , por cada registro debe buscar el registro en la tabla  tabla_invitados  que coincide con el n\u00famero de cuenta de anfitri\u00f3n y de invitado y sumar los puntos.",
+            "title": "TR20: Leer archivo batch con puntos y actualizar tabla_invitados"
+        },
+        {
+            "location": "/requerimientos_invitado/",
+            "text": "Requerimientos de interfaces\n\n\nRII1: Pantalla para solicitar el inicio de sesi\u00f3n o inscripci\u00f3n\n\n\nPantalla que se muestra cuando no existe una sesi\u00f3n iniciada, se dan opciones para iniciar sesi\u00f3n o para inscribirse.\n\n\n\n\n\n\n\n\n\n\nId\n\n\nElemento\n\n\nContenido\n\n\n\n\n\n\n\n\n\n\n1\n\n\nT\u00edtulo\n\n\n%%Nombre de anfitri\u00f3n%% te ha invitado a ganar m\u00e1s Puntos Premier\n\n\n\n\n\n\n2\n\n\nBanner\n\n\nLink\n\n\n\n\n\n\n3\n\n\nDescripci\u00f3n 1\n\n\nAcepta la invitaci\u00f3n y gana 15% m\u00e1s Puntos Premier por transferir tus puntos de otras empresas afiliadas a Club Premier y/o por acumular tus vuelos con Aerom\u00e9xico.\n\n\n\n\n\n\n4\n\n\nDescripci\u00f3n 2\n\n\nInicia sesi\u00f3n o inscr\u00edbete a Club Premier para empezar a ganar.\n\n\n\n\n\n\n\n\nRIIB1: Modal para aceptar t\u00e9rminos y condiciones\n\n\nModal que se muestra para que el socio acepte los t\u00e9rminos y condicones para ser invitado.\n\n\n\n\nRII2: Pantalla de espera mientras se hace el c\u00e1lculo de la pre-validaci\u00f3n\n\n\nCuando se accede al \nlanding invitado\n con una sesi\u00f3n iniciada esta es la pantalla que se muestra mientras se realiza la pre-validaci\u00f3n.\n\n\n\n\n\n\n\n\n\n\nId\n\n\nElemento\n\n\nContenido\n\n\n\n\n\n\n\n\n\n\n-\n\n\nLogo superior\n\n\nPendiente\n\n\n\n\n\n\n-\n\n\nTexto\n\n\nEspera un momento, estamos validando tus datos.\n\n\n\n\n\n\n-\n\n\nLogo carga\n\n\nPendiente\n\n\n\n\n\n\n\n\nRII3: Mensaje de error\n\n\nCuando sucede alg\u00fan error por las validaciones o la pre-validaci\u00f3n, se muestra un modal con un mensaje de error.\n\n\n\n\nRII4: Pantalla de inscripci\u00f3n con el campo de anfitri\u00f3n\n\n\nEsta es la nueva pantalla de inscripci\u00f3n, se va a agregar el campo \nAnfitri\u00f3n\n, con validaci\u00f3n igual que para un n\u00famero de cuenta pero no obligatorio.\n\n\n\n\nRII5: Pantalla de pre-validaci\u00f3n todo\n\n\nPantalla donde se muestra con cuales partners el socio participa, este ejemplo de pantalla es para cuando participa en vuelos y transferencias.\n\n\n\n\n\n\n\n\n\n\nId\n\n\nElemento\n\n\nContenido\n\n\n\n\n\n\n\n\n\n\n1\n\n\nT\u00edtulo\n\n\nTe decimos c\u00f3mo puedes ganar m\u00e1s Puntos Premier\n\n\n\n\n\n\n2\n\n\nBanner\n\n\nPendiente\n\n\n\n\n\n\n3\n\n\nTexto 1\n\n\nGana 15% m\u00e1s Puntos Premier  al transferir tus  puntos  de otras empresas  afiliadas a Club Premier, as\u00ed como por la acumulaci\u00f3n de tus vuelos con Aerom\u00e9xico.\n\n\n\n\n\n\n4\n\n\nTexto 2\n\n\nGana m\u00e1s Puntos Premier con:\n\n\n\n\n\n\n5\n\n\nLogo Vuelos\n\n\nLink\n\n\n\n\n\n\n5\n\n\nLogo Transferencias\n\n\nLink\n\n\n\n\n\n\n5\n\n\nTexto vuelos\n\n\nSi vuelas o volaste con Aerom\u00e9xico, tienes un periodo de 90 d\u00edas* a partir de tu registro para  ganar 15% m\u00e1s Puntos Premier. *Recuerda que puedes registrar tus vuelos realizados de seis meses atr\u00e1s a la fecha.\n\n\n\n\n\n\n5\n\n\nTexto transferencias\n\n\nGana 15% mas Puntos Premier por tu primer transferencia de puntos.\n\n\n\n\n\n\n5\n\n\nLinks Logos partners hoteles\n\n\nPC\n, \nHX\n, \nHI\n, \nBH\n, \nSTW\n, \nHY\n, \nHJ\n, \nHW\n, \nWH\n, \nBW\n, \nCHI\n, \nLQ\n, \nCS\n, \nACC\n\n\n\n\n\n\n5\n\n\nLinks Logos partners bancos\n\n\nMRM\n, \nBVA\n, \nHMX\n, \nSFI\n, \nSS\n, \nGFM\n, \nSE\n, \nSBI\n\n\n\n\n\n\n5\n\n\nLinks Logos partners retail\n\n\nPH\n, \nSBS\n\n\n\n\n\n\n5\n\n\nLogo Aerom\u00e9xico\n\n\nLink\n\n\n\n\n\n\n6\n\n\nTexto bot\u00f3n\n\n\nEmpieza a invitar y gana m\u00e1s Puntos Premier con tus amigos\n\n\n\n\n\n\n\n\nRII5: Pantalla de pre-validaci\u00f3n solo transferencias\n\n\nPantalla donde se muestra con cuales partners el socio participa, este ejemplo de pantalla es para cuando participa solo en transferencias.\n\n\n\n\nRequerimientos funcionales\n\n\nTRI01: Guardar cookie con informaci\u00f3n del anfitri\u00f3n\n\n\nDependendcias\n: No\n\n\nCuando un usuario utilice el link de un anfitri\u00f3n el navegador debe guardar la informaci\u00f3n del anfitri\u00f3n en una cookie que tenga expiraci\u00f3n de dos d\u00edas. A esta cookie se le llamar\u00e1 \ncookie anfitri\u00f3n\n\n\nTRI02: Mostrar landing invitado sin sesi\u00f3n iniciada\n\n\nDependencias\n: No\n\n\nCuando un usuario utilice el link de un anfitri\u00f3n y no tenga una sesi\u00f3n iniciada, el usuario debe ver la pantalla \nRII1\n, en el t\u00edtulo debe aparecer el nombre del anfitri\u00f3n.\n\n\nTRI03: Iniciar sesi\u00f3n en landing invitado\n\n\nDependencias\n: TRI02\n\n\nCuando un usuario acceda al landing invitado sin sesi\u00f3n iniciada y de click en el bot\u00f3n de \nIniciar sesi\u00f3n\n se debe redirigir al inicio de sesi\u00f3n y regresar una vez haya iniciado sesi\u00f3n correctamente.\n\n\nTRI04: Primer validaci\u00f3n al acceder al landing invitado\n\n\nDependencias\n: No\n\n\nCuando un socio acceda al \nlanding invitado\n con sesi\u00f3n iniciada el sistema verificar\u00e1 si el socio ya es invitado de alguien, en caso positivo se mostrar\u00e1 la pantalla de error \nRII3\n, con el mensaje descrito abajo. En caso negativo se proceder\u00e1 a la segunda verificaci\u00f3n TRI05.\n\n\nAdjuntos\n\n\n\n\nMensaje: Ya eres invitado de alguien, no puedes volver a ser invitado. \nNo final\n\n\n\n\nTRI05: Segunda validaci\u00f3n al acceder al landing invitado\n\n\nDependencias\n: TRI04\n\n\nEl sistema valida que el anfitri\u00f3n que invit\u00f3 al socio no sea un invitado directo del socio. Si existe la relaci\u00f3n se mostrar\u00e1 la pantalla de error \nRII3\n, con el mensaje descrito abajo. En caso que no exista la relaci\u00f3n se proceder\u00e1 a TRI06.\n\n\nAdjuntos\n\n\n\n\nMensaje: No puedes ser invitado de un invitado tuyo. \nNo final\n\n\n\n\nTRIB01: Mostrar modal para aceptar t\u00e9rminos y condiciones\n\n\nCuando un usuario pase las validaciones TRI05 y TRI05 deber\u00e1 ver la pantalla con el modal como se muestra en \nRIIB1\n. El texto de los t\u00e9rminos y condiciones deber\u00e1 ser el que est\u00e1 guardado en backoffice con el c\u00f3digo \nInvitaAUnAmigo\n en espa\u00f1ol.\n\n\nTRI06: Mostrar spinner\n\n\nDependencias\n: TRI05\n\n\nCuando un usuario acepte los t\u00e9rminos y condiciones en TRIB01 deber\u00e1 ver la pantalla con el spinner como se muestra en \nRII2\n.\n\n\nTRI07: Hacer el c\u00e1lculo de la pre-validaci\u00f3n\n\n\nDependencias\n: TRI06\n\n\nCuando un usuario acepte los t\u00e9rminos y condiciones en TRIB01, el sistema deber\u00e1 realizar la pre-validaci\u00f3n utilizando el webservice \nGetLastNTransaction2\n, deber\u00e1 guardar esta informaci\u00f3n en un objeto donde se tengan los c\u00f3digos de los partners con los que el socio participa.\n\n\nAdjuntos\n\n\nPara m\u00e1s informaci\u00f3n ver \nC\u00e1lculo de pre-validaci\u00f3n\n y \nGetLastNTransactions2 Spec\n\n\nEjemplo de objeto con partners de la validaci\u00f3n\n\n\n{AM, PC, WH, BW, CHI, LQ, CS, ACC, MRM, BVA, HMX, GFM, SE, SBI, PH, SBS}\n\n\nTRI08: Mostrar error al hacer c\u00e1lculo de pre-validaci\u00f3n\n\n\nDependencias\n: TRI07\n\n\nCuando el c\u00e1lculo de pre-validaci\u00f3n falla por alguna raz\u00f3n, el socio debe ver una pantalla de error \nRII3\n, con el mensaje descrito abajo.\n\n\nAdjuntos\n\n\n\n\nMensaje (\nno final\n): Hubo un error a la hora de inscribirte. Favor de intentar m\u00e1s tarde.\n\n\n\n\nTRI09: Agregar el registro del invitado que es socio existente\n\n\nDependencias\n: TRI07\n\n\nCuando el c\u00e1lculo de pre-validaci\u00f3n funciona correctamente el sistema debe agregar el registro del invitado a la tabla \ntabla_invitados\n. Si para el anfitri\u00f3n ya existe un registro dentro de la tabla que tenga el mismo correo que el correo del invitado, el registro debe actualizarse, en caso de que no exista se debe agregar el registro con los siguientes datos.\n\n\n\n\n\n\n\n\ncta_anfitrion\n\n\ncta_invitado\n\n\nestado\n\n\nnombre\n\n\npuntos\n\n\nvalidacion\n\n\nfecha\n\n\n\n\n\n\n\n\n\n\nN\u00famero de cuenta del anfitri\u00f3n a 11 caracteres\n\n\nN\u00famero de cuenta del invitado a 11 caracteres\n\n\nregistrado\n\n\nel primer nombre y primer letra del apellido (Mauro M.)\n\n\n0\n\n\nEl objeto calculado en la pre-validaci\u00f3n\n\n\nFecha de inscripci\u00f3n\n\n\n\n\n\n\n\n\nTRI10: Inscribir invitado, socio existente\n\n\nDependencias\n: TRI07\n\n\nDespu\u00e9s de que el sistema realice el c\u00e1lculo de pre-validaci\u00f3n de forma correcta, el sistema debe agregar al socio a dos campa\u00f1as, la \nBF17D\n y la \nBF17E\n, adem\u00e1s agregar en la preferencia n\u00famero \n863\n, con el c\u00f3digo \nINVTED\n el n\u00famero de cuenta del anfitri\u00f3n.\n\n\nAdjuntos\n\n\n\n\n\n\nNombres de campa\u00f1as: \nBF17D\n y \nBF17E\n\n\n\n\n\n\nEjemplo de inscripci\u00f3n a las dos campa\u00f1as: \nRequest\n \nResponse\n\n\n\n\n\n\nEjemplo para agregar la preferencia: \nPendiente\n\n\n\n\n\n\nTRI11: Mostrar pantalla de las transacciones que puede hacer el invitado\n\n\nDespu\u00e9s de que el sistema realice el c\u00e1lculo de pre-validaci\u00f3n de forma correcta, el sistema debe mostrar la pantalla \nRII5\n, cada partner que est\u00e1 validado dentro de la \ntabla_invitados\n para este socio debe verse en esta pantalla, los que no existen deben ocultarse. Si no existe AM todo el m\u00f3dulo de vuelos debe ocultarse, para las transferencias deber\u00e1 ocultarse el logo del partner que no est\u00e9 en la validaci\u00f3n.\n\n\nAdjuntos\n\n\nInformaci\u00f3n de la pre-validaci\u00f3n, partners, logos, c\u00f3digos, webservice\n\n\nPantalla con todas las transacciones\n\n\nPantalla solo con transferencias\n\n\nTRI12: Inscribirse en landing invitado\n\n\nCuando un usuario acceda al landing invitado sin sesi\u00f3n iniciada y de click en el bot\u00f3n de \nInscribirse\n se debe redirigir a la p\u00e1gina de inscripci\u00f3n de Club Premier.",
+            "title": "Req Invitado"
+        },
+        {
+            "location": "/requerimientos_invitado/#requerimientos-de-interfaces",
+            "text": "",
+            "title": "Requerimientos de interfaces"
+        },
+        {
+            "location": "/requerimientos_invitado/#rii1-pantalla-para-solicitar-el-inicio-de-sesion-o-inscripcion",
+            "text": "Pantalla que se muestra cuando no existe una sesi\u00f3n iniciada, se dan opciones para iniciar sesi\u00f3n o para inscribirse.      Id  Elemento  Contenido      1  T\u00edtulo  %%Nombre de anfitri\u00f3n%% te ha invitado a ganar m\u00e1s Puntos Premier    2  Banner  Link    3  Descripci\u00f3n 1  Acepta la invitaci\u00f3n y gana 15% m\u00e1s Puntos Premier por transferir tus puntos de otras empresas afiliadas a Club Premier y/o por acumular tus vuelos con Aerom\u00e9xico.    4  Descripci\u00f3n 2  Inicia sesi\u00f3n o inscr\u00edbete a Club Premier para empezar a ganar.",
+            "title": "RII1: Pantalla para solicitar el inicio de sesi\u00f3n o inscripci\u00f3n"
+        },
+        {
+            "location": "/requerimientos_invitado/#riib1-modal-para-aceptar-terminos-y-condiciones",
+            "text": "Modal que se muestra para que el socio acepte los t\u00e9rminos y condicones para ser invitado.",
+            "title": "RIIB1: Modal para aceptar t\u00e9rminos y condiciones"
+        },
+        {
+            "location": "/requerimientos_invitado/#rii2-pantalla-de-espera-mientras-se-hace-el-calculo-de-la-pre-validacion",
+            "text": "Cuando se accede al  landing invitado  con una sesi\u00f3n iniciada esta es la pantalla que se muestra mientras se realiza la pre-validaci\u00f3n.      Id  Elemento  Contenido      -  Logo superior  Pendiente    -  Texto  Espera un momento, estamos validando tus datos.    -  Logo carga  Pendiente",
+            "title": "RII2: Pantalla de espera mientras se hace el c\u00e1lculo de la pre-validaci\u00f3n"
+        },
+        {
+            "location": "/requerimientos_invitado/#rii3-mensaje-de-error",
+            "text": "Cuando sucede alg\u00fan error por las validaciones o la pre-validaci\u00f3n, se muestra un modal con un mensaje de error.",
+            "title": "RII3: Mensaje de error"
+        },
+        {
+            "location": "/requerimientos_invitado/#rii4-pantalla-de-inscripcion-con-el-campo-de-anfitrion",
+            "text": "Esta es la nueva pantalla de inscripci\u00f3n, se va a agregar el campo  Anfitri\u00f3n , con validaci\u00f3n igual que para un n\u00famero de cuenta pero no obligatorio.",
+            "title": "RII4: Pantalla de inscripci\u00f3n con el campo de anfitri\u00f3n"
+        },
+        {
+            "location": "/requerimientos_invitado/#rii5-pantalla-de-pre-validacion-todo",
+            "text": "Pantalla donde se muestra con cuales partners el socio participa, este ejemplo de pantalla es para cuando participa en vuelos y transferencias.      Id  Elemento  Contenido      1  T\u00edtulo  Te decimos c\u00f3mo puedes ganar m\u00e1s Puntos Premier    2  Banner  Pendiente    3  Texto 1  Gana 15% m\u00e1s Puntos Premier  al transferir tus  puntos  de otras empresas  afiliadas a Club Premier, as\u00ed como por la acumulaci\u00f3n de tus vuelos con Aerom\u00e9xico.    4  Texto 2  Gana m\u00e1s Puntos Premier con:    5  Logo Vuelos  Link    5  Logo Transferencias  Link    5  Texto vuelos  Si vuelas o volaste con Aerom\u00e9xico, tienes un periodo de 90 d\u00edas* a partir de tu registro para  ganar 15% m\u00e1s Puntos Premier. *Recuerda que puedes registrar tus vuelos realizados de seis meses atr\u00e1s a la fecha.    5  Texto transferencias  Gana 15% mas Puntos Premier por tu primer transferencia de puntos.    5  Links Logos partners hoteles  PC ,  HX ,  HI ,  BH ,  STW ,  HY ,  HJ ,  HW ,  WH ,  BW ,  CHI ,  LQ ,  CS ,  ACC    5  Links Logos partners bancos  MRM ,  BVA ,  HMX ,  SFI ,  SS ,  GFM ,  SE ,  SBI    5  Links Logos partners retail  PH ,  SBS    5  Logo Aerom\u00e9xico  Link    6  Texto bot\u00f3n  Empieza a invitar y gana m\u00e1s Puntos Premier con tus amigos",
+            "title": "RII5: Pantalla de pre-validaci\u00f3n todo"
+        },
+        {
+            "location": "/requerimientos_invitado/#rii5-pantalla-de-pre-validacion-solo-transferencias",
+            "text": "Pantalla donde se muestra con cuales partners el socio participa, este ejemplo de pantalla es para cuando participa solo en transferencias.",
+            "title": "RII5: Pantalla de pre-validaci\u00f3n solo transferencias"
+        },
+        {
+            "location": "/requerimientos_invitado/#requerimientos-funcionales",
+            "text": "",
+            "title": "Requerimientos funcionales"
+        },
+        {
+            "location": "/requerimientos_invitado/#tri01-guardar-cookie-con-informacion-del-anfitrion",
+            "text": "Dependendcias : No  Cuando un usuario utilice el link de un anfitri\u00f3n el navegador debe guardar la informaci\u00f3n del anfitri\u00f3n en una cookie que tenga expiraci\u00f3n de dos d\u00edas. A esta cookie se le llamar\u00e1  cookie anfitri\u00f3n",
+            "title": "TRI01: Guardar cookie con informaci\u00f3n del anfitri\u00f3n"
+        },
+        {
+            "location": "/requerimientos_invitado/#tri02-mostrar-landing-invitado-sin-sesion-iniciada",
+            "text": "Dependencias : No  Cuando un usuario utilice el link de un anfitri\u00f3n y no tenga una sesi\u00f3n iniciada, el usuario debe ver la pantalla  RII1 , en el t\u00edtulo debe aparecer el nombre del anfitri\u00f3n.",
+            "title": "TRI02: Mostrar landing invitado sin sesi\u00f3n iniciada"
+        },
+        {
+            "location": "/requerimientos_invitado/#tri03-iniciar-sesion-en-landing-invitado",
+            "text": "Dependencias : TRI02  Cuando un usuario acceda al landing invitado sin sesi\u00f3n iniciada y de click en el bot\u00f3n de  Iniciar sesi\u00f3n  se debe redirigir al inicio de sesi\u00f3n y regresar una vez haya iniciado sesi\u00f3n correctamente.",
+            "title": "TRI03: Iniciar sesi\u00f3n en landing invitado"
+        },
+        {
+            "location": "/requerimientos_invitado/#tri04-primer-validacion-al-acceder-al-landing-invitado",
+            "text": "Dependencias : No  Cuando un socio acceda al  landing invitado  con sesi\u00f3n iniciada el sistema verificar\u00e1 si el socio ya es invitado de alguien, en caso positivo se mostrar\u00e1 la pantalla de error  RII3 , con el mensaje descrito abajo. En caso negativo se proceder\u00e1 a la segunda verificaci\u00f3n TRI05.",
+            "title": "TRI04: Primer validaci\u00f3n al acceder al landing invitado"
+        },
+        {
+            "location": "/requerimientos_invitado/#adjuntos",
+            "text": "Mensaje: Ya eres invitado de alguien, no puedes volver a ser invitado.  No final",
+            "title": "Adjuntos"
+        },
+        {
+            "location": "/requerimientos_invitado/#tri05-segunda-validacion-al-acceder-al-landing-invitado",
+            "text": "Dependencias : TRI04  El sistema valida que el anfitri\u00f3n que invit\u00f3 al socio no sea un invitado directo del socio. Si existe la relaci\u00f3n se mostrar\u00e1 la pantalla de error  RII3 , con el mensaje descrito abajo. En caso que no exista la relaci\u00f3n se proceder\u00e1 a TRI06.",
+            "title": "TRI05: Segunda validaci\u00f3n al acceder al landing invitado"
+        },
+        {
+            "location": "/requerimientos_invitado/#adjuntos_1",
+            "text": "Mensaje: No puedes ser invitado de un invitado tuyo.  No final",
+            "title": "Adjuntos"
+        },
+        {
+            "location": "/requerimientos_invitado/#trib01-mostrar-modal-para-aceptar-terminos-y-condiciones",
+            "text": "Cuando un usuario pase las validaciones TRI05 y TRI05 deber\u00e1 ver la pantalla con el modal como se muestra en  RIIB1 . El texto de los t\u00e9rminos y condiciones deber\u00e1 ser el que est\u00e1 guardado en backoffice con el c\u00f3digo  InvitaAUnAmigo  en espa\u00f1ol.",
+            "title": "TRIB01: Mostrar modal para aceptar t\u00e9rminos y condiciones"
+        },
+        {
+            "location": "/requerimientos_invitado/#tri06-mostrar-spinner",
+            "text": "Dependencias : TRI05  Cuando un usuario acepte los t\u00e9rminos y condiciones en TRIB01 deber\u00e1 ver la pantalla con el spinner como se muestra en  RII2 .",
+            "title": "TRI06: Mostrar spinner"
+        },
+        {
+            "location": "/requerimientos_invitado/#tri07-hacer-el-calculo-de-la-pre-validacion",
+            "text": "Dependencias : TRI06  Cuando un usuario acepte los t\u00e9rminos y condiciones en TRIB01, el sistema deber\u00e1 realizar la pre-validaci\u00f3n utilizando el webservice  GetLastNTransaction2 , deber\u00e1 guardar esta informaci\u00f3n en un objeto donde se tengan los c\u00f3digos de los partners con los que el socio participa.",
+            "title": "TRI07: Hacer el c\u00e1lculo de la pre-validaci\u00f3n"
+        },
+        {
+            "location": "/requerimientos_invitado/#adjuntos_2",
+            "text": "Para m\u00e1s informaci\u00f3n ver  C\u00e1lculo de pre-validaci\u00f3n  y  GetLastNTransactions2 Spec",
+            "title": "Adjuntos"
+        },
+        {
+            "location": "/requerimientos_invitado/#ejemplo-de-objeto-con-partners-de-la-validacion",
+            "text": "{AM, PC, WH, BW, CHI, LQ, CS, ACC, MRM, BVA, HMX, GFM, SE, SBI, PH, SBS}",
+            "title": "Ejemplo de objeto con partners de la validaci\u00f3n"
+        },
+        {
+            "location": "/requerimientos_invitado/#tri08-mostrar-error-al-hacer-calculo-de-pre-validacion",
+            "text": "Dependencias : TRI07  Cuando el c\u00e1lculo de pre-validaci\u00f3n falla por alguna raz\u00f3n, el socio debe ver una pantalla de error  RII3 , con el mensaje descrito abajo.",
+            "title": "TRI08: Mostrar error al hacer c\u00e1lculo de pre-validaci\u00f3n"
+        },
+        {
+            "location": "/requerimientos_invitado/#adjuntos_3",
+            "text": "Mensaje ( no final ): Hubo un error a la hora de inscribirte. Favor de intentar m\u00e1s tarde.",
+            "title": "Adjuntos"
+        },
+        {
+            "location": "/requerimientos_invitado/#tri09-agregar-el-registro-del-invitado-que-es-socio-existente",
+            "text": "Dependencias : TRI07  Cuando el c\u00e1lculo de pre-validaci\u00f3n funciona correctamente el sistema debe agregar el registro del invitado a la tabla  tabla_invitados . Si para el anfitri\u00f3n ya existe un registro dentro de la tabla que tenga el mismo correo que el correo del invitado, el registro debe actualizarse, en caso de que no exista se debe agregar el registro con los siguientes datos.     cta_anfitrion  cta_invitado  estado  nombre  puntos  validacion  fecha      N\u00famero de cuenta del anfitri\u00f3n a 11 caracteres  N\u00famero de cuenta del invitado a 11 caracteres  registrado  el primer nombre y primer letra del apellido (Mauro M.)  0  El objeto calculado en la pre-validaci\u00f3n  Fecha de inscripci\u00f3n",
+            "title": "TRI09: Agregar el registro del invitado que es socio existente"
+        },
+        {
+            "location": "/requerimientos_invitado/#tri10-inscribir-invitado-socio-existente",
+            "text": "Dependencias : TRI07  Despu\u00e9s de que el sistema realice el c\u00e1lculo de pre-validaci\u00f3n de forma correcta, el sistema debe agregar al socio a dos campa\u00f1as, la  BF17D  y la  BF17E , adem\u00e1s agregar en la preferencia n\u00famero  863 , con el c\u00f3digo  INVTED  el n\u00famero de cuenta del anfitri\u00f3n.",
+            "title": "TRI10: Inscribir invitado, socio existente"
+        },
+        {
+            "location": "/requerimientos_invitado/#adjuntos_4",
+            "text": "Nombres de campa\u00f1as:  BF17D  y  BF17E    Ejemplo de inscripci\u00f3n a las dos campa\u00f1as:  Request   Response    Ejemplo para agregar la preferencia:  Pendiente",
+            "title": "Adjuntos"
+        },
+        {
+            "location": "/requerimientos_invitado/#tri11-mostrar-pantalla-de-las-transacciones-que-puede-hacer-el-invitado",
+            "text": "Despu\u00e9s de que el sistema realice el c\u00e1lculo de pre-validaci\u00f3n de forma correcta, el sistema debe mostrar la pantalla  RII5 , cada partner que est\u00e1 validado dentro de la  tabla_invitados  para este socio debe verse en esta pantalla, los que no existen deben ocultarse. Si no existe AM todo el m\u00f3dulo de vuelos debe ocultarse, para las transferencias deber\u00e1 ocultarse el logo del partner que no est\u00e9 en la validaci\u00f3n.",
+            "title": "TRI11: Mostrar pantalla de las transacciones que puede hacer el invitado"
+        },
+        {
+            "location": "/requerimientos_invitado/#adjuntos_5",
+            "text": "Informaci\u00f3n de la pre-validaci\u00f3n, partners, logos, c\u00f3digos, webservice  Pantalla con todas las transacciones  Pantalla solo con transferencias",
+            "title": "Adjuntos"
+        },
+        {
+            "location": "/requerimientos_invitado/#tri12-inscribirse-en-landing-invitado",
+            "text": "Cuando un usuario acceda al landing invitado sin sesi\u00f3n iniciada y de click en el bot\u00f3n de  Inscribirse  se debe redirigir a la p\u00e1gina de inscripci\u00f3n de Club Premier.",
+            "title": "TRI12: Inscribirse en landing invitado"
+        },
+        {
+            "location": "/requerimientos_inscripcion/",
+            "text": "Requerimientos de interfaces\n\n\nRIN1: Pantalla de inscripci\u00f3n con el campo de anfitri\u00f3n\n\n\nEsta es la nueva pantalla de inscripci\u00f3n, se va a agregar el campo \nAnfitri\u00f3n\n, con validaci\u00f3n igual que para un n\u00famero de cuenta pero no obligatorio.\n\n\n\n\nRIN2: Pantalla de mensaje para ver beneficios\n\n\nCuando un socio nuevo se inscribe como anfitri\u00f3n se le mostrar\u00e1 esta pantalla para que presionando un bot\u00f3n pueda ver los beneficios de la promoci\u00f3n, este modal estar\u00e1 encima del formulario para completar los datos.\n\n\n\n\nRIN3: Pantalla de informaci\u00f3n de beneficios\n\n\nPantalla donde se muestra con cuales partners el socio participa, este ejemplo de pantalla es para cuando participa en vuelos y transferencias.\n\n\n\n\n\n\n\n\n\n\nId\n\n\nElemento\n\n\nContenido\n\n\n\n\n\n\n\n\n\n\n1\n\n\nT\u00edtulo\n\n\nTe decimos c\u00f3mo puedes ganar m\u00e1s Puntos Premier\n\n\n\n\n\n\n2\n\n\nBanner\n\n\nPendiente\n\n\n\n\n\n\n3\n\n\nTexto 1\n\n\nGana 15% m\u00e1s Puntos Premier  al transferir tus  puntos  de otras empresas  afiliadas a Club Premier, as\u00ed como por la acumulaci\u00f3n de tus vuelos con Aerom\u00e9xico.\n\n\n\n\n\n\n4\n\n\nTexto 2\n\n\nGana m\u00e1s Puntos Premier con:\n\n\n\n\n\n\n5\n\n\nLogo Vuelos\n\n\nLink\n\n\n\n\n\n\n5\n\n\nLogo Transferencias\n\n\nLink\n\n\n\n\n\n\n5\n\n\nTexto vuelos\n\n\nSi vuelas o volaste con Aerom\u00e9xico, tienes un periodo de 90 d\u00edas* a partir de tu registro para  ganar 15% m\u00e1s Puntos Premier. *Recuerda que puedes registrar tus vuelos realizados de seis meses atr\u00e1s a la fecha.\n\n\n\n\n\n\n5\n\n\nTexto transferencias\n\n\nGana 15% mas Puntos Premier por tu primer transferencia de puntos.\n\n\n\n\n\n\n5\n\n\nLinks Logos partners hoteles\n\n\nPC\n, \nHX\n, \nHI\n, \nBH\n, \nSTW\n, \nHY\n, \nHJ\n, \nHW\n, \nWH\n, \nBW\n, \nCHI\n, \nLQ\n, \nCS\n, \nACC\n\n\n\n\n\n\n5\n\n\nLinks Logos partners bancos\n\n\nMRM\n, \nBVA\n, \nHMX\n, \nSFI\n, \nSS\n, \nGFM\n, \nSE\n, \nSBI\n\n\n\n\n\n\n5\n\n\nLinks Logos partners retail\n\n\nPH\n, \nSBS\n\n\n\n\n\n\n5\n\n\nLogo Aerom\u00e9xico\n\n\nLink\n\n\n\n\n\n\n6\n\n\nTexto bot\u00f3n\n\n\nEmpieza a invitar y gana m\u00e1s Puntos Premier con tus amigos\n\n\n\n\n\n\n\n\nRequerimientos funcionales\n\n\nTRN01: Visualizar campo de Anfitri\u00f3n en formulario de inscripci\u00f3n\n\n\nDependencias\n: No\n\n\nCuando un usuario acceda al formulario de inscripci\u00f3n, este debe ver un campo llamado \nAnfitri\u00f3n\n. Este campo solo debe aceptar n\u00fameros, debe tener la validaci\u00f3n de un n\u00famero de cuenta v\u00e1lido sin embargo no es un campo obligatorio en el formulario.\n\n\nTRN02: Autocompletar campo de \nAnfitri\u00f3n\n\n\nDependencias\n: TRI01, TRN01\n\n\nCuando un usuario accede a la p\u00e1gina de inscripci\u00f3n, el sistema deber\u00e1 verificar si el navegador tiene la cookie generada en \nTRI01\n, si es as\u00ed deber\u00e1 llenar autom\u00e1ticamente la informaci\u00f3n del campo \nAnfitri\u00f3n\n con el n\u00famero de cuenta del anfitri\u00f3n y bloquear la edici\u00f3n de dicho campo.\n\n\nTRN04: Inscribir invitado, socio nuevo\n\n\nDependencias\n: No\n\n\nCuando un usuario llene el formulario de inscripci\u00f3n correctamente, y exista informaci\u00f3n en el campo de \nAnfitri\u00f3n\n (ya sea que el usuario la coloc\u00f3 o fue autom\u00e1tico), y el usuario de click para inscribirse, el sistema deber\u00e1 enrolar al socio utilizando el web service \nEnrollMember\n incluyendo el par\u00e1metro \nRecommendersCardNo\n con el n\u00famero de cuenta del anfitri\u00f3n. Despu\u00e9s el sistema debe agregar al socio a dos campa\u00f1as, la \nBF17A\n y la \nBF17B\n.\n\n\nAdjuntos\n\n\n\n\n\n\nNombre de campa\u00f1as: \nBF17A\n \nBF17B\n\n\n\n\n\n\nEjemplo de enrolamiento: \nPendiente\n\n\n\n\n\n\nEjemplo de inscripci\u00f3n a las dos campa\u00f1as: \nRequest\n \nResponse\n\n\n\n\n\n\nTRN05: Agregar el registro del invitado que es socio nuevo\n\n\nDespu\u00e9s de que se inscribe al invitado que es socio nuevo (TRN04), el sistema debe agregar el registro a la tabla \ntabla_invitados\n. Si para el anfitri\u00f3n ya existe un registro dentro de la tabla que tenga el mismo correo que el correo del invitado, el registro debe actualizarse, en caso de que no exista se debe agregar el registro con los siguientes datos.\n\n\n\n\n\n\n\n\ncta_anfitrion\n\n\ncta_invitado\n\n\nestado\n\n\nnombre\n\n\npuntos\n\n\nvalidacion\n\n\nfecha\n\n\n\n\n\n\n\n\n\n\nN\u00famero de cuenta del anfitri\u00f3n a 11 caracteres\n\n\nN\u00famero de cuenta del invitado a 11 caracteres\n\n\nregistrado\n\n\nel primer nombre y primer letra del apellido (Mauro M.)\n\n\n0\n\n\nEl objeto de partners completo\n\n\nFecha de inscripci\u00f3n\n\n\n\n\n\n\n\n\nAdjuntos\n\n\n\n\nObjeto de partners completo: \n{AM, PC, HX, HI, BH, STW, HY, HJ, HW, WH, BW, CHI, LQ, CS, ACC, MRM, BVA, HMX, SFI, SS, GFM, SE, SBI, PH, SBS}\n\n\n\n\nTRN06: Mostrar pantalla de datos con modal de beneficios\n\n\nDependencias\n: No\n\n\nDespu\u00e9s de que el socio se inscribe deber\u00e1 ser dirigido a la p\u00e1gina para completar sus datos, el socio debe ver en esta p\u00e1gina un modal como en \nRIN2\n\n\nTRN07: Mostrar pantalla de beneficios en pesta\u00f1a nueva\n\n\nDependencias\n: No\n\n\nCuando un socio da click en el bot\u00f3n de \nBeneficios\n en el modal de TRN06, el navegador deber\u00e1 abrir una nueva pestana con la pantalla para visualizar los partners de la promoci\u00f3n \nRIN3",
+            "title": "Req Inscripci\u00f3n"
+        },
+        {
+            "location": "/requerimientos_inscripcion/#requerimientos-de-interfaces",
+            "text": "",
+            "title": "Requerimientos de interfaces"
+        },
+        {
+            "location": "/requerimientos_inscripcion/#rin1-pantalla-de-inscripcion-con-el-campo-de-anfitrion",
+            "text": "Esta es la nueva pantalla de inscripci\u00f3n, se va a agregar el campo  Anfitri\u00f3n , con validaci\u00f3n igual que para un n\u00famero de cuenta pero no obligatorio.",
+            "title": "RIN1: Pantalla de inscripci\u00f3n con el campo de anfitri\u00f3n"
+        },
+        {
+            "location": "/requerimientos_inscripcion/#rin2-pantalla-de-mensaje-para-ver-beneficios",
+            "text": "Cuando un socio nuevo se inscribe como anfitri\u00f3n se le mostrar\u00e1 esta pantalla para que presionando un bot\u00f3n pueda ver los beneficios de la promoci\u00f3n, este modal estar\u00e1 encima del formulario para completar los datos.",
+            "title": "RIN2: Pantalla de mensaje para ver beneficios"
+        },
+        {
+            "location": "/requerimientos_inscripcion/#rin3-pantalla-de-informacion-de-beneficios",
+            "text": "Pantalla donde se muestra con cuales partners el socio participa, este ejemplo de pantalla es para cuando participa en vuelos y transferencias.      Id  Elemento  Contenido      1  T\u00edtulo  Te decimos c\u00f3mo puedes ganar m\u00e1s Puntos Premier    2  Banner  Pendiente    3  Texto 1  Gana 15% m\u00e1s Puntos Premier  al transferir tus  puntos  de otras empresas  afiliadas a Club Premier, as\u00ed como por la acumulaci\u00f3n de tus vuelos con Aerom\u00e9xico.    4  Texto 2  Gana m\u00e1s Puntos Premier con:    5  Logo Vuelos  Link    5  Logo Transferencias  Link    5  Texto vuelos  Si vuelas o volaste con Aerom\u00e9xico, tienes un periodo de 90 d\u00edas* a partir de tu registro para  ganar 15% m\u00e1s Puntos Premier. *Recuerda que puedes registrar tus vuelos realizados de seis meses atr\u00e1s a la fecha.    5  Texto transferencias  Gana 15% mas Puntos Premier por tu primer transferencia de puntos.    5  Links Logos partners hoteles  PC ,  HX ,  HI ,  BH ,  STW ,  HY ,  HJ ,  HW ,  WH ,  BW ,  CHI ,  LQ ,  CS ,  ACC    5  Links Logos partners bancos  MRM ,  BVA ,  HMX ,  SFI ,  SS ,  GFM ,  SE ,  SBI    5  Links Logos partners retail  PH ,  SBS    5  Logo Aerom\u00e9xico  Link    6  Texto bot\u00f3n  Empieza a invitar y gana m\u00e1s Puntos Premier con tus amigos",
+            "title": "RIN3: Pantalla de informaci\u00f3n de beneficios"
+        },
+        {
+            "location": "/requerimientos_inscripcion/#requerimientos-funcionales",
+            "text": "",
+            "title": "Requerimientos funcionales"
+        },
+        {
+            "location": "/requerimientos_inscripcion/#trn01-visualizar-campo-de-anfitrion-en-formulario-de-inscripcion",
+            "text": "Dependencias : No  Cuando un usuario acceda al formulario de inscripci\u00f3n, este debe ver un campo llamado  Anfitri\u00f3n . Este campo solo debe aceptar n\u00fameros, debe tener la validaci\u00f3n de un n\u00famero de cuenta v\u00e1lido sin embargo no es un campo obligatorio en el formulario.",
+            "title": "TRN01: Visualizar campo de Anfitri\u00f3n en formulario de inscripci\u00f3n"
+        },
+        {
+            "location": "/requerimientos_inscripcion/#trn02-autocompletar-campo-de-anfitrion",
+            "text": "Dependencias : TRI01, TRN01  Cuando un usuario accede a la p\u00e1gina de inscripci\u00f3n, el sistema deber\u00e1 verificar si el navegador tiene la cookie generada en  TRI01 , si es as\u00ed deber\u00e1 llenar autom\u00e1ticamente la informaci\u00f3n del campo  Anfitri\u00f3n  con el n\u00famero de cuenta del anfitri\u00f3n y bloquear la edici\u00f3n de dicho campo.",
+            "title": "TRN02: Autocompletar campo de Anfitri\u00f3n"
+        },
+        {
+            "location": "/requerimientos_inscripcion/#trn04-inscribir-invitado-socio-nuevo",
+            "text": "Dependencias : No  Cuando un usuario llene el formulario de inscripci\u00f3n correctamente, y exista informaci\u00f3n en el campo de  Anfitri\u00f3n  (ya sea que el usuario la coloc\u00f3 o fue autom\u00e1tico), y el usuario de click para inscribirse, el sistema deber\u00e1 enrolar al socio utilizando el web service  EnrollMember  incluyendo el par\u00e1metro  RecommendersCardNo  con el n\u00famero de cuenta del anfitri\u00f3n. Despu\u00e9s el sistema debe agregar al socio a dos campa\u00f1as, la  BF17A  y la  BF17B .",
+            "title": "TRN04: Inscribir invitado, socio nuevo"
+        },
+        {
+            "location": "/requerimientos_inscripcion/#adjuntos",
+            "text": "Nombre de campa\u00f1as:  BF17A   BF17B    Ejemplo de enrolamiento:  Pendiente    Ejemplo de inscripci\u00f3n a las dos campa\u00f1as:  Request   Response",
+            "title": "Adjuntos"
+        },
+        {
+            "location": "/requerimientos_inscripcion/#trn05-agregar-el-registro-del-invitado-que-es-socio-nuevo",
+            "text": "Despu\u00e9s de que se inscribe al invitado que es socio nuevo (TRN04), el sistema debe agregar el registro a la tabla  tabla_invitados . Si para el anfitri\u00f3n ya existe un registro dentro de la tabla que tenga el mismo correo que el correo del invitado, el registro debe actualizarse, en caso de que no exista se debe agregar el registro con los siguientes datos.     cta_anfitrion  cta_invitado  estado  nombre  puntos  validacion  fecha      N\u00famero de cuenta del anfitri\u00f3n a 11 caracteres  N\u00famero de cuenta del invitado a 11 caracteres  registrado  el primer nombre y primer letra del apellido (Mauro M.)  0  El objeto de partners completo  Fecha de inscripci\u00f3n",
+            "title": "TRN05: Agregar el registro del invitado que es socio nuevo"
+        },
+        {
+            "location": "/requerimientos_inscripcion/#adjuntos_1",
+            "text": "Objeto de partners completo:  {AM, PC, HX, HI, BH, STW, HY, HJ, HW, WH, BW, CHI, LQ, CS, ACC, MRM, BVA, HMX, SFI, SS, GFM, SE, SBI, PH, SBS}",
+            "title": "Adjuntos"
+        },
+        {
+            "location": "/requerimientos_inscripcion/#trn06-mostrar-pantalla-de-datos-con-modal-de-beneficios",
+            "text": "Dependencias : No  Despu\u00e9s de que el socio se inscribe deber\u00e1 ser dirigido a la p\u00e1gina para completar sus datos, el socio debe ver en esta p\u00e1gina un modal como en  RIN2",
+            "title": "TRN06: Mostrar pantalla de datos con modal de beneficios"
+        },
+        {
+            "location": "/requerimientos_inscripcion/#trn07-mostrar-pantalla-de-beneficios-en-pestana-nueva",
+            "text": "Dependencias : No  Cuando un socio da click en el bot\u00f3n de  Beneficios  en el modal de TRN06, el navegador deber\u00e1 abrir una nueva pestana con la pantalla para visualizar los partners de la promoci\u00f3n  RIN3",
+            "title": "TRN07: Mostrar pantalla de beneficios en pesta\u00f1a nueva"
+        }
+    ]
+}

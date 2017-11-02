@@ -1,0 +1,1678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <GetLastNTransactions2Response xmlns="http://skywards.com/Mercator.CRIS.WS">
+            <GetLastNTransactions2Result>
+                <Activity PersonID="0" MemUID="8737782" ActivityType="FLT" ActivityTypeCategory="FLT">
+                    <CreatedDate>
+                        <ContainsQueryOperators>false</ContainsQueryOperators>
+                    </CreatedDate>
+                    <ModifiedDate>
+                        <ContainsQueryOperators>false</ContainsQueryOperators>
+                    </ModifiedDate>
+                    <ActivityID>181805766</ActivityID>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>182410619</ActivityID>
+                        <ActivityDate>2015-09-19T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>MEXGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-23T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>MEX-GDL flight (I Class)</TransactionDescr>
+                        <EnglishDescr>MEX-GDL flight (I Class)</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>1000</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 0466 I MEXGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>153934923</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>23OCT2015</TransactionDateString>
+                        <ActivityDateString>19SEP2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>BNRFOJ</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>0466</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>0466</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>182410619</ActivityID>
+                        <ActivityDate>2015-09-19T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>MEXGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-23T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>TITANIO TIER BONUS IN AM</TransactionDescr>
+                        <EnglishDescr>TITANIO TIER BONUS IN AM</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>TITANAM</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 0466 I MEXGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>153934924</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>23OCT2015</TransactionDateString>
+                        <ActivityDateString>19SEP2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>BNRFOJ</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>0466</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>0466</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>TRBONY</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>182410619</ActivityID>
+                        <ActivityDate>2015-09-19T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>MEXGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-23T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>Bono por Familia Tarifaria Confort</TransactionDescr>
+                        <EnglishDescr>Bono por Familia Tarifaria Confort</EnglishDescr>
+                        <RedemptionMiles>500</RedemptionMiles>
+                        <TierMiles>500</TierMiles>
+                        <QrsCode>2015_AAX</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 0466 I MEXGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>153934925</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>23OCT2015</TransactionDateString>
+                        <ActivityDateString>19SEP2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>BNRFOJ</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>0466</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>0466</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>CLBONJ</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>182411813</ActivityID>
+                        <ActivityDate>2015-09-20T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>MEXGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-23T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Vuelo MEX-GDL (Clase M)</TransactionDescr>
+                        <EnglishDescr>MEX-GDL flight (M Class)</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>1000</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 0466 M MEXGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>153936226</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>23OCT2015</TransactionDateString>
+                        <ActivityDateString>20SEP2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>BNRFOJ</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>0466</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>0466</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>182411813</ActivityID>
+                        <ActivityDate>2015-09-20T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>MEXGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-23T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>TITANIO TIER BONUS IN AM</TransactionDescr>
+                        <EnglishDescr>TITANIO TIER BONUS IN AM</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>TITANAM</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 0466 M MEXGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>153936227</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>23OCT2015</TransactionDateString>
+                        <ActivityDateString>20SEP2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>BNRFOJ</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>0466</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>0466</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>TRBONY</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>182411813</ActivityID>
+                        <ActivityDate>2015-09-20T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>MEXGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-23T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>Bono por Familia Tarifaria Flexible</TransactionDescr>
+                        <EnglishDescr>Bono por Familia Tarifaria Flexible</EnglishDescr>
+                        <RedemptionMiles>250</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>2015_AAW</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 0466 M MEXGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>153936228</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>23OCT2015</TransactionDateString>
+                        <ActivityDateString>20SEP2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>BNRFOJ</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>0466</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>0466</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>CLBONY</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>182469474</ActivityID>
+                        <ActivityDate>2015-10-19T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>MEXGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-27T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Vuelo MEX-GDL (Clase M)</TransactionDescr>
+                        <EnglishDescr>MEX-GDL flight (M Class)</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>1000</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 0466 M MEXGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>154010153</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>27OCT2015</TransactionDateString>
+                        <ActivityDateString>19OCT2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>BNRFOJ</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>0466</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>0466</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>182469474</ActivityID>
+                        <ActivityDate>2015-10-19T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>MEXGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-27T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>TITANIO TIER BONUS IN AM</TransactionDescr>
+                        <EnglishDescr>TITANIO TIER BONUS IN AM</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>TITANAM</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 0466 M MEXGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>154010154</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>27OCT2015</TransactionDateString>
+                        <ActivityDateString>19OCT2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>BNRFOJ</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>0466</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>0466</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>TRBONY</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>182469474</ActivityID>
+                        <ActivityDate>2015-10-19T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>MEXGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-27T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>Bono por Familia Tarifaria Flexible</TransactionDescr>
+                        <EnglishDescr>Bono por Familia Tarifaria Flexible</EnglishDescr>
+                        <RedemptionMiles>250</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>2015_AAW</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 0466 M MEXGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>154010155</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>27OCT2015</TransactionDateString>
+                        <ActivityDateString>19OCT2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>BNRFOJ</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>0466</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>0466</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>CLBONY</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>182469475</ActivityID>
+                        <ActivityDate>2015-10-20T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>MEXGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-27T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>MEX-GDL flight (I Class)</TransactionDescr>
+                        <EnglishDescr>MEX-GDL flight (I Class)</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>1000</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 0466 I MEXGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>154010156</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>27OCT2015</TransactionDateString>
+                        <ActivityDateString>20OCT2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>BNRFOJ</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>0466</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>0466</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>182469475</ActivityID>
+                        <ActivityDate>2015-10-20T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>MEXGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-27T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>TITANIO TIER BONUS IN AM</TransactionDescr>
+                        <EnglishDescr>TITANIO TIER BONUS IN AM</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>TITANAM</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 0466 I MEXGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>154010157</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>27OCT2015</TransactionDateString>
+                        <ActivityDateString>20OCT2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>BNRFOJ</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>0466</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>0466</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>TRBONY</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>182469475</ActivityID>
+                        <ActivityDate>2015-10-20T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>MEXGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-27T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>Bono por Familia Tarifaria Confort</TransactionDescr>
+                        <EnglishDescr>Bono por Familia Tarifaria Confort</EnglishDescr>
+                        <RedemptionMiles>500</RedemptionMiles>
+                        <TierMiles>500</TierMiles>
+                        <QrsCode>2015_AAX</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 0466 I MEXGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>154010158</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>27OCT2015</TransactionDateString>
+                        <ActivityDateString>20OCT2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>BNRFOJ</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>0466</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>0466</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>CLBONJ</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>183042605</ActivityID>
+                        <ActivityDate>2015-07-28T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>GDLPVR</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-11-08T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Vuelo GDL-PVR (Clase B)</TransactionDescr>
+                        <EnglishDescr>GDL-PVR flight (B Class)</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>1000</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 3009 B GDLPVR</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>154800613</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>08NOV2015</TransactionDateString>
+                        <ActivityDateString>28JUL2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>ELVUHV</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>3009</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>3009</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>183042605</ActivityID>
+                        <ActivityDate>2015-07-28T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>GDLPVR</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-11-08T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>TITANIO TIER BONUS IN AM</TransactionDescr>
+                        <EnglishDescr>TITANIO TIER BONUS IN AM</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>TITANAM</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 3009 B GDLPVR</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>154800614</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>08NOV2015</TransactionDateString>
+                        <ActivityDateString>28JUL2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>ELVUHV</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>3009</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>3009</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>TRBONY</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>183042605</ActivityID>
+                        <ActivityDate>2015-07-28T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>GDLPVR</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-11-08T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>Bono por Familia Tarifaria Flexible</TransactionDescr>
+                        <EnglishDescr>Bono por Familia Tarifaria Flexible</EnglishDescr>
+                        <RedemptionMiles>250</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>2015_AAW</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 3009 B GDLPVR</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>154800615</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>08NOV2015</TransactionDateString>
+                        <ActivityDateString>28JUL2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>ELVUHV</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>3009</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>3009</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>CLBONY</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>183042606</ActivityID>
+                        <ActivityDate>2015-07-28T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>PVRGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-11-08T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Vuelo PVR-GDL (Clase U)</TransactionDescr>
+                        <EnglishDescr>PVR-GDL flight (U Class)</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>1000</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 3320 U PVRGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>154800616</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>08NOV2015</TransactionDateString>
+                        <ActivityDateString>28JUL2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>VDLZRT</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>3320</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>3320</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>183042606</ActivityID>
+                        <ActivityDate>2015-07-28T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>PVRGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-11-08T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>TITANIO TIER BONUS IN AM</TransactionDescr>
+                        <EnglishDescr>TITANIO TIER BONUS IN AM</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>TITANAM</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 3320 U PVRGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>154800617</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>08NOV2015</TransactionDateString>
+                        <ActivityDateString>28JUL2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>VDLZRT</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>3320</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>3320</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>TRBONY</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>181268448</ActivityID>
+                        <ActivityDate>2015-03-28T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>GDLPVR</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-09-27T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Vuelo GDL-PVR (Clase B)</TransactionDescr>
+                        <EnglishDescr>GDL-PVR flight (B Class)</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>1000</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 3009 B GDLPVR</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>152372071</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>27SEP2015</TransactionDateString>
+                        <ActivityDateString>28MAR2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>ELVUHV</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>3009</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>3009</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>181268448</ActivityID>
+                        <ActivityDate>2015-03-28T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>GDLPVR</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-09-27T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>TITANIO TIER BONUS IN AM</TransactionDescr>
+                        <EnglishDescr>TITANIO TIER BONUS IN AM</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>TITANAM</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 3009 B GDLPVR</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>152372072</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>27SEP2015</TransactionDateString>
+                        <ActivityDateString>28MAR2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>ELVUHV</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>3009</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>3009</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>TRBONY</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>181268448</ActivityID>
+                        <ActivityDate>2015-03-28T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>GDLPVR</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-09-27T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>Bono por Familia Tarifaria Flexible</TransactionDescr>
+                        <EnglishDescr>Bono por Familia Tarifaria Flexible</EnglishDescr>
+                        <RedemptionMiles>250</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>2015_AAW</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 3009 B GDLPVR</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>152372073</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>27SEP2015</TransactionDateString>
+                        <ActivityDateString>28MAR2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>ELVUHV</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>3009</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>3009</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>CLBONY</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>181268449</ActivityID>
+                        <ActivityDate>2015-03-28T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>PVRGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-09-27T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Vuelo PVR-GDL (Clase U)</TransactionDescr>
+                        <EnglishDescr>PVR-GDL flight (U Class)</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>1000</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 3320 U PVRGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>152372074</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>27SEP2015</TransactionDateString>
+                        <ActivityDateString>28MAR2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>VDLZRT</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>3320</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>3320</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>181268449</ActivityID>
+                        <ActivityDate>2015-03-28T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>PVRGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-09-27T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>TITANIO TIER BONUS IN AM</TransactionDescr>
+                        <EnglishDescr>TITANIO TIER BONUS IN AM</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>TITANAM</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 3320 U PVRGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>152372075</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>27SEP2015</TransactionDateString>
+                        <ActivityDateString>28MAR2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>VDLZRT</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>3320</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>3320</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>TRBONY</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>181805767</ActivityID>
+                        <ActivityDate>2015-10-04T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>MEXCUN</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-11T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Vuelo MEX-CUN (Clase H)</TransactionDescr>
+                        <EnglishDescr>MEX-CUN flight (H Class)</EnglishDescr>
+                        <RedemptionMiles>1283</RedemptionMiles>
+                        <TierMiles>1283</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 3539 H MEXCUN</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>153108116</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>11OCT2015</TransactionDateString>
+                        <ActivityDateString>04OCT2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>EBYDOZ</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>3539</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>3539</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>181805767</ActivityID>
+                        <ActivityDate>2015-10-04T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>MEXCUN</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-11T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>TITANIO TIER BONUS IN AM</TransactionDescr>
+                        <EnglishDescr>TITANIO TIER BONUS IN AM</EnglishDescr>
+                        <RedemptionMiles>1283</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>TITANAM</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 3539 H MEXCUN</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>153108117</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>11OCT2015</TransactionDateString>
+                        <ActivityDateString>04OCT2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>EBYDOZ</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>3539</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>3539</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>TRBONY</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>181805765</ActivityID>
+                        <ActivityDate>2015-10-02T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>PVRGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-11T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Vuelo PVR-GDL (Clase U)</TransactionDescr>
+                        <EnglishDescr>PVR-GDL flight (U Class)</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>1000</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 3320 U PVRGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>153108107</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>11OCT2015</TransactionDateString>
+                        <ActivityDateString>02OCT2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>VDLZRT</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>3320</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>3320</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>181805765</ActivityID>
+                        <ActivityDate>2015-10-02T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>PVRGDL</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-11T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>TITANIO TIER BONUS IN AM</TransactionDescr>
+                        <EnglishDescr>TITANIO TIER BONUS IN AM</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>TITANAM</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 3320 U PVRGDL</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>153108108</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>11OCT2015</TransactionDateString>
+                        <ActivityDateString>02OCT2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>VDLZRT</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>3320</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>3320</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>TRBONY</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>181805766</ActivityID>
+                        <ActivityDate>2015-10-03T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>GDLPVR</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-11T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Vuelo GDL-PVR (Clase B)</TransactionDescr>
+                        <EnglishDescr>GDL-PVR flight (B Class)</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>1000</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 3009 B GDLPVR</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>153108111</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>11OCT2015</TransactionDateString>
+                        <ActivityDateString>03OCT2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>ELVUHV</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>3009</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>3009</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>181805766</ActivityID>
+                        <ActivityDate>2015-10-03T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>GDLPVR</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-11T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>TITANIO TIER BONUS IN AM</TransactionDescr>
+                        <EnglishDescr>TITANIO TIER BONUS IN AM</EnglishDescr>
+                        <RedemptionMiles>1000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>TITANAM</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 3009 B GDLPVR</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>153108112</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>11OCT2015</TransactionDateString>
+                        <ActivityDateString>03OCT2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>ELVUHV</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>3009</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>3009</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>TRBONY</RateBand>
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>CRISOPS</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>181805766</ActivityID>
+                        <ActivityDate>2015-10-03T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>FLT</ActivityType>
+                        <CityPair>GDLPVR</CityPair>
+                        <PartnerCode>AM</PartnerCode>
+                        <PartnerDescr>Aeromexico</PartnerDescr>
+                        <TransactionDate>2015-10-11T00:00:00</TransactionDate>
+                        <TransactionType>RULCR</TransactionType>
+                        <TransactionDescr>Bono por Familia Tarifaria Flexible</TransactionDescr>
+                        <EnglishDescr>Bono por Familia Tarifaria Flexible</EnglishDescr>
+                        <RedemptionMiles>250</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode>2015_AAW</QrsCode>
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>B</ActivityMethod>
+                        <ActivityCode>AM 3009 B GDLPVR</ActivityCode>
+                        <ActivityTypeCategory>FLT</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>153108114</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>11OCT2015</TransactionDateString>
+                        <ActivityDateString>03OCT2015</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Flight</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator>ELVUHV</RecordLocator>
+                        <Mktcareer>AM</Mktcareer>
+                        <Optcareer>3009</Optcareer>
+                        <Mktfltno>AM</Mktfltno>
+                        <Optfltno>3009</Optfltno>
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand>CLBONY</RateBand>
+                    </TransactionArray>
+                </Activity>
+            </GetLastNTransactions2Result>
+            <wsResult>
+                <IsSuccess>true</IsSuccess>
+                <ErrorNumber>0</ErrorNumber>
+                <Message />
+                <ExtraInfo />
+                <ExType />
+            </wsResult>
+        </GetLastNTransactions2Response>
+    </soap:Body>
+</soap:Envelope>
