@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Descripción general - Bring A Friend</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">Bring A Friend</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Inicio</a>
+                    </li>
+                    <li class="active">
+                        <a href="./">Descripción general</a>
+                    </li>
+                    <li >
+                        <a href="../flujos/">Flujos</a>
+                    </li>
+                    <li >
+                        <a href="../requerimientos_anfitrion/">Req Anfitrión</a>
+                    </li>
+                    <li >
+                        <a href="../requerimientos_invitado/">Req Invitado</a>
+                    </li>
+                    <li >
+                        <a href="../requerimientos_inscripcion/">Req Inscripción</a>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="..">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../flujos/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#resumen">Resumen</a></li>
+        <li class="main "><a href="#anfitrion">Anfitrión</a></li>
+            <li><a href="#opciones-en-el-menu">Opciónes en el menú</a></li>
+            <li><a href="#landing-anfitrion">Landing anfitrión</a></li>
+            <li><a href="#modulo-de-invitar-amigos">Módulo de invitar amigos</a></li>
+            <li><a href="#modulo-de-monitor-de-amigos">Módulo de monitor de amigos</a></li>
+        <li class="main "><a href="#invitados">Invitados</a></li>
+            <li><a href="#acceso-al-link-del-anfitrion-cookie-del-anfitrion">Acceso al link del anfitrión, cookie del anfitrión</a></li>
+            <li><a href="#landing-invitado-sin-sesion-iniciada">Landing Invitado sin sesión iniciada</a></li>
+            <li><a href="#validaciones-para-el-invitado-que-ya-es-socio">Validaciones para el invitado que ya es socio</a></li>
+            <li><a href="#calculo-de-pre-validacion">Cálculo de pre-validación</a></li>
+            <li><a href="#inscripcion-a-la-promocion-para-socios-existentes">Inscripción a la promoción para socios existentes</a></li>
+            <li><a href="#mostrar-la-pantalla-de-inscripcion-finalizada">Mostrar la pantalla de inscripción finalizada</a></li>
+            <li><a href="#invitado-que-aun-no-es-socio">Invitado que aún no es socio</a></li>
+            <li><a href="#cambios-en-la-pagina-de-inscripcion">Cambios en la página de inscripción</a></li>
+            <li><a href="#llenado-automatico-del-campo-anfitrion">Llenado automático del campo Anfitrión</a></li>
+            <li><a href="#inscripcion-con-el-campo-de-anfitrion-llenado">Inscripción con el campo de Anfitrión llenado</a></li>
+            <li><a href="#mostrar-la-informacion-de-inscripcion-a-la-campana">Mostrar la información de inscripción a la campaña</a></li>
+            <li><a href="#assigncampaigns-spec">AssignCampaigns Spec</a></li>
+            <li><a href="#getlastntransactions2-spec">GetLastNTransactions2 Spec</a></li>
+            <li><a href="#cambios-en-el-modulo-de-inscripcion">Cambios en el módulo de inscripción</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="resumen">Resumen</h1>
+<p>El sistema consiste de tres páginas web, una de ellas residirá en el CMS y las otras dos residirán dentro del dominio member. De las dos que están en member una de ellas será el <em>landing anfitrión</em> y otra el <em>landing invitado</em>. Además se harán modificaciones al sistema de inscripción de usuarios.</p>
+<p>La página dentro del CMS mostrará la información general de la promoción, antes de que un socio pueda participar como anfitrión es requerido que visite esta página, en ella se tendrá un botón de <em>participar</em> con un link hacia el landing anfitrión que tendrá un parametro especial para inscribirse como anfitrión. El CMS tendrá las siguientes funciones:</p>
+<ul>
+<li>Mostrar la información de la promoción</li>
+<li>Redirigir al landing anfitrión con un parametro especial para inscribir al socio como anfitrión</li>
+</ul>
+<p>El landing anfitrión reside dentro de member. Cuando se accede a él tendrá la capacidad de inscribir a los socios como anfitriones cuando se le pase un parametro especial, una vez registrados como anfitriones podrán acceder al contenido, tendrá dos módulos, uno para poder enviar las invitaciones a sus conocidos, a este lo llamamos <em>invitar amigos</em>, y otro para monitorear el registro de invitados y cuantos puntos le han generado llamado <em>monitor de invitados</em>. Las funciones que los socios tienen en el <em>landing anfitrión</em> son las siguientes:</p>
+<ul>
+<li>Inscribirse a la promoción como anfitriones al acceder con el parametro especial</li>
+<li>Invitar amigos<ul>
+<li>Por correo</li>
+<li>Copiando un link</li>
+<li>Compartiendo en redes sociales el link (facebook y twitter)</li>
+</ul>
+</li>
+<li>Visualizar información de las invitaciones enviadas<ul>
+<li>Estado (Registrado ó No registrado)</li>
+<li>Nombre del invitado</li>
+<li>Puntos generados</li>
+</ul>
+</li>
+<li>Reenviar invitaciones</li>
+</ul>
+<p>Una vez que se accede se inscribirá a la promoción, c</p>
+<p>El landing invitado se accede con el correo de invitación o por el link que comparte un anfitrión. Como parte del título del landing se mostrará el nombre del anfitrión. Existen dos tipos de socios que se pueden inscribir, socios nuevos o socios existentes, para los socios nuevos se les dará la opción de inscribirse, se le agregará el campo de referido a la hora de inscribirse y se le asignarán las campañas de la promoción, después se le mostrará una pantalla con todas las transacciones que le dan bono. Para los socios existentes hay restricciones en la promoción, se tendrá un sistema de pre-validación utilizando un web service para mostrar al socio las transacciones de promoción que aplican para él, una vez que la pre-validación fue exitosa se le asignarán dos campañas y una preferencia para inscribirlo en la promoción. Las funciones que los usuarios tienen en el <em>landing invitado</em> son las siguientes:</p>
+<ul>
+<li>Socio Nuevo</li>
+<li>Inscribirse a la promoción como invitado de alguien</li>
+<li>Ver todas las transacciones de la promoción</li>
+<li>Socio existente</li>
+<li>Verificar si se puede inscribir como invitado</li>
+<li>Pre-validar en qué promociones puede participar</li>
+<li>Inscribirse a la promoción como invitado</li>
+<li>Ver las transacciones en las que ese socio puede participar</li>
+</ul>
+<p>Además de lo anterior se harán cambios en el sistema de inscripción de los usuarios. En la forma de inscripción se agregará un nuevo campo donde se podrá colocar el número de cuenta de un socio anfitrión, este campo se llenará automaticamente cuando el socio haya llegado a la inscripción por el link o correo de un anfitrión.</p>
+<h1 id="anfitrion">Anfitrión</h1>
+<p>En esta sección se describen a detalle los puntos del requerimiento que tienen que ver con el flujo del anfitrión.</p>
+<h2 id="opciones-en-el-menu">Opciónes en el menú</h2>
+<p>Se agregarán dos opciones de menú, una para la página de información que residirá dentro del dominio del CMS y otra para <em>landing anfitrion</em> que estará en member.</p>
+<h3 id="opcion-de-menu-para-pagina-de-cms">Opción de menú para página de CMS</h3>
+<p>Se debe agregar una opción en el menú para acceder a la página de información de la promoción que residira en el CMS, este debe estar bajo la categoría <strong>Promociones</strong> y se debe llamar <strong>Invita a un amigo</strong>, va a tener un logo y su URL debe ser <code>https://www.clubpremier.com/mx/invita-a-un-amigo</code>.</p>
+<h3 id="opcion-de-menu-para-pagina-landing-anfitrion-en-member">Opción de menú para página <em>landing anfitrión</em> en member</h3>
+<p>Se debe agregar una opción en el menú para acceder al <em>landing anfitrión</em>, este debe estar bajo la categoría <strong>Mi cuenta</strong> y se debe llamar <strong>Invita a un amigo</strong> y su URL debe ser <code>https://member.clubpremier.com/invita-a-un-amigo</code>.</p>
+<h2 id="landing-anfitrion">Landing anfitrión</h2>
+<p>El socio ingresa al <em>landing anfitrión</em> a través de la liga que está en el menú o colocando directamente la URL <code>https://member.clubpremier.com/invita-a-un-amigo</code>. Esta página solo será accesible con una sesión iniciada, por lo que si el socio no tiene un sesión iniciada se deberá redirigir a la página de inicio de sesión. Esta página podrá inscribir a los socios como anfitriones si es que se pasa el parametro <code>inscripcion=true</code>, una vez inscrito a la promoción el anfitrión podrá acceder al contenido y los módulos de <em>invitar amigos</em> y <em>monitor invitados</em>.</p>
+<p><a href="../img/flujo_landing_anfitrion.png">Flujo del <em>landing anfitrion</em></a></p>
+<p><a href="../img/flujo_landing_anfitrion_ventanas.png">Flujo del <em>landing anfitrion</em> con ventanas</a></p>
+<h3 id="alta-en-la-promocion-como-anfitrion">Alta en la promoción como anfitrión</h3>
+<p>Para darse de alta en la promoción como anfitrión se debe acceder a la URL del <em>landing anfitrión</em> con un parametro especial que indica que se aceptó participar en la promoción, <code>https://member.clubpremier.com/invita-a-un-amigo?inscripcion=true</code>. Para dar de alta hay que generar su código único el cual será almacenado en una tabla llamada <em>tabla_codigo_anfitrion</em>, esta tabla tendrá el número de cuenta del anfitrión y el código generado, además tendrá la fecha de inscripción.</p>
+<p>Ejemplo <em>tabla_codigo_anfitrion</em>:</p>
+<table>
+<thead>
+<tr>
+<th>cta_anfitrion</th>
+<th>codigo</th>
+<th>fecha_inscipcion</th>
+<th>nombre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0012312312</td>
+<td>Ajdfs12D</td>
+<td>2017-02-01</td>
+<td>Mario M.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="verificar-acceso">Verificar acceso</h3>
+<p>Cuando se accede con una sesión se tiene que verificar si el socio ya es parte de la promoción, para esto podemos revisar la <em>tabla_codigo_anfitrion</em>, la cual contiene los códigos generados para los anfitriones, si no está en esta tabla quiere decir que aún no es parte de la promoción. Después hay que verificar si tiene el parametro de inscripción, en caso de que así sea se debe hacer la inscripción y proceder a mostrar la página, en caso contrario hay que redirigirlo a la URL <code>https://www.clubpremier.com/mx/invita-a-un-amigo</code>, para que en esa página se de de alta.</p>
+<h3 id="despliegue-de-pagina-landing-anfitrion-basica">Despliegue de página <em>landing anfitrión básica</em></h3>
+<p>Si el socio ya es parte de la promoción y tiene una sesión iniciada podrá acceder a la página, la cual muestra el título, un banner y un texto descriptivo de la promoción, estos son estáticos y siempre los mismos, además mostrará los módulos de <em>invitar amigos</em> y de <em>monitor de invitados</em>.</p>
+<p><a href="../img/interfaces/landing_anfitrion_basica.png">Landing anfitrión</a></p>
+<h2 id="modulo-de-invitar-amigos">Módulo de <em>invitar amigos</em></h2>
+<p>Este módulo consta de dos partes, un box donde se escriben los correos para enviar las invitaciones, el otro es un visor del link único del anfitrión con botones para poder copiarlo y compartirlo en redes sociales. El correo y el link son los que útilizarán los invitados para registrarse en el programa.</p>
+<p><img alt="Módulo de invitar amigos completo" src="../img/modulo_invitar_amigos.png" /></p>
+<h3 id="link-unico-de-anfitrion">Link único de anfitrión</h3>
+<p>Cada anfitrión debe tener un código único el cual está guardado en <em>tabla_codigo_anfitrion</em>, este código junto con una url <code>https://member.clubpremier.com/invitacion/</code> generan un link, este link es utilizado por el módulo de <em>invitar amigo</em> para hacer referencia a la página de invitación de ese socio en particular. Por ejemplo el código de un socio puede ser <code>gW3313Djfd</code>, entonces su link único sería <code>https://member.clubpremier.com/invitacion/gW3313Djfd</code>.</p>
+<h3 id="box-de-correos">Box de correos</h3>
+<p>En este box se pueden colocar las direcciones de correo a las que se quieren enviar las invitaciones, se puede poner uno o muchos correos, con el botón <strong>Enviar</strong> se envían los correos a través de una cuenta de SendGrid (la cuenta y contraseña deben ser solicitadas). Este box tiene un funcionamiento similar al que tiene gmail cuando se va a enviar un correo, se escribe un correo y cuando se presiona <code>Enter</code> este se agrupa y se le asigna un botón de eliminar, de esta forma se pueden escribir varias direcciones de correo e irlas eliminando de manera sencilla.</p>
+<p>El box debe mostrar el texto <strong>Captura las direcciones de correo electrónico de tus amigos</strong> cuando no se haya colocado ningún texto.</p>
+<p><a href="../img/modulo_invitar_amigos_box_solo.png">Módulo de invitar amigos, box solo</a></p>
+<p><a href="../img/modulo_invitar_amigos_box_un_correo.png">Módulo de invitar amigos, box con varios correos</a></p>
+<h3 id="envio-de-correo">Envío de correo</h3>
+<p>Cuando en el box existan direcciones de correos agrupadas y se presione el botón <strong>Enviar</strong> se deben enviar correos de invitación a dichas direcciones y se debe limpiar el box. Se debe colocar el nombre del anfitrión en el asunto y en el cuerpo del correo, además de que el botón <strong>Aceptar invitación</strong> tenga la URL del link único. Cuando se envían correos de invitación estos deben ser agregados a la tabla <em>tabla_invitados</em> para ser visualizados en el módulo <em>invitar amigos</em>.</p>
+<p><a href="../img/correo.png">Ejemplo de correo</a> <em>(Solo ilustrativo, no final)</em></p>
+<h3 id="visor-de-link-unico">Visor de link único</h3>
+<p>En este módulo se muestra el link único del anfitrión, una opción para copiarlo y una opción para compartirlo en redes sociales, se podrá compartir en facebooky twitter.</p>
+<p><a href="../img/modulo_invitar_amigos_compartir.png">Módulo de invitar amigos, compartir link</a> <em>(Solo ilustrativo, no final)</em></p>
+<h2 id="modulo-de-monitor-de-amigos">Módulo de <em>monitor de amigos</em></h2>
+<p><em>Monitor de amigos</em> es una tabla que muestra cuatro columnas, <em>Invitado</em>, <em>Estado</em>, <em>Puntos generados</em> y <em>Reenviar</em>. Esta tabla funciona para darle seguimiento a las invitaciones enviadas, saber quienes ya se registraron como invitado y cuantos puntos han generado. Cuando la tabla no tiene ningún registro esta no se debe mostrar.</p>
+<p><img alt="Monitor invitados header" src="../img/modulo_monitor_invitados_header.png" /></p>
+<p>Cuando el anfitrión envía un correo a través del módulo <em>invitar amigos</em> este correo es guardado en la columna <em>Invitado</em> con un <em>Estado</em> en <em>No registrado</em>, tendrá 0 puntos generados y en la columna <em>Reenviar</em> se dará la opción de reenviar el correo.</p>
+<p><img alt="Monitor invitados correos" src="../img/modulo_monitor_invitados.png" /></p>
+<p>Cuando un invitado se inscribe a la promoción se busca en la <em>tabla_invitados</em> si es que se tiene guardado el correo del invitado, en caso de que sea así se cambia el texto del correo por el nombre y primer letra del apellido del invitado, se cambia <em>Estado</em> a <em>Registrado</em>. En caso de que el invitado no esté previamente registrado en la <em>tabla_invitados</em> entonces se agrega el registro.</p>
+<p><img alt="Monitor invitados registrado" src="../img/modulo_monitor_invitados_registrado.png" /></p>
+<p>Esta información debe ser guardada en una tabla en una base de datos, le llamaremos a esta tabla <em>tabla_invitados</em>. En esta tabla se tendrá almacenado el número de cuenta del anfitrión, número de cuenta del invitado (solo si es que ya se registró), el estado de esa invitación (puede ser <em>Registrado</em> o <em>No registrado</em>), el nombre (si es que no está registrado se pone la dirección de correo electrónico, en caso de que esté registrado se pone el primer nombre y la primer sigla de su apellido) y los puntos que ese invitado ha generado.</p>
+<table>
+<thead>
+<tr>
+<th>cta_anfitrion</th>
+<th>cta_invitado</th>
+<th>estado</th>
+<th>nombre</th>
+<th>puntos</th>
+<th>validacion</th>
+<th>fecha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Número de cuenta del anfitrión a 11 caracteres</td>
+<td>Número de cuenta del invitado a 11 caracteres</td>
+<td>estado, puede ser <em>registrado</em> o <em>no_registrado</em></td>
+<td>nombre identificador, si no está registrado es el correo, si está registrado es el primer nombre y primer letra del apellido (Mauro M.)</td>
+<td>Número de puntos generados</td>
+<td>Objeto que contiene los códigos de los partners que fueron validados para ese invitado</td>
+<td>Fecha de inscripción</td>
+</tr>
+</tbody>
+</table>
+<p>Club Premier va a generar una archivo diario <em>batch</em> llamado <em>registro_puntos_invita_a_un_amigo_<code>+fecha</code></em> que será compartido por ftp, este archivo contendrá los registros de las acumulaciones que se han generado para cada anfitrión y el número de cuenta de quién las generó. Usando esto se puede actualizar en <em>tabla_invitados</em> los puntos generados por cada invitado, los puntos en el archivo no serán totales sino del día que se genere, así que habrá que sumar cada vez que llegue un archivo nuevo para tener el total de puntos generados. El formato de este archivo es el siguiente.</p>
+<table>
+<thead>
+<tr>
+<th>cta_anfitrion</th>
+<th>cta_invitado</th>
+<th>puntos</th>
+<th>fecha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Número de cuenta del anfitrión a 11 caracteres</td>
+<td>Número de cuenta del invitado a 11 caracteres</td>
+<td>Número de puntos generados para ese día</td>
+<td>Fecha de creación del registro</td>
+</tr>
+</tbody>
+</table>
+<h1 id="invitados">Invitados</h1>
+<p>En la siguiente sección se describe el proceso de inscripción a la promoción para los invitados. Se pueden inscribir socios existentes o socios nuevos.</p>
+<h2 id="acceso-al-link-del-anfitrion-cookie-del-anfitrion">Acceso al link del anfitrión, cookie del anfitrión</h2>
+<p>Un usuario que accede al link de un anfitrión, ya sea porque se lo compartieron o porque le llegó por correo, va a ser enviado al <em>landing invitado</em>, lo primero que el sistema va a hacer es crear una cookie que guarde la información del anfitrión, esto se hará para que sin importar qué flujo siga el usuario dentro de la página se tenga la información de quien lo invitó. Esta cookie tiene una duración de 2 días, si es que ya existía una cookie se va a sobreescribir.</p>
+<h2 id="landing-invitado-sin-sesion-iniciada">Landing Invitado sin sesión iniciada</h2>
+<p>En cuando el usuario accede al <em>landing invitado</em>. Si es que no existe una sesión iniciada se le mostrará la opción para <em>Iniciar sesión</em> o para <em>Inscribirse</em>. En el título del landing se mostrará el nombre del anfitrión como se muestra en el ejemplo de pantalla.</p>
+<p><a href="../img/landing_invitado_desc.png">Landing invitado sin sesión iniciada</a></p>
+<p>Título: <em>Pendiente</em></p>
+<p>Banner: <em>Pendiente</em></p>
+<p>Descripción: <em>Pendiente</em></p>
+<h2 id="validaciones-para-el-invitado-que-ya-es-socio">Validaciones para el invitado que ya es socio</h2>
+<p>Si el socio da click en <em>Iniciar sesión</em> se le redirige a la página de inicio de sesión, una vez que haya iniciado sesión se regresa al <em>landing invitado</em>.</p>
+<p>Cuando se accede al <em>landing invitado</em> con una sesión iniciada se harán dos verificaciones, en la primera se verifica que el invitado no sea invitado de alguien más, para esto se puede revisar en la tabla <em>tabla_invitados</em> si es que existe un registro de ese socio que ya esté registrado, en caso de que ya sea un invitado se mostrará un modal con un mensaje de error. La segunda verificación revisará si es que el anfitrión no sea un invitado directo del socio (esto significa que yo no puedo ser invitado de un invitado mío), para esto se puede revisar la tabla <em>tabla_invitados</em> y revisar si existe una registro que relacione al anfitrión y al invitado, en caso de que se encuentre esa relación se mostrará un mensaje de error en un modal.</p>
+<h2 id="calculo-de-pre-validacion">Cálculo de pre-validación</h2>
+<p>La pre-validación solo se realiza cuando el invitado ya es un socio existente y pasó las validaciones previas. Ya que la promoción tiene varias restricciones se va a pre-validar en cuales transacciones o con cuales partners puede ganar puntos el invitado, para esto se utilizará el web service <em>GetLastNTransaction2</em>.</p>
+<p>El web service <em>GetLastNTransactions2</em> nos permite solicitar todas las transacciones que un socio haya realizado en un cierto intervalo de tiempo, además de esto nos permite filtrar las transacciones por tipo de actividad.</p>
+<p>La idea es tener un objeto que contiene todos los códigos de los partners, de esta lista se van a ir removiendo los partners que se encuentren con el web wervice, la lista completa es la siguiente:</p>
+<p><code>{AM, PC, HX, HI, BH, STW, HY, HJ, HW, WH, BW, CHI, LQ, CS, ACC, MRM, BVA, HMX, SFI, SS, GFM, SE, SBI, PH, SBS}</code></p>
+<p>Existen dos principales categorías donde se pueden ganar puntos, por vuelos y por tranferencias.</p>
+<p>Para calcular la participación en vuelos se van a solicitar las transacciones de los últimos 24 meses con el tipo de actividad <em>FLT</em> y el código de partner <em>AM</em>. Si es que esto regresa algún registro entonces ya no aplica a esta promoción y se remueve el partner <code>AM</code>.</p>
+<p>Para las transacciones es diferente ya que estas están categorizadas, hay 3 tipos de actividad diferentes, uno para hoteles, uno para retail y otro para bancos. Por cada tipo de actividad se tendrán que solicitar las transacciones de los últimos 12 meses, revisar cada una e ir verificando de qué partners se hicieron transferencias, por cada partner que se realizó transferencia se va a remover ese partner de la lista.</p>
+<p>El resultado de esta prevalidación va a ser un objeto que contenga los códigos de los partners con los que el socio si recibe bono.</p>
+<p>Para más información así como la lista completa de partners y sus logos ver la documentación del webservice <a href="#getlastntransactions2-spec">aquí</a></p>
+<h2 id="inscripcion-a-la-promocion-para-socios-existentes">Inscripción a la promoción para socios existentes</h2>
+<p>Si es que la pre-validación es exitosa y se tiene el objeto resultado, entonces se procede a inscribir al socio a la promoción, este proceso son varios pasos:</p>
+<ul>
+<li>Agregar al socio a dos campañas</li>
+<li>Agregar al socio una preferencia con el número de cuenta del anfitrión</li>
+<li>Buscar si el socio ya existe en un registro del anfitrión, actualizar ese registro o crear uno nuevo</li>
+</ul>
+<p>Si es que la pre-validación genera algún error por cualquier cosa se mostrará un mensaje de error para que lo intente más tarde.</p>
+<h3 id="agregar-al-socio-a-dos-campanas">Agregar al socio a dos campañas</h3>
+<p>Al socio hay que agregarlo a dos campañas, esto se hace con el web service <em>AssignCampaigns</em>, los nombres de las campañas son: <code>BF17D</code> y <code>BF17E</code>. Por cada campaña hay que colocar tres fechas:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>StartDate</td>
+<td>Fecha de inicio de campaña</td>
+<td>2017-05-01</td>
+</tr>
+<tr>
+<td>EndDate</td>
+<td>Fecha de fin de campaña</td>
+<td>2099-12-31</td>
+</tr>
+<tr>
+<td>DateTargetted</td>
+<td>Fecha de inscripción a la campaña</td>
+<td>La fecha de inscripción</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Ejemplo de inscripción a las dos campañas: <a href="../webservice/assigncampaignSocioExistenterequest.xml">Request</a> <a href="../webservice/assigncampaignSocioExistenteresponse.xml">Response</a></li>
+</ul>
+<h3 id="agregar-al-socio-en-una-preferencia-su-anfitrion">Agregar al socio en una preferencia su anfitrión</h3>
+<p>Se va a agregar una preferencia para guardar quien es el anfitrión, la preferencia tiene el número <strong>863</strong>, con el código <code>INVTED</code>, esta preferencia representa que el socio es un <em>Invited</em> de alguien, entonces en esta preferencia se va a almacenar el número de cuenta del anfitrión (a 11 carateres).</p>
+<p>Ejemplo: <em>Pendiente</em></p>
+<h3 id="actualizar-la-tabla-tabla_invitados">Actualizar la tabla <em>tabla_invitados</em></h3>
+<p>Por último hay que buscar en la tabla <em>tabla_invitados</em> si es que para el anfitrión ya existe un registro que tenga el correo que tiene el invitado. Si existe el registro entonces hay que actualizar la información en ese registro, si no existe entonces se creará un registro nuevo, sea cual sea el caso el resultado debe tener la siguiente información:</p>
+<table>
+<thead>
+<tr>
+<th>cta_anfitrion</th>
+<th>cta_invitado</th>
+<th>estado</th>
+<th>nombre</th>
+<th>puntos</th>
+<th>validacion</th>
+<th>fecha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Número de cuenta del anfitrión a 11 caracteres</td>
+<td>Número de cuenta del invitado a 11 caracteres</td>
+<td><em>registrado</em></td>
+<td>el primer nombre y primer letra del apellido (Mauro M.)</td>
+<td>0</td>
+<td>El objeto calculado en la pre-validación</td>
+<td>Fecha de inscripción</td>
+</tr>
+</tbody>
+</table>
+<p><a href="../img/flujo_landing_invitado_ventanas.png">Flujo de <em>landing invitado</em></a></p>
+<h2 id="mostrar-la-pantalla-de-inscripcion-finalizada">Mostrar la pantalla de inscripción finalizada</h2>
+<p>Se le mostrará al socio la pantalla que muestra los partners con los que participa. Hay dos secciones principales, una es la de vuelos en la que solo se encuentra Aeroméxico y la otra es la de transferencias en la que participan muchos partners. Si en la pre-validación no está incluido AM, entonces la sección de vuelos se oculta, la sección de transferencias tiene los otros partners, solo deben aparecer los que están incluidos en la pre-validación, y deben estar ordenados por Bancos, Hoteles y Retail.</p>
+<p>Con este proceso termina el flujo para el invitado que ya es socio.</p>
+<h2 id="invitado-que-aun-no-es-socio">Invitado que aún no es socio</h2>
+<p>Cuando un usuario accede al <em>landind invitado</em> tiene la opción de inscribirse, si da click en esta opción entonces se redirige a la página de inscripción de Club Premier. El sistema de inscripción tendrá algunos cambios.</p>
+<h2 id="cambios-en-la-pagina-de-inscripcion">Cambios en la página de inscripción</h2>
+<p>Se va a agregar un nuevo campo en la pantalla de inscripción, este va a ser el campo de <em>Anfitrión</em>, en este campo se va a poder colocar el número de cuenta de alguien que te haya invitado. La idea es que puedas inscribirte como invitado a pesar de no tener el link de un anfitrión, solo tienes que conocer su número de cuenta. Este campo debe tener las mismas validaciones que cualquier otro campo que utilice un número de cuenta, sin embargo no será un campo requerido.</p>
+<h2 id="llenado-automatico-del-campo-anfitrion">Llenado automático del campo Anfitrión</h2>
+<p>Si es que se detecta que existe una cookie con información de anfitrión, entonces este campo se llenará automáticamente, y además no podrá ser editable.</p>
+<h2 id="inscripcion-con-el-campo-de-anfitrion-llenado">Inscripción con el campo de Anfitrión llenado</h2>
+<p>Cuando un socio se inscribe y existe información en el campo de anfitrión, se harán dos cosas:</p>
+<ul>
+<li>Inscribir al socio de forma normal pero agregando el campo <em>RecommendersCardNo</em></li>
+<li>Agregar al socio a dos campañas</li>
+</ul>
+<h3 id="inscripcion-incluyendo-el-campo-recommenderscardno">Inscripción incluyendo el campo <em>RecommendersCardNo</em></h3>
+<p>El web service de EnrollMember que se utiliza para la inscripción de los socios tiene un campo llamado <em>RecommendersCardNo</em> que identifica si ese socio es referido, este campo solo se puede llenar cuando se inscribe al socio, y en él se coloca el número de cuenta del anfitrión, este número de cuenta se obtiene del campo <em>Anfitrión</em>, ya sea que lo coloca el socio o que se llena automáticamente por la cookie.</p>
+<h3 id="agregar-a-dos-campanas">Agregar a dos campañas</h3>
+<p>Se tiene que agregar a dos campañas, una para la parte de vuelos y una para la parte de tranferencias, cabe decir que estas campañas son diferentes a las campañas que utilizan los invitados que son socios. Esto se hace con el web service <em>AssignCampaigns</em>, los nombres de las campañas son: <code>BF17A</code> y <code>BF17B</code>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>StartDate</td>
+<td>Fecha de inicio de campaña</td>
+<td>2017-05-01</td>
+</tr>
+<tr>
+<td>EndDate</td>
+<td>Fecha de fin de campaña</td>
+<td>2099-12-31</td>
+</tr>
+<tr>
+<td>DateTargetted</td>
+<td>Fecha de inscripción a la campaña</td>
+<td>La fecha de inscripción</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Ejemplo de inscripción a las dos campañas: <a href="../webservice/assigncampaignSocioNuevorequest.xml">Request</a> <a href="../webservice/assigncampaignSocioExistenteresponse.xml">Response</a></li>
+</ul>
+<h2 id="mostrar-la-informacion-de-inscripcion-a-la-campana">Mostrar la información de inscripción a la campaña</h2>
+<p>Una vez inscrito se mostrará la pantalla para completar los datos, esto es el mismo proceso de las inscripciones normales, sin embargo, después de que completan sus datos en lugar de que</p>
+<h2 id="assigncampaigns-spec">AssignCampaigns Spec</h2>
+<p>Agrega a un socio a una o varias campañas. En caso de éxito regresa todas las campañas a las que está suscrito el socio, en caso de error manda un mensaje de error. Solo se puede inscribir a una campaña una vez, si ya se está inscrito regresa error, las campañas ya no pueden borrarse ni modificarse una vez agregadas.</p>
+<h3 id="url-de-pruebas">URL de pruebas</h3>
+<p>http://cr5w5cptest.clubpremier.com/Mercator.CRIS.WebService.TESTCRIS/IVRWebService.asmx</p>
+<h3 id="autenticacion">Autenticación</h3>
+<p>Necesaria, HTTP basic.</p>
+<h3 id="peticion">Petición</h3>
+<table>
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CardNumber</td>
+<td>Número de cuenta del socio</td>
+</tr>
+<tr>
+<td>CampaignList</td>
+<td>Debe contener los objetos Campaign de las campañas que se quieren agregar</td>
+</tr>
+<tr>
+<td>Campaign</td>
+<td>Objeto que representa una campaña</td>
+</tr>
+<tr>
+<td>Campaign.PrcCode</td>
+<td>Código de la promoción</td>
+</tr>
+<tr>
+<td>Campaign.StartDate</td>
+<td>Objeto que representa el inicio de la campaña</td>
+</tr>
+<tr>
+<td>Campaign.StartDate.IsQuery</td>
+<td>Debe estar en 'false'</td>
+</tr>
+<tr>
+<td>Campaign.StartDate.QueryString</td>
+<td>Debe estar vacío</td>
+</tr>
+<tr>
+<td>Campaign.StartDate.HasValue</td>
+<td>Debe ser 'true'</td>
+</tr>
+<tr>
+<td>Campaign.StartDate.Value</td>
+<td>Debe ser la fecha de inicio de la campaña</td>
+</tr>
+<tr>
+<td>Campaign.EndDate</td>
+<td>Objeto que representa el fin de la campaña</td>
+</tr>
+<tr>
+<td>Campaign.EndDate.IsQuery</td>
+<td>Debe estar en 'false'</td>
+</tr>
+<tr>
+<td>Campaign.EndDate.QueryString</td>
+<td>Debe estar vacío</td>
+</tr>
+<tr>
+<td>Campaign.EndDate.HasValue</td>
+<td>Debe ser 'true'</td>
+</tr>
+<tr>
+<td>Campaign.EndDate.Value</td>
+<td>Debe ser la fecha de fin de la campaña</td>
+</tr>
+<tr>
+<td>Campaign.DateTargetted</td>
+<td>Objeto que representa la fecha de cuando el socio se une a la campaña</td>
+</tr>
+<tr>
+<td>Campaign.DateTargetted.IsQuery</td>
+<td>Debe estar en 'false'</td>
+</tr>
+<tr>
+<td>Campaign.DateTargetted.QueryString</td>
+<td>Debe estar vacío</td>
+</tr>
+<tr>
+<td>Campaign.DateTargetted.HasValue</td>
+<td>Debe ser 'true'</td>
+</tr>
+<tr>
+<td>Campaign.DateTargetted.Value</td>
+<td>Debe ser la fecha en la que el socio se une a la campaña</td>
+</tr>
+<tr>
+<td>Campaign.CardNumber</td>
+<td>Número de cuenta del socio</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ejemplos">Ejemplos</h3>
+<h4 id="agregar-a-la-campana-bf17a">Agregar a la campaña BF17A</h4>
+<pre><code class="xml">&lt;AssignCampaigns xmlns=&quot;http://skywards.com/Mercator.CRIS.WS&quot;&gt;
+  &lt;CardNumber&gt;00970011581&lt;/CardNumber&gt;
+  &lt;CampaignList&gt;
+    &lt;Campaign&gt;
+      &lt;PrcCode&gt;BF17A&lt;/PrcCode&gt;
+      &lt;StartDate&gt;
+        &lt;IsQuery&gt;false&lt;/IsQuery&gt;
+        &lt;QueryString&gt;&lt;/QueryString&gt;
+        &lt;ContainsQueryOperators&gt;false&lt;/ContainsQueryOperators&gt;
+        &lt;HasValue&gt;true&lt;/HasValue&gt;
+        &lt;Value&gt;2017-06-01&lt;/Value&gt;
+      &lt;/StartDate&gt;
+      &lt;EndDate&gt;
+        &lt;IsQuery&gt;false&lt;/IsQuery&gt;
+        &lt;QueryString&gt;&lt;/QueryString&gt;
+        &lt;ContainsQueryOperators&gt;false&lt;/ContainsQueryOperators&gt;
+        &lt;HasValue&gt;true&lt;/HasValue&gt;
+        &lt;Value&gt;2017-12-31&lt;/Value&gt;
+      &lt;/EndDate&gt;
+      &lt;DateTargetted&gt;
+        &lt;IsQuery&gt;false&lt;/IsQuery&gt;
+        &lt;QueryString&gt;&lt;/QueryString&gt;
+        &lt;ContainsQueryOperators&gt;false&lt;/ContainsQueryOperators&gt;
+        &lt;HasValue&gt;true&lt;/HasValue&gt;
+        &lt;Value&gt;2017-08-30&lt;/Value&gt;
+      &lt;/DateTargetted&gt;
+      &lt;CardNumber&gt;00970011581&lt;/CardNumber&gt;
+    &lt;/Campaign&gt;
+  &lt;/CampaignList&gt;
+&lt;/AssignCampaigns&gt;
+</code></pre>
+
+<p><a href="../webservice/assigncampaignBF17Arequest.xml">request</a> <a href="../webservice/assigncampaignBF17Aresponse.xml">response</a></p>
+<h2 id="getlastntransactions2-spec">GetLastNTransactions2 Spec</h2>
+<h3 id="url-de-pruebas_1">URL de pruebas</h3>
+<p>http://cr5w5cptest.clubpremier.com/Mercator.CRIS.WebService.TESTCRIS/IVRWebService.asmx?op=GetLastNTransactions2</p>
+<h3 id="autenticacion_1">Autenticación</h3>
+<p>Necesaria, HTTP basic. (solicitar claves de pruebas)</p>
+<h3 id="peticion_1">Petición</h3>
+<table>
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>activeCardNo</td>
+<td>Número de cuenta del socio a solicitar, a 11 caracteres</td>
+</tr>
+<tr>
+<td>fromTransDate</td>
+<td>Fecha a partir de la cual se buscan los registros, en el formato <code>0001-01-01T00:00:00</code></td>
+</tr>
+<tr>
+<td>toTransDate</td>
+<td>Fecha hasta la cual se buscan los registros, en el formato <code>0001-01-01T00:00:00</code></td>
+</tr>
+<tr>
+<td>activityType</td>
+<td>Filtro de tipo de actividad</td>
+</tr>
+<tr>
+<td>transFilter</td>
+<td>Debe existir vacío</td>
+</tr>
+<tr>
+<td>orderBy</td>
+<td>Ordena los resultados por actividad <code>A</code> o por transferencia <code>T</code></td>
+</tr>
+<tr>
+<td>partnerCode</td>
+<td>Filtro del código del partner</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ejemplos_1">Ejemplos</h3>
+<h4 id="ejemplo-1">Ejemplo 1</h4>
+<p>Para solicitar los últimos dos años de transacciones de tipo FLT con partnerCode AM. Este será utilizado para verificar si aplican a la promoción de vuelos.</p>
+<pre><code class="xml">&lt;soap:Body&gt;
+    &lt;GetLastNTransactions2 xmlns=&quot;http://skywards.com/Mercator.CRIS.WS&quot;&gt;
+      &lt;activeCardNo&gt;00970011581&lt;/activeCardNo&gt;
+      &lt;fromTransDate&gt;2015-08-22&lt;/fromTransDate&gt;
+      &lt;toTransDate&gt;2017-08-22&lt;/toTransDate&gt;
+      &lt;activityType&gt;FLT&lt;/activityType&gt;
+      &lt;transFilter&gt;&lt;/transFilter&gt;
+      &lt;orderBy&gt;&lt;/orderBy&gt;
+      &lt;partnerCode&gt;AM&lt;/partnerCode&gt;
+    &lt;/GetLastNTransactions2&gt;
+&lt;/soap:Body&gt;
+</code></pre>
+
+<p><a href="../webservice/example1request.xml">Request</a> <a href="../webservice/example1response.xml">Response</a></p>
+<h4 id="ejemplo-2">Ejemplo 2</h4>
+<p>Para solicitar el último año de transacciones de transferencias de puntos de bancos. Se utiliza el tipo de transacción BPT. Con el partner code hay que ver con cuales partners ya se hicieron tranferencias.</p>
+<pre><code class="xml">&lt;soap:Body&gt;
+    &lt;GetLastNTransactions2 xmlns=&quot;http://skywards.com/Mercator.CRIS.WS&quot;&gt;
+      &lt;activeCardNo&gt;00970011581&lt;/activeCardNo&gt;
+      &lt;fromTransDate&gt;2016-08-22&lt;/fromTransDate&gt;
+      &lt;toTransDate&gt;2017-08-22&lt;/toTransDate&gt;
+      &lt;activityType&gt;BPT&lt;/activityType&gt;
+      &lt;transFilter&gt;&lt;/transFilter&gt;
+      &lt;orderBy&gt;&lt;/orderBy&gt;
+      &lt;partnerCode&gt;&lt;/partnerCode&gt;
+    &lt;/GetLastNTransactions2&gt;
+&lt;/soap:Body&gt;
+</code></pre>
+
+<p><a href="../webservice/example2request.xml">Request</a> <a href="../webservice/example2response.xml">Response</a></p>
+<h4 id="ejemplo-3">Ejemplo 3</h4>
+<p>Para solicitar el último año de transacciones de transferencias de puntos de hoteles. Se utiliza el tipo de transacción LYP. Con el partner code hay que ver con cuales partners ya se hicieron tranferencias.</p>
+<pre><code class="xml">&lt;soap:Body&gt;
+    &lt;GetLastNTransactions2 xmlns=&quot;http://skywards.com/Mercator.CRIS.WS&quot;&gt;
+      &lt;activeCardNo&gt;00970011581&lt;/activeCardNo&gt;
+      &lt;fromTransDate&gt;2016-08-22&lt;/fromTransDate&gt;
+      &lt;toTransDate&gt;2017-08-22&lt;/toTransDate&gt;
+      &lt;activityType&gt;LYP&lt;/activityType&gt;
+      &lt;transFilter&gt;&lt;/transFilter&gt;
+      &lt;orderBy&gt;&lt;/orderBy&gt;
+      &lt;partnerCode&gt;&lt;/partnerCode&gt;
+    &lt;/GetLastNTransactions2&gt;
+&lt;/soap:Body&gt;
+</code></pre>
+
+<p><a href="../webservice/example3request.xml">Request</a> <a href="../webservice/example3response.xml">Response</a></p>
+<h4 id="ejemplo-4">Ejemplo 4</h4>
+<p>La útilma petición es para solicitar el último año de transacciones de transferencias de puntos de retail. Se utiliza el tipo de transacción RPT. Con el partner code hay que ver con cuales partners ya se hicieron tranferencias. La respuesta de este ejemplo no econtró ningún registro que coincidiera con el filtro.</p>
+<pre><code class="xml">&lt;soap:Body&gt;
+    &lt;GetLastNTransactions2 xmlns=&quot;http://skywards.com/Mercator.CRIS.WS&quot;&gt;
+      &lt;activeCardNo&gt;00970011581&lt;/activeCardNo&gt;
+      &lt;fromTransDate&gt;2016-08-22&lt;/fromTransDate&gt;
+      &lt;toTransDate&gt;2017-08-22&lt;/toTransDate&gt;
+      &lt;activityType&gt;RPT&lt;/activityType&gt;
+      &lt;transFilter&gt;&lt;/transFilter&gt;
+      &lt;orderBy&gt;&lt;/orderBy&gt;
+      &lt;partnerCode&gt;&lt;/partnerCode&gt;
+    &lt;/GetLastNTransactions2&gt;
+&lt;/soap:Body&gt;
+</code></pre>
+
+<p><a href="../webservice/example4request.xml">Request</a> <a href="../webservice/example4response.xml">Response</a></p>
+<h3 id="codigos">Códigos</h3>
+<h4 id="codigos-de-tipo-de-actividad">Codigos de tipo de actividad</h4>
+<table>
+<thead>
+<tr>
+<th><code>activityType</code></th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FLT</td>
+<td>Vuelos</td>
+</tr>
+<tr>
+<td>BPT</td>
+<td>Tranferencias de bancos</td>
+</tr>
+<tr>
+<td>RPT</td>
+<td>Transferencias de retail</td>
+</tr>
+<tr>
+<td>LYP</td>
+<td>Transferencias de hoteles</td>
+</tr>
+</tbody>
+</table>
+<h4 id="codigos-de-partners-de-hoteles">Códigos de partners de hoteles</h4>
+<table>
+<thead>
+<tr>
+<th><code>partnerCode</code></th>
+<th>Descripción</th>
+<th>Logo</th>
+<th>Link de información</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PC</td>
+<td>Fiesta Rewards</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/PC.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/servicios-de-viaje/hoteles/fiesta-americana-fiesta-inn/transferencia/">Link</a></td>
+</tr>
+<tr>
+<td>HX</td>
+<td>Marriott Rewards</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/HX.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/servicios-de-viaje/hoteles/marriott-hotels/transferencia/">Link</a></td>
+</tr>
+<tr>
+<td>HI</td>
+<td>Hilton Honors</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/HI.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/servicios-de-viaje/hoteles/hilton-honors/transferencia/">Link</a></td>
+</tr>
+<tr>
+<td>BH</td>
+<td>IHG Rewards</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/BH.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/servicios-de-viaje/hoteles/intercontinental-hotels-group/transferencia/">Link</a></td>
+</tr>
+<tr>
+<td>STW</td>
+<td>Starwood</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/STW.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/servicios-de-viaje/hoteles/starwood-hoteles-and-resorts/">Link</a></td>
+</tr>
+<tr>
+<td>HY</td>
+<td>Hyatt Gold Passport</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/HY.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/servicios-de-viaje/hoteles/hyatt-hotels-resorts/transferencia/">Link</a></td>
+</tr>
+<tr>
+<td>HJ</td>
+<td>City Premios</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/HJ.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/servicios-de-viaje/hoteles/hoteles-city-express/transferencia">Link</a></td>
+</tr>
+<tr>
+<td>HW</td>
+<td>Carlson Reizdor Hotels</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/HW.jpg">Link</a></td>
+<td>link no está disponible</td>
+</tr>
+<tr>
+<td>WH</td>
+<td>Wyndham Rewards</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/WH.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/servicios-de-viaje/hoteles/wyndham-hotel-group/transferencia/">Link</a></td>
+</tr>
+<tr>
+<td>BW</td>
+<td>Best Western</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/BW.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/servicios-de-viaje/hoteles/best-western/transferencia/">Link</a></td>
+</tr>
+<tr>
+<td>CHI</td>
+<td>Choice Privileges</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/CHI.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/servicios-de-viaje/hoteles/choice-hotels">Link</a></td>
+</tr>
+<tr>
+<td>LQ</td>
+<td>La Quinta Returns</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/LQ.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/servicios-de-viaje/hoteles/la-quinta-inns-suites/transferencia/">Link</a></td>
+</tr>
+<tr>
+<td>CS</td>
+<td>Círculo Real</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/CS.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/servicios-de-viaje/hoteles/grupo-real-turismo/transferencia/">Link</a></td>
+</tr>
+<tr>
+<td>ACC</td>
+<td>Accor Hotels</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/ACC.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/servicios-de-viaje/hoteles/accor-hotels/">Link</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="codigos-de-partners-de-bancos">Códigos de partners de bancos</h4>
+<table>
+<thead>
+<tr>
+<th><code>partnerCode</code></th>
+<th>Descripción</th>
+<th>Logo</th>
+<th>Link de información</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MRM</td>
+<td>Membership Rewards México</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/MRM.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/bancos/transferencia/membership-rewards/">Link</a></td>
+</tr>
+<tr>
+<td>BVA</td>
+<td>Bancomer</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/BVA.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/bancos/transferencia/bancomer">Link</a></td>
+</tr>
+<tr>
+<td>HMX</td>
+<td>HSBC</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/HMX.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/bancos/transferencia/hsbc">Link</a></td>
+</tr>
+<tr>
+<td>SFI</td>
+<td>Inbursa</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/SFI.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/bancos/transferencia/inbursa">Link</a></td>
+</tr>
+<tr>
+<td>SS</td>
+<td>Invex</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/SS.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/bancos/transferencia/invex">Link</a></td>
+</tr>
+<tr>
+<td>GFM</td>
+<td>Banca Mifel</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/GFM.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/bancos/transferencia/mifel">Link</a></td>
+</tr>
+<tr>
+<td>SE</td>
+<td>Santander</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/SE.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/bancos/transferencia/superbonus-de-santander-brasil/">Link</a></td>
+</tr>
+<tr>
+<td>SBI</td>
+<td>Scotiabank</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/SBI.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/bancos/transferencia/scotiabank">Link</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="codigos-de-partners-de-retail">Códigos de partners de retail</h4>
+<table>
+<thead>
+<tr>
+<th><code>partnerCode</code></th>
+<th>Descripción</th>
+<th>Logo</th>
+<th>Link de información</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PH</td>
+<td>Palacio de Hierro</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/PH.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/tiendas-y-mas/tiendas/palacio-de-hierro">Link</a></td>
+</tr>
+<tr>
+<td>SBS</td>
+<td>Sanborns</td>
+<td><a href="https://s3.amazonaws.com/club_premier/invita/partners/SBS.jpg">Link</a></td>
+<td><a href="https://www.clubpremier.com/mx/acumula/tiendas-y-mas/tiendas/sanborns">Link</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="codigos-de-partners-de-vuelos">Códigos de partners de vuelos</h4>
+<table>
+<thead>
+<tr>
+<th><code>partnerCode</code></th>
+<th>Descripción</th>
+<th>Logo</th>
+<th>Link de información</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AM</td>
+<td>Aeroméxico</td>
+<td><a href="../adjuntos/logo_aeromexico.ai">Archivo de illustrator</a></td>
+<td><a href="https://member.clubpremier.com/individual/acreditacion-retroactiva-aeromexico">Link</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="cambios-en-el-modulo-de-inscripcion">Cambios en el módulo de inscripción</h2>
+<p>En el sistema de inscripción general de la página se harán cambios dependiendo de si se encuentra la cookie del anfitrión.</p>
+<p>Si la cookie no está presente se mostrará un campo para agregar el número de cuenta de tu anfitrión, esto es para que de forma manual alguna persona pueda indicar si es invitado de alguien. Si este campo es llenado a la hora de inscribirse se agregará al campo <em>refered</em>, además se agregará al socio a la campaña <code>BF17B</code>. Si no se llena el campo se procedera de forma normal con la inscripción.</p>
+<p>Si la cookie está presente no se mostrará el campo de anfitrión pero de igual forma se le agregará la información del anfitrión en el campo <em>refered</em> y se agregará a la campaña <code>BF17B</code>.</p>
+<p>En cualquiera de los dos casos si es que se inscribe al socio en la promoción, ya sea porque manualmente colocó la información de sus anfitrión o porque se obtuvo automáticamente de la cookie, después de la segunda pantalla de llenado de datos se hará login automátimente y se redirigirá a la pantalla de <em>landing invitado</em> para que pueda ver la pre-validación.</p>
+<p><a href="../img/flujo_inscripcion.png">Flujo de inscripción</a></p>
+<p><a href="../img/flujo_inscripcion_ventanas.png">Flujo de inscripción ventanas</a></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

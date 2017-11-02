@@ -1,0 +1,9 @@
+site_name: Bring A Friend
+
+pages:
+  - Inicio: 'index.md'
+  - Descripción general: 'description.md'
+  - Flujos: 'flujos.md'
+  - Req Anfitrión: 'requerimientos_anfitrion.md'
+  - Req Invitado: 'requerimientos_invitado.md'
+  - Req Inscripción: 'requerimientos_inscripcion.md'

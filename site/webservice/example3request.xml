@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <AuthenticationHeader xmlns="http://skywards.com/Mercator.CRIS.WS">
+      <AuthenticationName>CANALES</AuthenticationName>
+      <AuthenticationPassword>*******</AuthenticationPassword>
+      <AuthenticationToken></AuthenticationToken>
+      <AuthenticationProxyUser></AuthenticationProxyUser>
+      <AuthenticationProxyPassword></AuthenticationProxyPassword>
+    </AuthenticationHeader>
+  </soap:Header>
+  <soap:Body>
+    <GetLastNTransactions2 xmlns="http://skywards.com/Mercator.CRIS.WS">
+      <activeCardNo>00970011581</activeCardNo>
+      <fromTransDate>2016-08-22</fromTransDate>
+      <toTransDate>2017-08-22</toTransDate>
+      <activityType>LYP</activityType>
+      <transFilter></transFilter>
+      <orderBy></orderBy>
+      <partnerCode></partnerCode>
+    </GetLastNTransactions2>
+</soap:Body>
+</soap:Envelope>

@@ -1,0 +1,1558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <GetLastNTransactions2Response xmlns="http://skywards.com/Mercator.CRIS.WS">
+            <GetLastNTransactions2Result>
+                <Activity PersonID="0" MemUID="8737782" ActivityType="LYP" ActivityTypeCategory="HTL">
+                    <CreatedDate>
+                        <ContainsQueryOperators>false</ContainsQueryOperators>
+                    </CreatedDate>
+                    <ModifiedDate>
+                        <ContainsQueryOperators>false</ContainsQueryOperators>
+                    </ModifiedDate>
+                    <ActivityID>197116038</ActivityID>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197011680</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172611351</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197012693</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172612364</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197015812</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172615489</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197018981</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172618709</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy />
+                        <ModifiedDate>
+                            <ContainsQueryOperators>false</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197035627</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTDB</TransactionType>
+                        <TransactionDescr>Fiesta Rewards</TransactionDescr>
+                        <EnglishDescr>Fiesta Rewards</EnglishDescr>
+                        <RedemptionMiles>-2000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>0001-01-01T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>RMA</PmaType>
+                        <ActivityMethod>M</ActivityMethod>
+                        <ActivityCode>PC 05   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172635679</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy />
+                        <ModifiedDate>
+                            <ContainsQueryOperators>false</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197116055</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTDB</TransactionType>
+                        <TransactionDescr>Fiesta Rewards</TransactionDescr>
+                        <EnglishDescr>Fiesta Rewards</EnglishDescr>
+                        <RedemptionMiles>-2000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>0001-01-01T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>RMA</PmaType>
+                        <ActivityMethod>M</ActivityMethod>
+                        <ActivityCode>PC 05   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172718130</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy />
+                        <ModifiedDate>
+                            <ContainsQueryOperators>false</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197330662</ActivityID>
+                        <ActivityDate>2016-09-13T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-13T00:00:00</TransactionDate>
+                        <TransactionType>ACTDB</TransactionType>
+                        <TransactionDescr>Fiesta Rewards</TransactionDescr>
+                        <EnglishDescr>Fiesta Rewards</EnglishDescr>
+                        <RedemptionMiles>-2000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>0001-01-01T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>RMA</PmaType>
+                        <ActivityMethod>M</ActivityMethod>
+                        <ActivityCode>PC 05   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172993045</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>13SEP2016</TransactionDateString>
+                        <ActivityDateString>13SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy />
+                        <ModifiedDate>
+                            <ContainsQueryOperators>false</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197330710</ActivityID>
+                        <ActivityDate>2016-09-13T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-13T00:00:00</TransactionDate>
+                        <TransactionType>ACTDB</TransactionType>
+                        <TransactionDescr>Fiesta Rewards</TransactionDescr>
+                        <EnglishDescr>Fiesta Rewards</EnglishDescr>
+                        <RedemptionMiles>-2000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>0001-01-01T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>RMA</PmaType>
+                        <ActivityMethod>M</ActivityMethod>
+                        <ActivityCode>PC 05   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172993092</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>13SEP2016</TransactionDateString>
+                        <ActivityDateString>13SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy />
+                        <ModifiedDate>
+                            <ContainsQueryOperators>false</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197330736</ActivityID>
+                        <ActivityDate>2016-09-13T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-13T00:00:00</TransactionDate>
+                        <TransactionType>ACTDB</TransactionType>
+                        <TransactionDescr>Fiesta Rewards</TransactionDescr>
+                        <EnglishDescr>Fiesta Rewards</EnglishDescr>
+                        <RedemptionMiles>-2000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>0001-01-01T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>RMA</PmaType>
+                        <ActivityMethod>M</ActivityMethod>
+                        <ActivityCode>PC 05   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172993124</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>13SEP2016</TransactionDateString>
+                        <ActivityDateString>13SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197115369</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172717222</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197115422</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172717307</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197115423</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172717312</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197115442</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172717343</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197115492</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172717423</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197115493</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172717424</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197115497</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172717432</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197115498</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172717433</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197115569</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172717578</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197115718</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172717765</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197115722</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172717769</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197115730</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172717777</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197115915</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172717981</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197115916</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172717982</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197115928</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172717994</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197115942</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172718010</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy>CRISOPS</ModifiedBy>
+                        <ModifiedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197115964</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTCR</TransactionType>
+                        <TransactionDescr>Transferencia de Fiesta Reward</TransactionDescr>
+                        <EnglishDescr>Transferencia de Fiesta Reward</EnglishDescr>
+                        <RedemptionMiles>1750</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>2019-07-31T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>EMA</PmaType>
+                        <ActivityMethod>W</ActivityMethod>
+                        <ActivityCode>PC 0D   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172718033</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                    <TransactionArray>
+                        <CreatedBy>GRUPOS_USER</CreatedBy>
+                        <CreatedDate>
+                            <QueryString />
+                            <ContainsQueryOperators>true</ContainsQueryOperators>
+                        </CreatedDate>
+                        <ModifiedBy />
+                        <ModifiedDate>
+                            <ContainsQueryOperators>false</ContainsQueryOperators>
+                        </ModifiedDate>
+                        <PersonID>0</PersonID>
+                        <MemUID>8737782</MemUID>
+                        <ActivityID>197116038</ActivityID>
+                        <ActivityDate>2016-09-07T00:00:00</ActivityDate>
+                        <FamilyMemUID>0</FamilyMemUID>
+                        <ActivityType>LYP</ActivityType>
+                        <CityPair />
+                        <PartnerCode>PC</PartnerCode>
+                        <PartnerDescr>Fiesta Rewards</PartnerDescr>
+                        <TransactionDate>2016-09-07T00:00:00</TransactionDate>
+                        <TransactionType>ACTDB</TransactionType>
+                        <TransactionDescr>Fiesta Rewards</TransactionDescr>
+                        <EnglishDescr>Fiesta Rewards</EnglishDescr>
+                        <RedemptionMiles>-2000</RedemptionMiles>
+                        <TierMiles>0</TierMiles>
+                        <QrsCode />
+                        <MilesUnExpired>0</MilesUnExpired>
+                        <ExpiryActionDate>0001-01-01T00:00:00</ExpiryActionDate>
+                        <ActualPoints>0</ActualPoints>
+                        <PmaType>RMA</PmaType>
+                        <ActivityMethod>M</ActivityMethod>
+                        <ActivityCode>PC 05   </ActivityCode>
+                        <ActivityTypeCategory>HTL</ActivityTypeCategory>
+                        <FamilyID>0</FamilyID>
+                        <TransactionID>172718110</TransactionID>
+                        <PRBR>N</PRBR>
+                        <StatementDate>0001-01-01T00:00:00</StatementDate>
+                        <IsCancelled>N</IsCancelled>
+                        <MCDCardNumber>00970011581</MCDCardNumber>
+                        <IsFamilyTransaction>N</IsFamilyTransaction>
+                        <TransactionDateString>07SEP2016</TransactionDateString>
+                        <ActivityDateString>07SEP2016</ActivityDateString>
+                        <LastExpired>0001-01-01T00:00:00</LastExpired>
+                        <IsExpired>N</IsExpired>
+                        <ActivityDescription>Loyalty Hotel Programs</ActivityDescription>
+                        <IsMerged>N</IsMerged>
+                        <RecordLocator />
+                        <Mktcareer />
+                        <Optcareer />
+                        <Mktfltno />
+                        <Optfltno />
+                        <PaxName />
+                        <PNRName />
+                        <PartnerBsn />
+                        <RateBand />
+                    </TransactionArray>
+                </Activity>
+            </GetLastNTransactions2Result>
+            <wsResult>
+                <IsSuccess>true</IsSuccess>
+                <ErrorNumber>0</ErrorNumber>
+                <Message />
+                <ExtraInfo />
+                <ExType />
+            </wsResult>
+        </GetLastNTransactions2Response>
+    </soap:Body>
+</soap:Envelope>

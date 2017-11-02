@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <AssignCampaignsResponse xmlns="http://skywards.com/Mercator.CRIS.WS">
+            <AssignCampaignsResult>
+                <Campaign>
+                    <PrcCode>AM-P1</PrcCode>
+                    <PrcDescription>Bono rutas de Aeroméxico </PrcDescription>
+                    <StartDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-06-24T00:00:00</Value>
+                    </StartDate>
+                    <EndDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2017-03-16T00:00:00</Value>
+                    </EndDate>
+                    <DateTargetted>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-10-31T00:00:00</Value>
+                    </DateTargetted>
+                    <CardNumber />
+                </Campaign>
+                <Campaign>
+                    <PrcCode>AM-P2</PrcCode>
+                    <PrcDescription>Bono Web Check-in</PrcDescription>
+                    <StartDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-06-24T00:00:00</Value>
+                    </StartDate>
+                    <EndDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2014-08-06T00:00:00</Value>
+                    </EndDate>
+                    <DateTargetted>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-10-31T00:00:00</Value>
+                    </DateTargetted>
+                    <CardNumber />
+                </Campaign>
+                <Campaign>
+                    <PrcCode>AM-P3</PrcCode>
+                    <PrcDescription>Bono Compra en aeromexico.com</PrcDescription>
+                    <StartDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-06-24T00:00:00</Value>
+                    </StartDate>
+                    <EndDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2016-06-29T00:00:00</Value>
+                    </EndDate>
+                    <DateTargetted>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-10-29T00:00:00</Value>
+                    </DateTargetted>
+                    <CardNumber />
+                </Campaign>
+                <Campaign>
+                    <PrcCode>AM-P6</PrcCode>
+                    <PrcDescription>Rutas de Aeromexico Agosto '15</PrcDescription>
+                    <StartDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2015-08-01T00:00:00</Value>
+                    </StartDate>
+                    <EndDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2015-09-30T00:00:00</Value>
+                    </EndDate>
+                    <DateTargetted>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2015-09-29T00:00:00</Value>
+                    </DateTargetted>
+                    <CardNumber />
+                </Campaign>
+                <Campaign>
+                    <PrcCode>AMWEB</PrcCode>
+                    <PrcDescription>bono compra AM.com</PrcDescription>
+                    <StartDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-05-05T00:00:00</Value>
+                    </StartDate>
+                    <EndDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-05-10T00:00:00</Value>
+                    </EndDate>
+                    <DateTargetted>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-05-06T00:00:00</Value>
+                    </DateTargetted>
+                    <CardNumber />
+                </Campaign>
+                <Campaign>
+                    <PrcCode>BMR30</PrcCode>
+                    <PrcDescription>30% KmP al transferir tus puntos Bancomer</PrcDescription>
+                    <StartDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2014-06-10T00:00:00</Value>
+                    </StartDate>
+                    <EndDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2014-08-15T00:00:00</Value>
+                    </EndDate>
+                    <DateTargetted>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2014-08-14T00:00:00</Value>
+                    </DateTargetted>
+                    <CardNumber />
+                </Campaign>
+                <Campaign>
+                    <PrcCode>BN-P0</PrcCode>
+                    <PrcDescription>hasta 20 por ciento más con Banorte</PrcDescription>
+                    <StartDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-08-27T00:00:00</Value>
+                    </StartDate>
+                    <EndDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-10-25T00:00:00</Value>
+                    </EndDate>
+                    <DateTargetted>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-08-30T00:00:00</Value>
+                    </DateTargetted>
+                    <CardNumber />
+                </Campaign>
+                <Campaign>
+                    <PrcCode>DCNG</PrcCode>
+                    <PrcDescription>Bono Promoción Especial</PrcDescription>
+                    <StartDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2014-05-23T00:00:00</Value>
+                    </StartDate>
+                    <EndDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2014-06-22T00:00:00</Value>
+                    </EndDate>
+                    <DateTargetted>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2014-05-28T00:00:00</Value>
+                    </DateTargetted>
+                    <CardNumber />
+                </Campaign>
+                <Campaign>
+                    <PrcCode>INIP0</PrcCode>
+                    <PrcDescription>TRIPLES KMP CON TARJETAS AM - AMERICAN EXPRESS</PrcDescription>
+                    <StartDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-06-01T00:00:00</Value>
+                    </StartDate>
+                    <EndDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-06-30T00:00:00</Value>
+                    </EndDate>
+                    <DateTargetted>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-06-03T00:00:00</Value>
+                    </DateTargetted>
+                    <CardNumber />
+                </Campaign>
+                <Campaign>
+                    <PrcCode>RALP0</PrcCode>
+                    <PrcDescription>RALLY PREMIER</PrcDescription>
+                    <StartDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-06-10T00:00:00</Value>
+                    </StartDate>
+                    <EndDate>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-07-07T00:00:00</Value>
+                    </EndDate>
+                    <DateTargetted>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2013-06-20T00:00:00</Value>
+                    </DateTargetted>
+                    <CardNumber />
+                </Campaign>
+                <Campaign>
+                    <PrcCode>BF17A</PrcCode>
+                    <StartDate>
+                        <IsQuery>false</IsQuery>
+                        <ContainsQueryOperators>false</ContainsQueryOperators>
+                        <HasValue>false</HasValue>
+                        <Value>0001-01-01T00:00:00</Value>
+                    </StartDate>
+                    <EndDate>
+                        <IsQuery>false</IsQuery>
+                        <ContainsQueryOperators>false</ContainsQueryOperators>
+                        <HasValue>false</HasValue>
+                        <Value>0001-01-01T00:00:00</Value>
+                    </EndDate>
+                    <DateTargetted>
+                        <IsQuery>false</IsQuery>
+                        <QueryString />
+                        <ContainsQueryOperators>true</ContainsQueryOperators>
+                        <HasValue>true</HasValue>
+                        <Value>2017-08-30T00:00:00</Value>
+                    </DateTargetted>
+                    <CardNumber>00970011581</CardNumber>
+                </Campaign>
+            </AssignCampaignsResult>
+            <wsResult>
+                <IsSuccess>true</IsSuccess>
+                <ErrorNumber>0</ErrorNumber>
+                <Message />
+                <ExtraInfo />
+                <ExType />
+            </wsResult>
+        </AssignCampaignsResponse>
+    </soap:Body>
+</soap:Envelope>
